@@ -2,7 +2,6 @@
 title: "attention만 남기고 다 걷어냈다 — Vaswani 2017"
 date: "2026-07-26"
 description: "번역기를 만들려고 쓴 논문인데 지금 쓰는 모든 대형 언어모델의 구조가 여기서 나왔다. 문장을 한 단어씩 읽던 방식을 버리고 얻은 것과 새로 붙여야 했던 것."
-categories: [논문]
 ---
 
 > *Attention Is All You Need* · arXiv: [1706.03762](https://arxiv.org/abs/1706.03762) · Ashish Vaswani 외 7인 (Google Brain · Google Research · Univ. of Toronto) · **NIPS 2017** — 저자 전원이 동등 기여이고 나열 순서는 무작위라고 논문이 밝힌다. 읽은 판은 arXiv v7(2023-08-02).\
