@@ -6,7 +6,7 @@ categories: [논문]
 ---
 
 > *Attention Is All You Need* · arXiv: [1706.03762](https://arxiv.org/abs/1706.03762) · Ashish Vaswani 외 7인 (Google Brain · Google Research · Univ. of Toronto) · **NIPS 2017** — 저자 전원이 동등 기여이고 나열 순서는 무작위라고 논문이 밝힌다. 읽은 판은 arXiv v7(2023-08-02).\
-> 상태: 본문 전편 정독. 부록의 attention 시각화 그림은 아직 안 다뤘다.\
+> 상태: 본문 전편과 부록 정독.\
 > 모델: 크기 둘 — base(파라미터 6,500만) · big(2억 1,300만). 둘 다 P100 GPU 8장에서 각각 12시간과 3.5일 훈련.
 
 ## 이 논문이 무엇인가
@@ -280,6 +280,24 @@ decoder 입력 :  [시작]   I     ate    rice
 그래서 점수판을 여덟 장 만들고 장마다 변환 행렬을 따로 둔다. 각 장은 512차원 전체가 아니라 64차원만 보고(512 ÷ 8 = 64) 결과 여덟 개를 이어붙여 다시 정리한다. 차원을 줄였기 때문에 전체 계산 비용은 512차원짜리 한 장을 쓸 때와 비슷하다. 같은 비용으로 관점을 여덟 개 얻는다.
 
 각 장이 무엇을 볼지는 사람이 지정하지 않는다. 변환 행렬이 학습으로 정해지면서 저절로 갈린다. 여덟이라는 숫자에는 실험 근거가 있다. 계산량을 고정한 채 head 수만 바꿔본 결과 **한 장짜리는 최고 설정보다 BLEU가 0.9 낮았다.** 너무 많이 쪼개도 점수가 떨어졌다.
+
+## 정말 그렇게 작동하는지 열어보면
+
+저자들은 훈련이 끝난 모델에 실제 문장을 넣고 attention이 어디로 향하는지를 뽑아 부록에 실었다. 세 장 중 두 장이 지금까지의 설명과 곧바로 이어진다.
+
+첫째는 멀리 떨어진 단어를 잡아내는 장면이다. 예문은 이렇다.
+
+```
+It is in this spirit that a majority of American governments have passed
+new laws since 2009 [making] the registration or voting process [more difficult].
+                       └──────────── 여덟 단어 건너 ────────────┘
+```
+
+`making`에서 나간 attention이 여덟 단어 뒤의 `more difficult`로 향한다. `making … more difficult`가 하나의 구를 이루기 때문이고, 경로 길이가 거리와 무관하게 1이라는 주장이 실제로 이렇게 나타난다.
+
+둘째는 글 첫머리에서 던진 문제 그 자체다. `The Law will never be perfect, but its application should be just`라는 문장에서 `its`가 무엇을 가리키는지가 문제인데, 5번과 6번 head에서 나간 attention이 `Law`와 `application`으로 뾰족하게 향한다. 앞에서 `it`이 닭인지 길인지 알아야 한다고 했던 그 일을 모델이 실제로 이렇게 처리한다.
+
+셋째는 같은 층의 서로 다른 head를 나란히 놓은 것이다. 두 head의 attention 모양이 눈에 띄게 다르다. 논문은 head들이 서로 다른 일을 하도록 학습된 것은 분명하다고 쓰면서도, 그 일이 문법·의미 구조와 관련돼 보인다는 부분에는 "보인다"는 표현을 붙인다. 사람이 예문 몇 개를 골라 눈으로 확인한 것이라 거기까지가 이 증거가 말할 수 있는 범위다.
 
 ## 마지막 한 걸음 — 숫자를 단어 확률로
 
