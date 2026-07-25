@@ -1,11 +1,10 @@
 ---
 title: "(실험 이름) (진행중)"
 date: "YYYY-MM-DD"
-description: "한 줄 — 무엇을 재는 실험인가"
-categories: [experiment]
+description: "한 줄 — 무엇을 측정하는 실험인가"
 ---
 
-> 무엇을 재나: (질문 한 줄 + 출처 리뷰 링크)
+> 무엇을 측정하나: (질문 한 줄 + 그 질문을 낳은 공부글 링크)
 
 ## 설계
 
