@@ -106,3 +106,31 @@ draw(ax, grid, "각 자리가 자기 뒤쪽을 못 보게 막은 점수판", mas
 ax.text(N - 0.2, 0.6, "사선 = 가려진 자리\n(비율 0)", fontsize=9.5,
         color=MUTE, ha="right", va="top")
 figstyle.save(fig, "attention-masked")
+
+# ── 그림 3: 부록에서 저자들이 뽑은 두 head ──
+# ⚠ 논문 Figure 4는 색 농도로만 그려져 있어 값을 숫자로 읽을 수 없다. 아래 값은
+#    모식도이고, "한 head는 Law로 다른 head는 application으로 향한다"는 구조만 옮겼다.
+#    그 판독 자체가 캡션에 없는 내용이라(캡션은 "attentions are very sharp for this
+#    word"까지 + 헤지 "apparently") 본문도 그 사정거리를 밝히고 있다.
+HEAD_A = np.array([0.02, 0.62, 0.01, 0.01, 0.02, 0.03, 0.01,
+                   0.02, 0.05, 0.18, 0.01, 0.01, 0.01])
+HEAD_B = np.array([0.02, 0.14, 0.01, 0.01, 0.02, 0.03, 0.01,
+                   0.02, 0.06, 0.65, 0.01, 0.01, 0.01])
+
+fig, axes = plt.subplots(2, 1, figsize=(7.2, 5.8), sharex=True)
+for ax, row, name, target in [(axes[0], HEAD_A, "head 하나", "Law"),
+                              (axes[1], HEAD_B, "다른 head", "application")]:
+    ax.bar(range(N), row, color=TEAL, width=0.62, zorder=3)
+    ax.set_ylim(0, 0.78)
+    ax.set_ylabel("섞이는 비율", fontsize=9.5)
+    ax.set_title(f"{name} — {target} 쪽으로 향한다", fontsize=11, color=INK, pad=8)
+    ax.spines[["top", "right"]].set_visible(False)
+    top = int(np.argmax(row))
+    ax.text(top, row[top] + 0.02, TOKENS[top], ha="center", fontsize=9.5, color=INK)
+
+axes[1].set_xticks(range(N))
+axes[1].set_xticklabels(TOKENS, rotation=90, fontsize=8.5)
+axes[1].set_xlabel("its가 바라보는 단어", fontsize=9.5, labelpad=6)
+fig.suptitle("its에서 나가는 attention을 head별로 나눠 보면",
+             fontsize=12, color=INK, y=0.97)
+figstyle.save(fig, "attention-two-heads")
