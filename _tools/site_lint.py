@@ -33,10 +33,14 @@ JARGON_WARN = ["마일스톤", "체크포인트", "BACKLOG"]
 # 상단에 "> 상태:" 줄이 있어야 하는 가든 문서 — 오독 방지 기능이 있는 곳만
 # (2026-07-12 선호 결정: 장식성 상태 줄은 제거 — 용어집·실험 랜딩·foundations 랜딩은 제외.
 #  reading-list.qmd는 2026-07-22 지도에 흡수·삭제돼 목록에서 뺌)
+#  2026-07-26: 기초 개념 글(논문 정독이 아니라 밑돌 개념을 세우는 글)은 읽은 범위 자체가
+#  없어 상태 줄이 장식이 된다 — paper-reviews/ 안에 있어도 제외한다.
+NOT_PAPER_REVIEW = {"index.qmd", "before-attention.qmd"}
+
 STATUS_REQUIRED = (
     ["field-map.qmd"]
     + [str(p.relative_to(ROOT)) for p in (ROOT / "paper-reviews").glob("*.qmd")
-       if p.name != "index.qmd"]
+       if p.name not in NOT_PAPER_REVIEW]
 )
 
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s]+)\)")
