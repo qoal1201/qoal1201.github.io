@@ -28,17 +28,25 @@ PUBLIC_FILES = (
 
 # 내부 운영 용어 — 방문자 표면에서 금지 (CLAUDE.md "방문자 표면 vs 운영 용어")
 JARGON_ERROR = ["load-bearing", "just-in-time", "작업호", "진실원"]
-JARGON_WARN = ["마일스톤", "체크포인트", "BACKLOG"]
+# 2026-07-26: 개명 미반영 수리 — 2026-07-19에 load-bearing→밑돌로 바꿨는데 lint는 구 단어만
+# 검사하고 있었다(현행 용어를 아무도 안 보던 상태). "밑돌다"(수치가 기준에 못 미침)는 정상
+# 한국어라 통짜 문자열로 넣으면 오탐이 나므로 동사 활용형을 제외한 명사형만 잡는다.
+JARGON_ERROR_RE = [(re.compile(r"밑돌(?![다았아어며면지게던])"), "밑돌")]
+JARGON_WARN = ["마일스톤", "체크포인트", "BACKLOG", "승격"]
 
 # 상단에 "> 상태:" 줄이 있어야 하는 가든 문서 — 오독 방지 기능이 있는 곳만
 # (2026-07-12 선호 결정: 장식성 상태 줄은 제거 — 용어집·실험 랜딩·foundations 랜딩은 제외.
 #  reading-list.qmd는 2026-07-22 지도에 흡수·삭제돼 목록에서 뺌)
 #  2026-07-26: 기초 개념 글(논문 정독이 아니라 밑돌 개념을 세우는 글)은 읽은 범위 자체가
 #  없어 상태 줄이 장식이 된다 — paper-reviews/ 안에 있어도 제외한다.
-NOT_PAPER_REVIEW = {"index.qmd", "before-attention.qmd"}
+NOT_PAPER_REVIEW = {"before-attention.qmd"}
 
+# 2026-07-26: 죽은 항목 수리 — 목록의 유일한 비-리뷰 항목이 field-map.qmd였는데 그 파일은
+# 2026-07-24에 프롤로그로 흡수·삭제됐다. 존재하는 파일만 순회하는 구조라 오류로도 안 뜨고
+# 검사만 조용히 꺼져 있었다. 지도를 물려받은 프롤로그로 교체한다(상태 줄 실재 확인).
+# (구 목록의 "index.qmd"도 2026-07-17에 삭제된 논문 목록 페이지를 가리키던 죽은 항목.)
 STATUS_REQUIRED = (
-    ["field-map.qmd"]
+    ["experiments/2026-06-29-prologue.qmd"]
     + [str(p.relative_to(ROOT)) for p in (ROOT / "paper-reviews").glob("*.qmd")
        if p.name not in NOT_PAPER_REVIEW]
 )
@@ -120,6 +128,9 @@ def check_jargon(path, lines, fenced):
         for term in JARGON_ERROR:
             if term in line:
                 errors.append(f"{path}:{i} 내부 용어 '{term}' — 방문자 표면에서는 풀어쓸 것")
+        for pat, label in JARGON_ERROR_RE:
+            if pat.search(line):
+                errors.append(f"{path}:{i} 내부 용어 '{label}' — 방문자 표면에서는 풀어쓸 것")
         for term in JARGON_WARN:
             if term in line:
                 warnings.append(f"{path}:{i} 운영 용어 '{term}' — 일지 밖 사용이 맞는지 확인")
@@ -154,8 +165,13 @@ def table_rows(text, score_header):
 # 원칙(2026-07-22 확정): 형태만으로 문제인 패턴만 기계가 센다. "아니라" 쿼터는 제거 —
 # 극적 대조(voice 금지)와 사실 서술(정당)을 문자열로 못 가르고, 오탐이 정당한 문장을
 # 고치게 만들었다(anisotropy 항목 실측). 그 판정은 의미 층(자체 스캔·voice-check·통독) 몫.
-STYLE_QUOTA = {"대시": 12, "볼드쌍": 10, "연결어미쉼표": 6}
+STYLE_QUOTA = {"대시": 12, "볼드쌍": 10, "연결어미쉼표": 6, "이모지": 0}
 CONJ_COMMA_RE = re.compile(r"(?:고|며|지만|는데|면서|므로),\s")
+# 2026-07-26 신설: CLAUDE.md 규칙 등급이 이모지를 3급으로 내리며 "site_lint.py 쿼터로 관리"라고
+# 적었는데 lint에 검사가 없어 어느 층도 안 보고 있었다. 규칙이 겨냥한 것은 성숙도 스탬프(🌱🌿🌳)
+# 류의 그림 이모지이므로 그 범위만 센다 — ✕·○·△·⚠ 같은 기호는 판정 표기라 제외(프롤로그
+# 8편 표에서 오탐 실측).
+EMOJI_RE = re.compile("[\U0001F300-\U0001FAFF]")
 # 불릿 라벨 볼드(`- **라벨**: 설명`, `- **라벨** — 설명`) — 역할 볼드(voice 규칙 ③)라 산문 볼드와 구분
 LABEL_BOLD_RE = re.compile(r"^[-*+]\s+\*\*[^*]+\*\*")
 
@@ -166,9 +182,12 @@ def check_style(path, lines, fenced):
     인용 블록(>)·표(|)·헤딩(#)·코드 펜스는 제외 — 원문 인용과 데이터는 문체 대상이 아니다.
     불릿 라벨 구분자 등 정당한 대시가 섞여 세밀하진 않으므로 상한을 넉넉히 잡았다.
     """
-    counts = {"대시": 0, "볼드쌍": 0, "연결어미쉼표": 0}
+    counts = {"대시": 0, "볼드쌍": 0, "연결어미쉼표": 0, "이모지": 0}
     for line, in_fence in zip(lines, fenced):
         s = line.strip()
+        # 이모지는 인용·표·헤딩에서도 금지라 skip 앞에서 센다(코드 펜스만 제외)
+        if not in_fence:
+            counts["이모지"] += len(EMOJI_RE.findall(line))
         if in_fence or s.startswith((">", "|", "#")) or not s:
             continue
         # 대시는 산문만 센다 — 불릿의 라벨 구분자(`- **라벨** — 설명`)와 서지 줄은 관례상 예외
