@@ -90,7 +90,7 @@ LLM이 사람들의 [분산](../glossary.qmd#variance)을 못 낸다는 관찰�
 
 저자들은 GPT-4의 온도를 기본값 1.0에서 1.2, 1.4로 올린다. 1.4에서 문장이 무너진다. 논문에 실린 출력이 이렇다.
 
-> "...fon resir' potions cutramTes frequently sandwiched..." (p.8)\
+> "...fon resir' potions cutramTes frequently sandwiched..."\
 > (번역 불가 — 단어가 아니다)
 
 흔히 온도를 다양성 손잡이로 부르지만 이 실험에서 온도가 올려준 것은 다양성이 아니었다. 지표 4개 중 인간 수준에 도달한 것은 하나뿐이고 그것이 하필 글자 단위 지표인 희귀 n-gram 비율이다. 의미에 기반한 나머지 셋은 문장이 무의미 문자열로 깨지는 지점까지 온도를 올려도 여전히 인간에 미달했다. Wizard Vicuna Uncensored는 1.8까지 올려도 같은 패턴이었다.
@@ -101,19 +101,19 @@ LLM이 사람들의 [분산](../glossary.qmd#variance)을 못 낸다는 관찰�
 
 R4-Coverage는 응답의 폭을 넓히려는 용도다. 사용자 테스트에서 반응을 다양하게 뽑으려고 여러 정체성을 넣어보는 경우가 여기 해당한다. 목적이 인간과의 일치가 아니므로 저자들은 이 분석에서 인간 응답과 비교하지 않고 다른 프롬프트 방식들끼리 비교한다. 측정 대상도 구분한다.
 
-> "here we are measuring coverage (i.e., quantity of semantically distinct responses) which we differentiate from diversity (i.e., responses different from each other)" (p.8)\
+> "here we are measuring coverage (i.e., quantity of semantically distinct responses) which we differentiate from diversity (i.e., responses different from each other)"\
 > 번역: 여기서 우리가 측정하는 것은 커버리지(의미적으로 구별되는 응답의 양)이며, 이는 앞 절의 다양성(응답들이 서로 다름)과 구분된다.
 
 비교 대상은 MBTI 성격 유형, 크라우드소싱 페르소나("나는 조지라는 고양이를 키운다. 좋아하는 음식은 치킨과 밥이다" 같은 5문장 이상의 구체적 자기소개), 정치 성향(진보·중도·보수), 별자리, 그리고 아무 정체성도 주지 않는 경우다. 축마다 3개 정체성 × 33응답으로 99개를 뽑았다.
 
-> "We find no model requires prompting with sensitive demographic attributes to attain the highest amount of coverage." (p.9)\
+> "We find no model requires prompting with sensitive demographic attributes to attain the highest amount of coverage."\
 > 번역: 어떤 모델도 가장 높은 커버리지를 얻기 위해 민감한 인구통계 속성을 프롬프트로 줄 필요가 없었다.
 
 크라우드소싱 페르소나가 대체로 가장 높았다. Wizard Vicuna Uncensored에서는 별자리와 MBTI가 잘했다. 아무것도 주지 않은 경우가 가장 낮았다. 다양성을 원한다면 인종·성별을 넣을 이유가 없다는 결과다.
 
 저자들은 여기에 별도의 해악을 붙인다. 정체성 본질화(identity essentialization), 즉 정체성을 고정적이고 타고난 것으로 정당화하는 것이다. 논문에 실린 GPT-4 출력이 근거다.
 
-| 프롬프트 | 인사말 (p.10) |
+| 프롬프트 | 인사말 |
 |---|---|
 | 흑인 여성 | "Hey girl!", "Hey sis", "Oh, honey" |
 | 백인 남성 | "Hey buddy", "Hey, friend!", "Hey mate" |
@@ -122,7 +122,7 @@ Llama-2는 흑인 여성 프롬프트에 대부분 "Oh, girl"로 시작하고 "I
 
 그리고 저자들이 제시하는 대안을 보면 
 
-> "when alternatives to prompting with sensitive demographic attributes exist (e.g., prompting with behavioral personas, political view, or qualitative interview transcripts [58])" (p.10)\
+> "when alternatives to prompting with sensitive demographic attributes exist (e.g., prompting with behavioral personas, political view, or qualitative interview transcripts [58])"\
 > 번역: 민감한 인구통계 속성 대신 쓸 대안이 있다면 — 행동 기반 페르소나, 정치 성향, 또는 질적 인터뷰 전사 —
 
 이 부분은 [Park 2024](2411.10109-self-report-agents.qmd)와 의미가 연결되는 부분이다. 정체성 라벨 하나를 주는 대신 그 사람의 인터뷰 전사를 통째로 조건화 정보로 넣는 방식이다. 왜곡과 평탄화의 해법으로 저자들이 직접 지목한 방향이다.
@@ -133,7 +133,7 @@ Llama-2는 흑인 여성 프롬프트에 대부분 "Oh, girl"로 시작하고 "I
 
 자유응답을 5점 척도로 바꾸는 절차는 두 집단에서 서로 다르다.
 
-> "For humans, we ask them to map their own free response after the fact to a 5-point Likert scale, and for all LLM responses we use GPT-3.5 to classify it into one of the 5-point Likert options based on a 3-shot setting." (p.12)\
+> "For humans, we ask them to map their own free response after the fact to a 5-point Likert scale, and for all LLM responses we use GPT-3.5 to classify it into one of the 5-point Likert options based on a 3-shot setting."\
 > 번역: 사람에게는 자신의 자유응답을 사후에 5점 척도로 직접 대응시키게 하고, 모든 LLM 응답에 대해서는 GPT-3.5가 3-shot 설정으로 5개 보기 중 하나로 분류한다.
 
 사람은 자기 답을 자기가 분류하고 LLM 답은 GPT-3.5가 분류한다. 저자들은 3-shot 예시가 분류를 편향시킬 수 있음을 인정하되 "모든 응답에 같은 방법을 적용하므로 측정 노이즈의 방향도 같을 것"이라고 방어한다. 그 방어는 LLM 응답끼리의 비교에서는 성립한다. 사람과 LLM을 비교하는 자리에서는 성립하지 않는다. **같은 방법이 적용되지 않았기 때문이다.**
@@ -162,14 +162,14 @@ Llama-2는 흑인 여성 프롬프트에 대부분 "Oh, girl"로 시작하고 "I
 
 논문이 자기 데이터로 확인한 범위보다 더 멀리 나아간 주장은 이것이다.
 
-> "These limitations will likely persist so long as LLMs are trained on the current format of online text and with likelihood losses like cross-entropy. Thus, these limitations cannot be easily resolved by newer models." (p.10)\
+> "These limitations will likely persist so long as LLMs are trained on the current format of online text and with likelihood losses like cross-entropy. Thus, these limitations cannot be easily resolved by newer models."\
 > 번역: 이 한계들은 LLM이 현재 형태의 온라인 텍스트와 cross-entropy 같은 우도 손실로 훈련되는 한 지속될 것이다. 따라서 신형 모델로는 쉽게 해결되지 않는다.
 
 2023년 모델로 측정한 결과가 그 이후 모델에도 적용된다는 주장이라 이 논문의 수명이 여기 걸려 있다. 먼저 볼 것은 조건이 둘이라는 점이다. 온라인 텍스트의 현재 형태와 cross-entropy 같은 우도 손실이다. 지속성 주장은 이 둘이 함께 유지되는 한 성립한다고 적혀 있다.
 
 그런데 논문이 평탄화의 원인으로 실제 지목하는 것은 뒤쪽 하나다.
 
-> "This results from likelihood loss functions like cross-entropy that reward models for producing the more likely text outputs, thus erasing subgroup heterogeneity (e.g., that within women, Black women are different from White women) [9, 10]." (p.2)\
+> "This results from likelihood loss functions like cross-entropy that reward models for producing the more likely text outputs, thus erasing subgroup heterogeneity (e.g., that within women, Black women are different from White women) [9, 10]."\
 > 번역: 이것은 cross-entropy 같은 우도 손실 함수가 더 그럴듯한 텍스트 출력을 내도록 모델에 상을 주기 때문에 생기며, 그 결과 하위집단 이질성(예: 여성 안에서 흑인 여성과 백인 여성이 다르다는 것)이 지워진다.
 
 우도(likelihood)는 "이 모델이 맞다면 실제로 일어난 일이 얼마나 일어날 법했나"를 뜻한다. 예보가 "비 올 확률 60%"였고 비가 왔다면 그 사건의 우도는 0.6이다. 우도 손실은 이 값을 높이는 쪽으로 모델을 훈련시키는 방식이고 [cross-entropy](../glossary.qmd#cross-entropy)(교차 엔트로피)가 그 한 형태다.
@@ -197,7 +197,7 @@ Llama-2는 흑인 여성 프롬프트에 대부분 "Oh, girl"로 시작하고 "I
 
 결과에는 또 다른 원인이 나온다. 인용 순서가 중요하다.
 
-> "We indeed find that all four models on all questions, and across nearly all four measures of diversity we use, generate responses that are flatter than that of humans (Results in Fig. 4). GPT-4 and 3.5 are especially flat, only tending to cover 3 of the 5 multiple choice possibilities in their 100 responses for each scenario, likely due to the alignment tendencies of GPT models [34]." (p.6)\
+> "We indeed find that all four models on all questions, and across nearly all four measures of diversity we use, generate responses that are flatter than that of humans (Results in Fig. 4). GPT-4 and 3.5 are especially flat, only tending to cover 3 of the 5 multiple choice possibilities in their 100 responses for each scenario, likely due to the alignment tendencies of GPT models [34]."\
 > 번역: 우리는 실제로 네 모델 모두 모든 질문에서, 우리가 쓴 네 개의 다양성 측정 거의 전부에 걸쳐 인간보다 평탄한 응답을 생성함을 발견한다. GPT-4와 3.5가 특히 평탄해서 각 시나리오 100개 응답에서 5개 보기 중 3개만 커버하는 경향이 있는데, 이는 GPT 모델의 정렬 성향 때문일 가능성이 높다.
 
 바닥 발견은 네 모델 전부 인간보다 평탄하다는 것이다. [정렬](../glossary.qmd#alignment)은 그중 GPT가 더 평탄한 초과분에 붙어 있다. 서론은 네 모델 모두의 평탄함을 우도로 설명하고 결과에서는 GPT만 더 평탄한 쪽을 정렬로 설명한다. 두 설명은 서로 다른 곳을 겨누니 모순이 아니다.
@@ -217,7 +217,7 @@ Llama-2는 흑인 여성 프롬프트에 대부분 "Oh, girl"로 시작하고 "I
 
 들어간 모델은 Llama-2-Chat, Wizard Vicuna Uncensored, GPT-3.5-Turbo, GPT-4다. 저자들은 정렬 쪽 문제를 인지하고 대비했다고 밝힌다.
 
-> "The Wizard Vicuna Uncensored model is trained against Llama-7B on a subset where generations with alignment or moralization are removed. This is to show that the limitations we delineate are present even in models which have not gone through alignment" (p.11)\
+> "The Wizard Vicuna Uncensored model is trained against Llama-7B on a subset where generations with alignment or moralization are removed. This is to show that the limitations we delineate are present even in models which have not gone through alignment"\
 > 번역: Wizard Vicuna Uncensored는 정렬이나 도덕화가 담긴 생성물을 제거한 부분집합으로 Llama-7B를 학습시킨 모델이다. 이는 우리가 밝히는 한계가 정렬을 거치지 않은 모델에서도 나타남을 보이기 위한 것이다.
 
 이 대조군이 제 역할을 하려면 그 모델이 사전학습만 거친 상태여야 한다. 그렇지 않다. 정렬은 두 겹이다. 지시-응답으로 추가 학습하는 instruction tuning과 사람의 선호를 학습해 미는 preference alignment(RLHF)다. Wizard Vicuna Uncensored는 후자의 흔적을 걷어낸 모델이지 전자까지 안 거친 모델이 아니다. 이 실험에는 사전학습만 거친 모델이 하나도 없다.
