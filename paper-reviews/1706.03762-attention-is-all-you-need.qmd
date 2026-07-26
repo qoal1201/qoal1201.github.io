@@ -1,6 +1,7 @@
 ---
 title: "attention만 남기고 다 걷어냈다 — Vaswani 2017"
 date: "2026-07-26"
+date-modified: "2026-07-27"
 description: "지금 쓰는 모든 대형 언어모델의 구조의 핵심 논문."
 ---
 
