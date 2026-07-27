@@ -1,0 +1,1022 @@
+[
+ {
+  "pid": "W4389519488",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4405298817",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4389520377",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4412877164",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4416344211",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4414983395",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4401201613",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4414809569",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W7125596608",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W7131677754",
+  "measures": "yes_method",
+  "setting": "REFFREE",
+  "open_world": false
+ },
+ {
+  "pid": "W7115731840",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4389494455",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4386907477",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4406243629",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4406568360",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4417264159",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W7117476864",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W7126116134",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W7131620264",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W7142763173",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W7153759222",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": true
+ },
+ {
+  "pid": "W7160706745",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W7163994787",
+  "measures": "yes_method",
+  "setting": "REFFREE",
+  "open_world": false
+ },
+ {
+  "pid": "W7165197802",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W7166664313",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4412754106",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4317831476",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4404782785",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4391545885",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4391673229",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4417266324",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4407207546",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4402670146",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4404780931",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4404782219",
+  "measures": "yes_method",
+  "setting": "BENCH",
+  "open_world": false
+ },
+ {
+  "pid": "W4324129119",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4406015426",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4402670540",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4415979340",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4404346614",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4404792888",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4402670044",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4413472898",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4410176054",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": false
+ },
+ {
+  "pid": "W4409719234",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4391800042",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4404781205",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4405253355",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4385849309",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4396820243",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4415289348",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4400688542",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4396913486",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4416035019",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4387724739",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4401201013",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4411119880",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4402671390",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4411120383",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4412206278",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4412889677",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4401203303",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4404783265",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W7115597185",
+  "measures": "yes_method",
+  "setting": "BENCH",
+  "open_world": false
+ },
+ {
+  "pid": "W4391948939",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4388555895",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4404780768",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4387560371",
+  "measures": "yes_method",
+  "setting": "BENCH",
+  "open_world": false
+ },
+ {
+  "pid": "W4398796203",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4412887867",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4415334317",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4415871599",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4407571410",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4391556783",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4400611399",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4411113099",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4403622645",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4395454638",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4417080482",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4411154040",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4407405457",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4385952870",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W7117363789",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4402670103",
+  "measures": "yes_method",
+  "setting": "BENCH",
+  "open_world": false
+ },
+ {
+  "pid": "W4402672029",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4401042604",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4392677961",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4404781733",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4403880476",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4391621414",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4396832847",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": false
+ },
+ {
+  "pid": "W4372272969",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W7126417061",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4400142639",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4388788960",
+  "measures": "yes_method",
+  "setting": "BENCH",
+  "open_world": false
+ },
+ {
+  "pid": "W4404782535",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4400518809",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4404782489",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4399270570",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4378711567",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4406851161",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4411120769",
+  "measures": "yes_method",
+  "setting": "BENCH",
+  "open_world": false
+ },
+ {
+  "pid": "W4406482922",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4411120637",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4391901256",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4416135656",
+  "measures": "yes_method",
+  "setting": "BENCH",
+  "open_world": false
+ },
+ {
+  "pid": "W4392489710",
+  "measures": "yes_method",
+  "setting": "BENCH",
+  "open_world": false
+ },
+ {
+  "pid": "W4410004015",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4394971457",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4405766313",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4387800246",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4403012237",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4416035763",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4412945666",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W7140091937",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": true
+ },
+ {
+  "pid": "W4415013336",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4403786493",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4390438049",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4412944944",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": true
+ },
+ {
+  "pid": "W4414974957",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4411119042",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4405173238",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4405561690",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4416117991",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4404260950",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": true
+ },
+ {
+  "pid": "W4410611668",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4412945169",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4404340695",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4399657578",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4404986534",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4416447808",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4399779690",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4407063450",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4388703015",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4361983517",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4393111328",
+  "measures": "yes_method",
+  "setting": "BENCH",
+  "open_world": false
+ },
+ {
+  "pid": "W4389272899",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4415230806",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4408101658",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4407546036",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": false
+ },
+ {
+  "pid": "W4380993949",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4416035281",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4387561066",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4408589781",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W7135419420",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W7135013000",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W7139977536",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W7137480596",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W7136104198",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W7135054653",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4400065162",
+  "measures": "yes_method",
+  "setting": "BENCH",
+  "open_world": false
+ },
+ {
+  "pid": "W7163719692",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W7163546737",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W7134143904",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W7163720272",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W4392011869",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W7162218243",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W7153185612",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W7164614681",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W7166544702",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4416036585",
+  "measures": "no",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W7162150370",
+  "measures": "critique_only",
+  "setting": "NONE",
+  "open_world": false
+ },
+ {
+  "pid": "W7128095928",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W7117339716",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4417420292",
+  "measures": "yes_method",
+  "setting": "GT_AGGREGATE",
+  "open_world": false
+ },
+ {
+  "pid": "W4405461402",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4403222200",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4389519968",
+  "measures": "yes_method",
+  "setting": "OPEN_RATING",
+  "open_world": true
+ },
+ {
+  "pid": "W4379933644",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ },
+ {
+  "pid": "W4388585374",
+  "measures": "yes_method",
+  "setting": "GT_FIXED",
+  "open_world": false
+ }
+]

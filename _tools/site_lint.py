@@ -7,7 +7,7 @@
 2. 내부 링크 — 로컬 .qmd/.md 링크의 대상 파일 존재 + {#앵커} 존재 (앵커는 경고 수준)
 3. 방문자 표면의 내부 운영 용어 — 전 공개 파일 대상 (일지 예외는 2026-07-10 재구조로 폐지)
 4. 가든 문서 상단 상태 줄 존재
-5. 문체 쿼터 — 3급 형태 패턴(산문 대시·연결어미 쉼표·산문 볼드·이모지). check_style
+5. 문체 쿼터 — 3급 형태 패턴(산문 대시·산문 볼드·이모지). check_style
 6. kaggle 점수 동기화 — foundations 랜딩 표 vs kaggle repo README. check_kaggle_sync
 7. 용어집 골격 — 중복 앵커·항목 문단 수·최장 항목 참고 출력. check_glossary
 
@@ -171,7 +171,10 @@ def table_rows(text, score_header):
 # 원칙(2026-07-22 확정): 형태만으로 문제인 패턴만 기계가 센다. "아니라" 쿼터는 제거 —
 # 극적 대조(voice 금지)와 사실 서술(정당)을 문자열로 못 가르고, 오탐이 정당한 문장을
 # 고치게 만들었다(anisotropy 항목 실측). 그 판정은 의미 층(자체 스캔·voice-check·통독) 몫.
-STYLE_QUOTA = {"대시": 12, "볼드쌍": 10, "연결어미쉼표": 6, "이모지": 0}
+# 2026-07-27: "연결어미쉼표" 쿼터 제거. 근거로 적혀 있던 "AI 탐지 단일 최강 지표 4.84배"의
+# 출처가 어디에도 없었고(07-26 전수 추적 실패), 근거 없는 쿼터가 문장 구조를 건드리는 수정을
+# 유발했다(3급은 "고쳐서 문장이 나빠지면 안 고친다"가 원칙). 근거를 확보하면 되살린다.
+STYLE_QUOTA = {"대시": 12, "볼드쌍": 10, "이모지": 0}
 CONJ_COMMA_RE = re.compile(r"(?:고|며|지만|는데|면서|므로),\s")
 # 2026-07-26 신설: CLAUDE.md 규칙 등급이 이모지를 3급으로 내리며 "site_lint.py 쿼터로 관리"라고
 # 적었는데 lint에 검사가 없어 어느 층도 안 보고 있었다. 규칙이 겨냥한 것은 성숙도 스탬프(🌱🌿🌳)
@@ -188,7 +191,7 @@ def check_style(path, lines, fenced):
     인용 블록(>)·표(|)·헤딩(#)·코드 펜스는 제외 — 원문 인용과 데이터는 문체 대상이 아니다.
     불릿 라벨 구분자 등 정당한 대시가 섞여 세밀하진 않으므로 상한을 넉넉히 잡았다.
     """
-    counts = {"대시": 0, "볼드쌍": 0, "연결어미쉼표": 0, "이모지": 0}
+    counts = {"대시": 0, "볼드쌍": 0, "이모지": 0}
     for line, in_fence in zip(lines, fenced):
         s = line.strip()
         # 이모지는 인용·표·헤딩에서도 금지라 skip 앞에서 센다(코드 펜스만 제외)
@@ -202,7 +205,6 @@ def check_style(path, lines, fenced):
         # 볼드는 줄 맨 앞 불릿 라벨 1개를 빼고 센다(2026-07-22) — 불릿-라벨 구조 문서가
         # 역할 준수와 무관하게 걸리던 오탐 제거(self-report 27쌍 실측)
         counts["볼드쌍"] += LABEL_BOLD_RE.sub("", s).count("**") // 2
-        counts["연결어미쉼표"] += len(CONJ_COMMA_RE.findall(line))
     over = {k: v for k, v in counts.items() if v > STYLE_QUOTA[k]}
     if over:
         detail = "·".join(f"{k} {v}(상한 {STYLE_QUOTA[k]})" for k, v in over.items())
