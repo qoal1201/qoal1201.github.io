@@ -10,11 +10,11 @@ description: "지금 쓰는 모든 대형 언어모델의 구조의 핵심 논�
 
 ## 이 논문이 무엇인가
 
-지금 쓰는 대형 언어모델 대부분이 이 논문의 구조를 기반으로 만들어졌다. GPT의 T가 여기서 온 Transformer다. 다만 논문 자체는 언어모델 얘기를 하지 않는다. 영어를 독일어와 프랑스어로 옮기는 **기계 번역 논문**이고 주 성적도 번역 점수로 보고한다. 뒤쪽에서 영어 문장의 구조를 분석하는 다른 과제로도 되는지 한 번 확인하기는 한다.
+지금 쓰는 대형 언어모델 대부분이 이 논문의 구조를 기반으로 만들어졌다. 챗봇으로 쓰는 GPT의 T가 여기서 온 Transformer다. 다만 논문 자체는 언어모델 얘기를 하지 않는다. 영어를 독일어와 프랑스어로 옮기는 **기계 번역 논문**이고 주 성적도 번역 점수로 보고한다. 뒤쪽에서 영어 문장의 구조를 분석하는 다른 과제로도 되는지 한 번 확인하기는 한다.
 
 ## 문장 하나가 이 글의 무대다
 
-구조 얘기를 하기 전에 이 분야가 풀려던 문제부터 봐야 한다. 표준 교과서([SLP 3판](https://web.stanford.edu/~jurafsky/slp3/))가 쓰는 예문 두 개를 나란히 놓자.
+구조 얘기를 하기 전에 이 분야가 풀려던 문제부터 봐야 한다. 표준 교과서(Jurafsky & Martin, [*Speech and Language Processing*](https://web.stanford.edu/~jurafsky/slp3/) 3판 — 줄여서 SLP라 부른다)가 쓰는 예문 두 개를 나란히 놓자.
 
 > (8.1) The chicken didn't cross the road because **it** was too tired.
 > (8.2) The chicken didn't cross the road because **it** was too wide.
@@ -37,7 +37,7 @@ description: "지금 쓰는 모든 대형 언어모델의 구조의 핵심 논�
 
 기계는 숫자만 먹으니 단어를 벡터로 바꿔서 넣는다. 이 묶음이 [임베딩](../glossary.qmd#embedding)이고 뜻이 비슷한 단어끼리 좌표가 가깝게 놓인다. 그 좌표는 사람이 채우는 게 아니라 [빈칸 맞히기를 시키면 저절로 그렇게 밀린다](before-attention.qmd#빈칸-맞히기가-뜻을-만드는-과정).
 
-초기 방식에서는 이 구분이 불가능했다. 단어 하나에 벡터 하나가 고정으로 배정되기 때문이다. 그 방식의 대표가 word2vec이고, 단어마다 벡터를 하나씩 만들어 사전처럼 들고 다니는 방법이다. 교과서(Jurafsky & Martin, *Speech and Language Processing* 3판 8장)는 이렇게 적는다.
+초기 방식에서는 이 구분이 불가능했다. 단어 하나에 벡터 하나가 고정으로 배정되기 때문이다. 그 방식의 대표가 word2vec이고, 단어마다 벡터를 하나씩 만들어 사전처럼 들고 다니는 방법이다. SLP 3판 8장은 이렇게 적는다.
 
 > for word2vec and other static embeddings, the representation of a word's meaning is always the same vector irrespective of the context
 >
@@ -130,7 +130,7 @@ flowchart LR
     end
 ```
 
-논문 4장의 비교표를 두 열만 뽑으면 이렇다.
+논문의 비교표를 두 열만 뽑으면 이렇다.
 
 | 방식 | 두 단어를 잇는 데 걸리는 단계 | 동시에 계산할 수 있나 |
 |---|---|---|
@@ -493,7 +493,7 @@ GPT 계열을 비롯한 지금의 대화형 언어모델에 앞의 전체 그림
 
 ## 지금 겪는 제약의 뿌리
 
-이 논문 안에 우리가 매일 겪는 제약의 출발점이 있다. 4장에서 저자들은 self-attention이 RNN보다 빠르다고 주장하면서 조건을 하나 단다.
+이 논문 안에 우리가 매일 겪는 제약의 출발점이 있다. 저자들은 self-attention이 RNN보다 빠르다고 주장하면서 조건을 하나 단다.
 
 > …self-attention layers are faster than recurrent layers when the sequence length n is smaller than the representation dimensionality d, which is most often the case with sentence representations used by state-of-the-art models in machine translations, such as word-piece and byte-pair representations.
 >
