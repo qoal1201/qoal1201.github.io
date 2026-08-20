@@ -1,20 +1,27 @@
 #!/bin/sh
-# pre-push — 발행물 형식 검사 게이트
+# pre-push — 형식 검사 게이트 (발행물 + 지식 번들)
 #
 # 무엇을 하나
-#   push 직전에 `python3 _tools/site_lint.py` 를 돌린다. 이 레포가 발행하는 .qmd
-#   전부(2026-08-20 기준 15개)를 검사하고 0.2초 안에 끝난다.
+#   push 직전에 검사 둘을 돌린다. 합쳐서 0.3초 안에 끝난다.
+#     1. `_tools/site_lint.py`          발행하는 .qmd 전부(2026-08-20 기준 15개)
+#     2. `tests/check_knowledge_bundle.py`  knowledge/ 번들의 형식
+#
+#   지식 번들 검사를 발행 워크플로우가 아니라 여기 둔 이유: knowledge/ 는 사이트에
+#   발행되지 않는다. 개념 카드 하나가 깨졌다고 사이트 배포가 멈추면 결합이 틀렸다.
 #
 # 무엇을 막고 무엇을 안 막나
 #   막는다   = 오류. 깨진 표 블록 · 깨진 내부 링크 · 내부 용어가 방문자 표면에 노출 ·
-#              foundations 점수와 kaggle README 불일치 · 용어집 앵커 누락/중복
+#              foundations 점수와 kaggle README 불일치 · 용어집 앵커 누락/중복 ·
+#              개념 카드의 frontmatter 파손 · 빈 type · 없는 출처 인용
 #   안 막는다 = 경고. 상태 줄 누락 · 문체 쿼터 초과 · 앵커 미확인 · 용어집 문단 골격
 #   경고를 막지 않는 것은 의도다 — 문체 쿼터가 push 를 막으면 "고쳐서 문장이
 #   나빠지면 안 고친다" 는 편집 규칙과 정면으로 부딪힌다.
 #
 # 언제 다시 볼 것인가
-#   이 레포에 실험 코드가 들어오는 순간. 그때 실질 검사가 발행물 하나가 아니게 되고
-#   이 훅의 범위가 좁아진다.
+#   이 레포에 실험 코드가 들어오는 순간. 그때 실질 검사가 이 둘로 안 끝난다.
+#
+# ⚠ 지식 번들이 비어 있으면 그 검사는 즉시 초록이다 — 검사할 파일이 없어서다.
+#   초록을 「지식이 검증됐다」로 읽지 말 것. 형식만 본다.
 #
 # ★ 이 파일은 추적되지만 스위치는 추적되지 않는다
 #   클론마다 한 번 켜야 발화한다:  git config core.hooksPath .githooks
@@ -39,13 +46,21 @@ if [ -z "$PY" ]; then
 fi
 
 "$PY" _tools/site_lint.py
-status=$?
-
-if [ "$status" -ne 0 ]; then
+if [ $? -ne 0 ]; then
   echo ""
   echo "pre-push: site_lint 오류 — push 를 중단한다."
   echo "  고치고 다시 시도하거나, 의도한 것이면 --no-verify 를 붙인다."
   exit 1
+fi
+
+if [ -f tests/check_knowledge_bundle.py ]; then
+  "$PY" tests/check_knowledge_bundle.py
+  if [ $? -ne 0 ]; then
+    echo ""
+    echo "pre-push: knowledge 번들 오류 — push 를 중단한다."
+    echo "  고치고 다시 시도하거나, 의도한 것이면 --no-verify 를 붙인다."
+    exit 1
+  fi
 fi
 
 exit 0
