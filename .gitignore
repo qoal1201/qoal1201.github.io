@@ -31,6 +31,7 @@ node_modules/
 CLAUDE.md
 AGENTS.md
 .claude/
+.agents/
 
 # Local-only — 세션 인계용 백로그 + 3-repo 공통 수신함
 BACKLOG.local.md
