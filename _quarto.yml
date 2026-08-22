@@ -11,7 +11,7 @@ project:
 website:
   title: "합성사회 연구 노트"
   description: "인간과 AI가 상호작용하는 합성사회를 공부하고 기록하는 공간."
-  site-url: https://qoal1201.github.io/synthetic-society-research/
+  site-url: https://qoal1201.github.io/
   image: images/field-map-terrain.png
   open-graph: true
   twitter-card: true
@@ -23,7 +23,7 @@ website:
         href: glossary.qmd
     right:
       - icon: github
-        href: https://github.com/qoal1201/synthetic-society-research
+        href: https://github.com/qoal1201/qoal1201.github.io
 
 lang: ko
 

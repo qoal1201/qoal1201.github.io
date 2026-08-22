@@ -2,7 +2,7 @@
 
 인간과 AI가 상호작용하는 합성사회(synthetic society)를 공부하고 기록하는 저장소.
 
-읽기 좋은 버전(사이트): https://qoal1201.github.io/synthetic-society-research/
+읽기 좋은 버전(사이트): https://qoal1201.github.io/
 
 ## 구조
 
