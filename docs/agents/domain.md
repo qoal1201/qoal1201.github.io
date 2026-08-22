@@ -11,14 +11,15 @@
 이 파일들이 없으면 **조용히 넘어간다.** 없다고 알리지 말고, 미리 만들자고 제안하지도 마라.
 `/domain-modeling` 스킬이 용어나 결정이 실제로 정해지는 시점에 늦게 만든다.
 
-⚠ **실측 2026-08-20: 이 레포엔 `CONTEXT.md` 도 `docs/adr/` 도 없다.** 미리 만들지 않는다 —
-만드는 시점은 **용어나 결정이 실제로 정해지는 순간**이고, 그건 **지나갈 수 있는 조건이지
-영구 상태가 아니다.** 첫 ADR 을 쓸 때 `docs/adr/` 가 생긴다 — 빈 폴더를 미리 파지 않는다.
+⚠ **실측 2026-08-22: `docs/adr/` 는 생겼고 `CONTEXT.md` 는 아직 없다.** 첫 ADR 을 쓰면서
+폴더가 났다 — 빈 폴더를 미리 파지 않는다는 원칙은 그대로다. `CONTEXT.md` 도 같다:
+만드는 시점은 **용어가 실제로 정해지는 순간**이고, 그건 **지나갈 수 있는 조건이지
+영구 상태가 아니다.**
 
 ⚠ **`CONTEXT.md` 를 `glossary.qmd` 로 대신할 수 없다** — 그건 독자용 발행물이라 이 레포
 내부 어휘를 **일부러** 안 싣는다(`실측`: 밑돌·가든·작업호·체크포인트·페르소나 검수·진실원
-전부 `glossary.qmd` 0건, `CLAUDE.md` 에만 있음). 언제 어디에 만들지는 `BACKLOG.local.md`
-최상단 「`CONTEXT.md` 는 `CLAUDE.md` 감축 안에서 난다」 절이 갖는다.
+전부 `glossary.qmd` 0건, `CLAUDE.md` 에만 있음). 언제 어디에 만들지는
+[ADR 0001](../adr/0001-no-separate-context-file.md) 이 갖는다 — 다시 열 조건 셋이 거기 있다.
 
 ## 배치 — 단일 컨텍스트
 
@@ -27,8 +28,8 @@
 
 ```
 /
-├── CONTEXT.md          ← 아직 없음
-├── docs/adr/           ← 아직 없음
+├── CONTEXT.md          ← 아직 없음 (ADR 0001)
+├── docs/adr/           ← 있음
 ├── knowledge/          ← OKF v0.2 개념 번들 (별개 물건, 아래 참조)
 ├── paper-reviews/ · experiments/ · foundations/ · glossary.qmd
 └── _tools/ · tests/

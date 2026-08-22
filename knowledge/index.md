@@ -38,7 +38,7 @@ frontmatter + 마크다운 본문. 형식은 Open Knowledge Format v0.2 이고 �
 못 본다. 초록은 *"적힌 것이 형식을 지킨다"* 는 뜻이다.
 
 ★ **그리고 이 레포에서는 사각이 한 겹 더 넓다 — 지식 뭉치 대부분이 `.gitignore` 안이다.**
-`_papers/notes/` 67장 · 하네스 memory 17장 · `CLAUDE.md` · `BACKLOG` 2종이 전부
+`_papers/notes/` 67장 · 에이전트 기억 22장 · `CLAUDE.md` · 백로그 보관본이 전부
 git 밖이라, 검사를 GitHub Actions 에 걸면 **체크아웃에 없어서 아무것도 못 본다.**
 git 안에 있는 것은 공개 발행물뿐이고 그것은 이 번들의 대상이 아니다.
 
