@@ -8,6 +8,19 @@
 #
 # 문법 = gitignore 호환. 마지막에 맞는 규칙이 이긴다(`!` 로 되살릴 수 있다).
 # 그래서 **되살리는 줄이 먼저, 막는 줄이 나중**이다.
+#
+# ★ 이 파일로 닫히지 않는 것 — 상류가 직접 그렇게 말한다.
+#   "This is a read boundary: ignored paths are never read, scanned, or
+#    reproduced in the docs. It does not guarantee a topic is never mentioned,
+#    since the agent may still infer an ignored area from other allowed
+#    evidence such as tests, the README, or commit messages."
+#   (openwiki README, v0.3.3)
+#
+#   즉 막힌 것의 **내용**은 안 나가지만 **화제**는 뜰 수 있다. 이 레포에서
+#   그럴 만한 통로는 공개된 git 커밋 메시지와 `.gitignore` 자신이다 —
+#   둘 다 이미 비공개 파일의 이름을 공개로 부른다.
+#   → **생성 뒤 `openwiki/` 에 유출 grep 을 따로 돌린다.** 이 파일이 초록인 것을
+#     「안 샜다」로 읽지 않는다. 막은 것과 안 새는 것은 다른 판정이다.
 
 # ── 1. 기본은 전부 막는다 ───────────────────────────────────────────────
 # 새 비공개 폴더가 생겨도 자동으로 막힌다. 빠뜨려서 새는 쪽보다
