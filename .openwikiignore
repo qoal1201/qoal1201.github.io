@@ -1,0 +1,81 @@
+# .openwikiignore — OpenWiki 가 읽지도 쓰지도 못하는 자리
+#
+# ★ 이 레포는 PUBLIC 이고 OpenWiki 생성물은 git 에 들어간다.
+#   그리고 OpenWiki 는 git 이 아니라 디스크를 읽는다 — `.gitignore` 는 안 막는다
+#   (`실측 2026-08-23`: 배포된 패키지에 git 열거 호출 0건. 양성 대조로 같은 검색이
+#   `OPENWIKI_IGNORE_FILE` 은 5건 잡는다). 즉 여기 안 적으면 비공개 파일이
+#   읽히고, 그것을 요약한 안내판이 공개된다.
+#
+# 문법 = gitignore 호환. 마지막에 맞는 규칙이 이긴다(`!` 로 되살릴 수 있다).
+# 그래서 **되살리는 줄이 먼저, 막는 줄이 나중**이다.
+
+# ── 1. 기본은 전부 막는다 ───────────────────────────────────────────────
+# 새 비공개 폴더가 생겨도 자동으로 막힌다. 빠뜨려서 새는 쪽보다
+# 과하게 막아서 안내판이 얇아지는 쪽이 되돌릴 수 있다.
+/*
+
+# ── 2. git 이 추적하는 것 = 공개 표면. 이것만 되살린다 ──────────────────
+!/.githooks/
+!/.github/
+!/.gitignore
+!/CONTEXT.md
+!/LICENSE
+!/README.md
+!/_data/
+!/_quarto.yml
+!/_templates/
+!/_tools/
+!/docs/
+!/experiments/
+!/foundations/
+!/glossary.qmd
+!/images/
+!/index.qmd
+!/knowledge/
+!/paper-reviews/
+!/styles.css
+!/tests/
+!/theme-dark.scss
+!/theme-light.scss
+
+# OpenWiki 자기 출력. 막으면 스스로 못 쓴다
+!/openwiki/
+
+# ── 3. 그래도 절대 안 되는 것 — 여기가 마지막이라 위를 이긴다 ───────────
+# 지시 파일 (gitignore 안이라 공개된 적이 없다)
+/CLAUDE.md
+/AGENTS.md
+/.claude/
+/.agents/
+
+# 세션 인계·작업 흔적
+/BACKLOG.local.md
+/BACKLOG-archive.local.md
+/INBOX.md
+/_workspace/
+/_preview/
+/_repro/
+
+# 논문 PDF 원본 (저작권) + 로컬 전용 위키
+/_papers/
+
+# 빌드 산출물·도구 상태
+/_site/
+/.quarto/
+/.obsidian/
+/.git/
+__pycache__/
+
+# 비밀 — 이 레포엔 지금 없지만, 생기면 이름으로 막힌다
+.env
+.env.*
+*.key
+*.pem
+*.sqlite
+*.db
+/data/raw/
+
+# 이름 규칙으로 거는 그물 (새 파일이 위 목록에 없어도 걸리게)
+*.local.md
+*_backup*
+*.bak
