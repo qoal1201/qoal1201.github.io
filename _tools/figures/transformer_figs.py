@@ -13,7 +13,7 @@
 ⚠ 숫자는 전부 설명용 모식도다. 논문 Figure는 색 농도로만 그려져 있어 실제 attention
    값을 읽을 수 없다. 여기 값은 글 본문이 이미 서술한 것(its가 Law로 가장 크게,
    application으로 그 다음)만 그림으로 옮긴 것이고 모델의 측정치가 아니다.
-   논문 Figure를 복사하지 않고 이해한 구조를 다시 그린 것(CLAUDE.md 차트 규약).
+   논문 Figure를 복사하지 않고 이해한 구조를 다시 그린 것(AGENTS.md 차트 규약).
 """
 import numpy as np
 import matplotlib.pyplot as plt

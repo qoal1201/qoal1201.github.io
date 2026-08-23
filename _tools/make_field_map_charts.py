@@ -8,7 +8,7 @@
 필요: matplotlib + Pretendard 폰트(사이트 본문 폰트와 통일).
 데이터 출처: field-map.qmd §3 지역 카드(연도 추이) · §4 1차 분류표(측정 방법).
 지도 갱신 시 아래 데이터만 고치고 재실행한다(차트 규칙: 생성 스크립트를 repo에 보관).
-색 규칙(CLAUDE.md): 청록 #0F87A8 = 이 연구 / 적색 #C4443C = 빈자리·경고 / 나머지 회색.
+색 규칙(AGENTS.md): 청록 #0F87A8 = 이 연구 / 적색 #C4443C = 빈자리·경고 / 나머지 회색.
 """
 import matplotlib
 matplotlib.use("Agg")
