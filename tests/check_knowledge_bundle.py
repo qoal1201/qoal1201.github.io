@@ -126,6 +126,7 @@ def check(bundle: Path = BUNDLE) -> list[str]:
 
 def selftest() -> int:
     """깨뜨리면 실제로 빨개지나. 안 도는 검사보다 나쁜 건 안 빨개지는 검사다."""
+    import re
     import shutil
     import tempfile
 
@@ -148,9 +149,17 @@ def selftest() -> int:
             if text is None:
                 idx = sandbox / "index.md"
                 keep = idx.read_text(encoding="utf-8")
-                idx.write_text(keep.replace('okf_version: "0.2"',
-                                            'okf_version: "0.2"\nmin_concepts: 99'),
-                               encoding="utf-8")
+                # ⚠ 선언이 이미 있으면 갈아끼운다. 덧붙이면 뒤 키가 이겨서
+                #    주입한 99 가 무시되고 검사가 초록으로 남는다 —
+                #    `실측 2026-08-23`: min_concepts 를 선언하자 이 자기검사가
+                #    실제로 그렇게 죽었다. 하한을 세우는 행위가 하한을 재는
+                #    검사를 끄는 모양이라, 여기가 그 자리다.
+                raised = (re.sub(r"^min_concepts:.*$", "min_concepts: 99",
+                                 keep, count=1, flags=re.M)
+                          if re.search(r"^min_concepts:", keep, flags=re.M)
+                          else keep.replace('okf_version: "0.2"',
+                                            'okf_version: "0.2"\nmin_concepts: 99'))
+                idx.write_text(raised, encoding="utf-8")
                 reddened = bool(check(sandbox))
                 idx.write_text(keep, encoding="utf-8")
             else:
