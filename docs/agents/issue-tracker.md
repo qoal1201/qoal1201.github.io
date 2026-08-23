@@ -1,6 +1,6 @@
 # Issue tracker: GitHub
 
-이 레포의 이슈·스펙은 `qoal1201/synthetic-society-research` 의 GitHub 이슈로 산다.
+이 레포의 이슈·스펙은 `qoal1201/qoal1201.github.io` 의 GitHub 이슈로 산다.
 모든 조작은 `gh` CLI — 클론 안에서 실행하면 `git remote -v` 로 레포를 알아서 찾는다.
 
 > 2026-08-20 선택. 로컬 마크다운이 아닌 이유: 뿌리(`qoal1201/brain`)가 레포 간 왕래를
@@ -9,7 +9,7 @@
 
 ## ★ 이 레포는 공개다 — 이슈도 공개된다
 
-`synthetic-society-research` 는 public 이므로 **이슈 제목·본문·라벨이 전부 공개**된다.
+`qoal1201/qoal1201.github.io` 는 public 이므로 **이슈 제목·본문·라벨이 전부 공개**된다.
 그래서 무엇을 이슈로 올리고 무엇을 안 올리는지가 갈린다:
 
 | 무엇 | 어디 |
