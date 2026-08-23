@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:620b12b95251f3dc0b06e1512fb138f202d4ea5b8c7aaed867d9dcdbb78723a6",
+  "claims": [
+    {
+      "id": "claim_8eb1f953c9a545049cd86267e7c4b6aa",
+      "statement": "The Quarto project renders an explicit list of five entries rather than the whole tree, so a new top-level page is not published until it is added to that list, while pages inside the three listed directories are picked up automatically.",
+      "evidence": [
+        {
+          "resource": "repo://_quarto.yml#L1-L10",
+          "version": "repo-lines-v1:sha256:4118a62bce3cf9ae05300b8c8d78747250e897c4e96fcf6ddaf06df3d3a841dc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkMmFhY2QzMmU1NWM1OTU2MmJjMTRlMmU0Mjc0ZDY1ZDJjMzFiMjAxMDZjZmE2YWIwNjNmYzM0NGRlMTcxOWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIzODkyNTc0YTE0NjE0Yjk4NWY4NTUxZGUyNTczNTkxZjM0NjdlZDc2ODMxMjE5N2ZmMGZiMmU5YzIxOGQ3ZWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5d184752802241079e0c5bb6823bdee9",
+      "statement": "The site declares no drafts or draft-mode key, leaving Quarto's default draft handling in force while five of the ten paper reviews carry draft: true in their frontmatter.",
+      "evidence": [
+        {
+          "resource": "repo://_quarto.yml#L1-L44",
+          "version": "repo-lines-v1:sha256:cdd8ac776f9361c2d98069a2fdac762efc24a1bf2d2b18ead00c1494b9b9fbff:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkMmFhY2QzMmU1NWM1OTU2MmJjMTRlMmU0Mjc0ZDY1ZDJjMzFiMjAxMDZjZmE2YWIwNjNmYzM0NGRlMTcxOWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzNTdhMmNlMWM2MzJiOGJmZWVkNDU4YzYxYTJlZWVmYmRkZTMzMjcxODhlOGM3ZTFhZjc4OWE2MDIxNzRhNWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://paper-reviews/schelling-1971-segregation.qmd#L1-L12",
+          "version": "repo-lines-v1:sha256:045580503156a278e5b2bda6627068a46d0f0c9119a5e2643d7cd0c4fba59c80:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc1ZTBkN2NmMmY5MmQ4MWNkMDAzZDNkOTdmNjc5ZDcwMzcxMWRiNjM5ZjdiZTY3MWYyYzQzZGVmNWU5YzljNDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_28c24f34d5c54cedb86088b66ae640f4",
+      "statement": "Ten legacy URLs are kept alive by aliases spread across four pages, which makes deleting or absorbing a published page an operation that must transfer that page's aliases to whichever page absorbed it.",
+      "evidence": [
+        {
+          "resource": "repo://index.qmd#L13-L16",
+          "version": "repo-lines-v1:sha256:53bab939673484baf5fe11e16f6ce3b6ee406f855b7ceecdc94a99ce0458bd61:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTlhNjkzOTQ4YmNjZTEwZmI2M2M0OTUxYTBhZjhhM2RmNGY2ZjE4ZGYyYTJhOTgzZjgyMTVmYjZhMTk0NzNmZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOThkY2IzMGIzOGExOTI3N2RkMjM3ZWVlOGQ4OWE0NWZhMGUzMzlhODExNzY4ZWU3NTExN2JiZTkzZjk4ZTY2ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzg0MDhkOTAzMDI5ZGQ4YmNjZTRmY2E3MTM2MmQ5OTIxMGJkYTAzZWQ2Y2I2NGY2ZGNiMzA2OTE0NWYzYjA2MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTVmNTY4NmZkNWUzZDFhZjBkYjk0YmZiOGE0N2U4Yjg1YTRhMjUxOTRmNDIxZDAzOWNiMzJlMzA3ZGRhOWYxYSJ9"
+        },
+        {
+          "resource": "repo://experiments/2026-06-29-prologue.qmd#L6-L11",
+          "version": "repo-lines-v1:sha256:2c9c029629a8862b027bdaba6541cf737a117c6ab9076ba98b32ef27e6e0e5cf:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTlhNjkzOTQ4YmNjZTEwZmI2M2M0OTUxYTBhZjhhM2RmNGY2ZjE4ZGYyYTJhOTgzZjgyMTVmYjZhMTk0NzNmZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWZiMmYyOTYxNTNjZGE0MGYxMGIyYWRhYTMyYmExZDVlMTQ3ZTE4YzNmY2ZhOTE1YzhhZmIzNDU2MDQ3OTU0NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDEzZTFlODQ2YmZiOGRkZjdkY2E0MDNmMWZmNjgwOTk3ZjMyZTZiNGI1YTM4M2Y3NzVmZDIyMjE1MzczYTc3NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjRiZTAwODM5NjA2NTI2NjFmNWE4YTg3ODNiODAwNzFjMTAxNzg0NTQ0OTliODk2NmVlYzM1NTUwOGUzYjM0ZiJ9"
+        },
+        {
+          "resource": "repo://paper-reviews/2304.03442-generative-agents.qmd#L6-L7",
+          "version": "repo-lines-v1:sha256:30bdc541cb6c832d738803f31d748c109df9b41baf1e470d31a3011831b6370c:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTlhNjkzOTQ4YmNjZTEwZmI2M2M0OTUxYTBhZjhhM2RmNGY2ZjE4ZGYyYTJhOTgzZjgyMTVmYjZhMTk0NzNmZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmNmMzU3Mzc2NDI0YmU5YjAyMmI4YWQ3M2JmOWQyOThiMjViYTc3M2NhMTljYjBkMmVmZmZhZGVlZTczNWIxNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGU5NmQ0YWJkZmM0YjlhNWVmMWQ0MTVkNjkyNjA1YjY0MmEyMmFlZWUyNDY4MmU5NWM3MDQ1YjY4ZmIyOTY1MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTY1ZjlkYTdhM2Y3MzdlNGI0ZTJmZjFhMWI3YzE2OTdhZGRhNjIzM2YxMzYzMGExNGI3MjVkMjA2ODQ2YWU2YSJ9"
+        },
+        {
+          "resource": "repo://foundations/index.qmd#L1-L5",
+          "version": "repo-lines-v1:sha256:561ddce055b15a7796a8e7c5fc079632677ffb78922c69cff1b15951727aa28d:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGIzY2ZkNTFiNDk1NjA0ZTA4NjA1OTZlNmFhNjVlM2Q5MDNjNDM1MWUwYmUzYTIwODFkZjRmMjY5OGQ1NjUyYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a635944536ad42d281313e315d81fef3",
+      "statement": "The publish workflow renders and deploys on every push to main with a pages concurrency group and cancel-in-progress, so a rapid second push supersedes the first deployment rather than queueing behind it.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/publish.yml#L1-L38",
+          "version": "repo-lines-v1:sha256:f94341d4e79a27527fa75fcbd118168330e3dee80dae24d8b09b560811cb6263:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkODdlYmJkMmE5M2Q0NTVmZDNmNTQ4YjUzNjRhNmEyZmY5NTg2NDM3ZmQyZGU0OGIwMmZlMGIyMDA5YzkyMzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2MzQxMzJhMWI5YWUwNmQ4YjQ5YjY1ZTY0YmVhNTExZGQ2MGI5N2NkYjJhNDM1ZTQ2ZDAwYjIwYjUwODJjZGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_717d018460394cfbb6dd8d9918be1051",
+      "statement": "The home page is a generated listing over paper-reviews and date-prefixed experiments sorted by date descending, not a hand-maintained index, so publication order is a consequence of frontmatter dates.",
+      "evidence": [
+        {
+          "resource": "repo://index.qmd#L1-L22",
+          "version": "repo-lines-v1:sha256:0fc300aaf5b731f979cbadb34a2059f7acc5ba01baf3a31c70f764ea94d0518a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0MDQyNzM2ZTE0MGNkNzVhOGJmMDljZDhlMDFkZDU3ZTU2YmE3NTQ0MzkwODMyNTdkYmY2ZjNlMmZiODI1MDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_269a9ee4df32440aadfdf8e6a4e02972",
+      "statement": "Theme customization is confined to a light and dark SCSS pair that override only font size, link color, and navbar treatment, with the dark link color chosen as a lightened form of the site's single accent color.",
+      "evidence": [
+        {
+          "resource": "repo://theme-light.scss#L1-L16",
+          "version": "repo-lines-v1:sha256:36e7a05b4900e92163e62f9dfd6601fd4c7f63585086f50bd4377e769f540805:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2N2NiNDAxNjgzNjIyZjcxM2E3ZWRlYTVmYTlkNjdjNWRkNjc2NjNjY2E4ODBkMzA0ZWE5NjA1NDkxZGJjYTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://theme-dark.scss#L1-L5",
+          "version": "repo-lines-v1:sha256:ef3fb40a52ba203b8f69d04f0326dcb96f4a6667ab3bdac65ec32e6422607db0:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDY3Y2I0MDE2ODM2MjJmNzEzYTdlZGVhNWZhOWQ2N2M1ZGQ2NzY2M2NjYTg4MGQzMDRlYTk2MDU0OTFkYmNhNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzYzMjQxZGVlMjQzOGY1NDVlYWIwZjg1N2NjYzliNjkyYTlhNWJkOWNiY2I3NTgwZDIyNWNhMGQ4NzkyZDZiOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_da5a58c1e73f41a2b16413fa0bbcb05e",
+      "statement": "Code folding is enabled only for the foundations directory through a directory-scoped metadata file rather than globally, so notebook code is collapsed while code in reviews and experiments stays visible.",
+      "evidence": [
+        {
+          "resource": "repo://foundations/_metadata.yml#L1-L7",
+          "version": "repo-lines-v1:sha256:d190c3b9b0c4d28e8a952ec6f63e90ac3039ee32292830d9b473800b50e28af8:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjEzN2VhNzY2YjNlYmU2MDE4NjUwODhjZGI2ZTFlODhjY2JmY2M3NTg1MTkwMjI5NjE1MWJmYjUwZWUyNDkxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzYyNmNjYTUwY2U2NGU1ZTAwYTdkNjhlOGI4NjZiMjA2M2M3MjZhNTFmOWFlMTU4MDFkMTllNjBiNmZlNzJmMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_b3ce715db00d41b68497ba2b7bd9e88d",
+      "statement": "Drafted reviews are still rendered and deployed with live URLs while being omitted from the home listing, so the draft flag controls discoverability rather than publication and half the reviews are reachable only by direct link or redirect.",
+      "evidence": [
+        {
+          "resource": "repo://_quarto.yml#L1-L44",
+          "version": "repo-lines-v1:sha256:cdd8ac776f9361c2d98069a2fdac762efc24a1bf2d2b18ead00c1494b9b9fbff:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkMmFhY2QzMmU1NWM1OTU2MmJjMTRlMmU0Mjc0ZDY1ZDJjMzFiMjAxMDZjZmE2YWIwNjNmYzM0NGRlMTcxOWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzNTdhMmNlMWM2MzJiOGJmZWVkNDU4YzYxYTJlZWVmYmRkZTMzMjcxODhlOGM3ZTFhZjc4OWE2MDIxNzRhNWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://index.qmd#L1-L22",
+          "version": "repo-lines-v1:sha256:0fc300aaf5b731f979cbadb34a2059f7acc5ba01baf3a31c70f764ea94d0518a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0MDQyNzM2ZTE0MGNkNzVhOGJmMDljZDhlMDFkZDU3ZTU2YmE3NTQ0MzkwODMyNTdkYmY2ZjNlMmZiODI1MDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_806ea0a000a847f1bd188b1808cb0fa2",
+      "statement": "Aliases are realized as generated redirect files at the legacy paths, so a removed page keeps producing output at its old address as long as some surviving page still declares its alias.",
+      "evidence": [
+        {
+          "resource": "repo://experiments/2026-06-29-prologue.qmd#L6-L11",
+          "version": "repo-lines-v1:sha256:2c9c029629a8862b027bdaba6541cf737a117c6ab9076ba98b32ef27e6e0e5cf:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTlhNjkzOTQ4YmNjZTEwZmI2M2M0OTUxYTBhZjhhM2RmNGY2ZjE4ZGYyYTJhOTgzZjgyMTVmYjZhMTk0NzNmZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWZiMmYyOTYxNTNjZGE0MGYxMGIyYWRhYTMyYmExZDVlMTQ3ZTE4YzNmY2ZhOTE1YzhhZmIzNDU2MDQ3OTU0NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDEzZTFlODQ2YmZiOGRkZjdkY2E0MDNmMWZmNjgwOTk3ZjMyZTZiNGI1YTM4M2Y3NzVmZDIyMjE1MzczYTc3NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjRiZTAwODM5NjA2NTI2NjFmNWE4YTg3ODNiODAwNzFjMTAxNzg0NTQ0OTliODk2NmVlYzM1NTUwOGUzYjM0ZiJ9"
+        },
+        {
+          "resource": "repo://index.qmd#L13-L16",
+          "version": "repo-lines-v1:sha256:53bab939673484baf5fe11e16f6ce3b6ee406f855b7ceecdc94a99ce0458bd61:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTlhNjkzOTQ4YmNjZTEwZmI2M2M0OTUxYTBhZjhhM2RmNGY2ZjE4ZGYyYTJhOTgzZjgyMTVmYjZhMTk0NzNmZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOThkY2IzMGIzOGExOTI3N2RkMjM3ZWVlOGQ4OWE0NWZhMGUzMzlhODExNzY4ZWU3NTExN2JiZTkzZjk4ZTY2ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzg0MDhkOTAzMDI5ZGQ4YmNjZTRmY2E3MTM2MmQ5OTIxMGJkYTAzZWQ2Y2I2NGY2ZGNiMzA2OTE0NWYzYjA2MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTVmNTY4NmZkNWUzZDFhZjBkYjk0YmZiOGE0N2U4Yjg1YTRhMjUxOTRmNDIxZDAzOWNiMzJlMzA3ZGRhOWYxYSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_52ef61be409a4168b510777810ec525d",
+      "statement": "No check compares a page's draft flag against intent, and the surfaces that determine whether a page is discoverable are spread across page frontmatter, the project render list, and the listing globs, none of which is validated against the others.",
+      "evidence": [
+        {
+          "resource": "repo://_quarto.yml#L1-L10",
+          "version": "repo-lines-v1:sha256:4118a62bce3cf9ae05300b8c8d78747250e897c4e96fcf6ddaf06df3d3a841dc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkMmFhY2QzMmU1NWM1OTU2MmJjMTRlMmU0Mjc0ZDY1ZDJjMzFiMjAxMDZjZmE2YWIwNjNmYzM0NGRlMTcxOWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIzODkyNTc0YTE0NjE0Yjk4NWY4NTUxZGUyNTczNTkxZjM0NjdlZDc2ODMxMjE5N2ZmMGZiMmU5YzIxOGQ3ZWEifQ"
+        },
+        {
+          "resource": "repo://index.qmd#L1-L12",
+          "version": "repo-lines-v1:sha256:864a79cff344284ead1b92012c9c4093763b746fee51bba17a36fe9b4e1cb94c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxYzBhYmViOTg3YTE2ZTZiY2MyNzI0NjliMmVlZGI4MjljODFhZDJmNTBjYWE5Y2MwNjhkOTUyMjBjYzIxNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2ZjA3NjY0Mzc2ODYxYmZlNzVkNDgwZjBmMWQ2M2YzMzg3YTJkZjg4Nzk5YzlkOWQwY2Y4MjIyY2UxODcyY2UifQ"
+        },
+        {
+          "resource": "repo://_tools/site_lint.py#L27-L33",
+          "version": "repo-lines-v1:sha256:e95882b7c7b76229285e6657099e7e9918bc4a5a59346242676d9bd3f98bebbe:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODcxMWM0ZTg2NTQ1NzFjZWNlMjQyODU2YmZiMGEwMGJmZjVjMTA5NDUwMjIxZmJmOTQwNmM4NDc2MzFhMjA1OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmFmYmEwNTI3YzM5NTNjNGI2ZTBlNWI1NzM5YmE4MzYxMmY4MDUzYmNkYzk0NjY3MzAxOTNjZDFkNTkwYjQwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjVkODc4ZGI4ZmUwMTY5YWNmZjZhMmIzYzFkNWNmZDMyMGE2MTUwOTYxZjZhNjZhZWM5MjI5OGNmMTBiNTEwMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTM4YWNiMTE2ZjAyMDg5ZmNiMTg2ZDZmMWY2Nzg0OTQ4OWUxYzVhNTNjNmE2YWFjNzZhYWI3N2RmYTJmYzRiOCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:aef62d9622c28f4a86b877f43735d49fc4a06331d0666a56ad56eef75f96cc5a",
+  "claims": [
+    {
+      "id": "claim_a108cbe121814c9bbda3b7f2ae514449",
+      "statement": "CONTEXT.md is scoped as a dictionary and nothing else; rules stay in the auto-loaded instruction file, and the vocabulary file declares that the instruction file wins whenever a rule and a definition disagree.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L1-L8",
+          "version": "repo-lines-v1:sha256:6f924bc944b45db2dea572bc1bc3c713515550698c9bf6118aa64316dd9c6d45:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWUxZGFlMTY5NDUxY2I0YzA4MWM3YmU0MTZkNzA4ZmQ1YTRjN2NkZTUwMGNiMmUxYzY2Nzc0ZDMzNDk2MTgwYyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_5faca93358ce4014b71a854ea4ed1e75",
+      "statement": "The same internal terms are required vocabulary for contributors and forbidden on the visitor surface, with four of them enforced as lint errors and four more as warnings, so the vocabulary is a two-sided contract rather than a glossary.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L1-L8",
+          "version": "repo-lines-v1:sha256:6f924bc944b45db2dea572bc1bc3c713515550698c9bf6118aa64316dd9c6d45:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWUxZGFlMTY5NDUxY2I0YzA4MWM3YmU0MTZkNzA4ZmQ1YTRjN2NkZTUwMGNiMmUxYzY2Nzc0ZDMzNDk2MTgwYyJ9"
+        },
+        {
+          "resource": "repo://_tools/site_lint.py#L34-L42",
+          "version": "repo-lines-v1:sha256:5b692507952ccda9fe08977d02e1f0d928adbc1b59431dc2f12b04a3a2344d29:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGUzYzQ4M2ZlNmQxZmFmNzYwZGEwMDZjYTAwOTE1MGRlZmM5NDg5NGYyNjg1NTFhNDcwNWQ1ZWY3MzJmN2FkZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjc2NGYxZjFiMzQ3MTQ5MDk1YzU0Zjc1ZmM2NGQxMjhiYmFiZTZhNjllYjkyYWE0ZTY2Y2JlMWRmMDdlMmQ1NiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_888cda12803b4e93b040e112a501fad2",
+      "statement": "One banned term is matched by a regular expression that excludes its verb inflections, because the noun is internal jargon while the identically spelled verb is ordinary Korean and a plain substring match produced false positives.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L36-L41",
+          "version": "repo-lines-v1:sha256:aa942ed901c769a68d4a4c2698c36207d548a3aa6411ff4eb174f5137c264a48:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjUyMjBmYmVhY2M5NDU2Zjc3YjgwNjQ0NjU2ZmMzNTJiYTIxMjY4NmUxZWJjMTMwNjVjMDY2NTQ4OTkwMDljZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzU3NGRmZWUzZGQ3NTUwNmI2ZDM0NjZiNWYyYTVmMjkzYjEyNjhiOWFlYzc3MTFhYTJjNjJlM2Y1ZjA0MTU4NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzI1ZGMyM2MwOTFlMGVjNTJiNGUzM2FjYzZhMzA0ZjU0NTQ5M2M2MWZiYmQwN2MwM2U3NWU0ODBhOTEzMTRkZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTcxMmY0ZWRmOTFjNTY1MGYzMDA2NDg2MjBjMjdjMzU4N2NmODU5MDYzNDEyYzAxNGJjZThkZWJjNDIxYjE4ZSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_27bac3e93e7f424f9eef3792049ab3e3",
+      "statement": "The vocabulary file cannot be replaced by the published glossary, because the glossary deliberately omits internal operating terms; the two files address different readers.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L1-L8",
+          "version": "repo-lines-v1:sha256:6f924bc944b45db2dea572bc1bc3c713515550698c9bf6118aa64316dd9c6d45:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWUxZGFlMTY5NDUxY2I0YzA4MWM3YmU0MTZkNzA4ZmQ1YTRjN2NkZTUwMGNiMmUxYzY2Nzc0ZDMzNDk2MTgwYyJ9"
+        },
+        {
+          "resource": "repo://docs/agents/domain.md#L18-L23",
+          "version": "repo-lines-v1:sha256:e8865852c43289ec829064e8322b007dd61da6d9d55c79c0cf30ef3e4ae0ee58:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzdlZTk5ZmJiNTU0ZmVjODg4MWE3ZjRhZDNiMmM2MjQ2MDJmNDkzNjY1M2NmMmU3MWExYjk4MGE2NWYzYWFmZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODgwYmZjMjVmMjYxM2E5OTMzYmQzZDA1YWY4ZjRkZGJiM2FkZDBmN2NiNDYxZThhMDkyMzU5NmE5Mjk4NWMxNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_f3e8b5293f9b417693faca557c8b5748",
+      "statement": "CONTEXT.md defines two distinct three-part schemes that share a name plus a third that is easily confused with them, and each entry carries an explicit warning pointing at the other, because the collision was invisible while the definitions were scattered across rule sentences.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L20-L34",
+          "version": "repo-lines-v1:sha256:d84a233d8ff3ce6ef78928072853e8f2b937976762d36cff5c0cfed6a667bfea:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNmZGJhYWJmMmUxN2JmYWVkNGRiMzY1N2ViZWY3M2MxNzYxMmUwNzM3YzE5Y2Q3NjJiOTEzNjRlZjc5MmE2NzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmZGE0MmVlOWUwN2NlMTEzNzI0MDgwNzY4MDgyMjkyY2E5OWUzYTEwOWYzMTMzZWJlNDZjZDEyOTc0ZDQzNGYifQ"
+        },
+        {
+          "resource": "repo://CONTEXT.md#L54-L62",
+          "version": "repo-lines-v1:sha256:3bdb4ad15b9a1b6420d384bf5d4720e18e336d575ed792d59b0c273aa61b70b9:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWIwYjJjZjg5MTFjNDJiOWM0N2IwMWE2M2EwZmRjNzZhNWFjZTRmNmNjMDIwMjA0NzI4ZWM1ZmNkNmRjZTQ3NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMWNkZmM1MzE0NTNmMWFiMjI2MmM2ODQ5MTU4NTg3OWRiNzdkYzYxZjNhMmUwYTkzZmQ3ZjM5MTMwYTMxZDY3YyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_da69f2e7a2ad4d498ac7f2aeb259fab1",
+      "statement": "The agent-facing domain document still describes CONTEXT.md as not yet existing and shows it as absent in its directory sketch, while the file exists at the repository root, so that guidance is stale relative to ADR 0003.",
+      "evidence": [
+        {
+          "resource": "repo://docs/agents/domain.md#L12-L35",
+          "version": "repo-lines-v1:sha256:ed33477ff0988fef3230098a80b9160b6502d681658e039acee3199aea3e9144:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI5Mzk2ODMyZDkxYWQ2YjI3NDVhM2FlNDExNWY2NTZmMDY3NzFjNjliMWQ2YjAxMDQ1NzA0OGRlMzc2N2VjOGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmZjFjMDVhZDQ2Njc3MjhmN2U0Njg4MTFiYjNiYjE5M2NhMGJmMDYzNTcwOGU3NGUwMjE4NjRlNDZhZjEzMDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQwMDU4NjJlNjIxZDU0OTExODc5NWJiODc2ZWM5NzBhNzM1MmM2ODUxY2ZlMDBkNzM0NDhlYjEzNzk1OWExMDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU3Mjg3YmRmYzllYmE4ODliZmZkYjliZjVjNjkzYzBmOGMzZTdlNWNiZTNlMDdjOWUwNjUwNzRiYTE4ZDM5NzQifQ"
+        },
+        {
+          "resource": "repo://CONTEXT.md#L1-L4",
+          "version": "repo-lines-v1:sha256:119947f53ec49dde82f45b1c957f1f22c8148af7c3e9f320c49b279ebde21aba:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTdhMDQyZTQ3YWRmYjEyMDFjODRiNDU0NTRmYzkyZjM4NmI1MDU1MDI5Mjg4NWVkZWE4MzBhMTRkNzMyNDE1MyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_644ddd54b5864506bfd46f1ae05dd3e0",
+      "statement": "CONTEXT.md is scoped as a dictionary and nothing else; rules stay in the auto-loaded instruction file, and the vocabulary file declares that the instruction file wins whenever a rule and a definition disagree.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L1-L8",
+          "version": "repo-lines-v1:sha256:6f924bc944b45db2dea572bc1bc3c713515550698c9bf6118aa64316dd9c6d45:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWUxZGFlMTY5NDUxY2I0YzA4MWM3YmU0MTZkNzA4ZmQ1YTRjN2NkZTUwMGNiMmUxYzY2Nzc0ZDMzNDk2MTgwYyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c9a5a79ff9414184a282304b539f6dff",
+      "statement": "The same internal terms are required vocabulary for contributors and forbidden on the visitor surface, with four of them enforced as lint errors and four more as warnings, so the vocabulary is a two-sided contract rather than a glossary.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L1-L8",
+          "version": "repo-lines-v1:sha256:6f924bc944b45db2dea572bc1bc3c713515550698c9bf6118aa64316dd9c6d45:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWUxZGFlMTY5NDUxY2I0YzA4MWM3YmU0MTZkNzA4ZmQ1YTRjN2NkZTUwMGNiMmUxYzY2Nzc0ZDMzNDk2MTgwYyJ9"
+        },
+        {
+          "resource": "repo://_tools/site_lint.py#L34-L42",
+          "version": "repo-lines-v1:sha256:5b692507952ccda9fe08977d02e1f0d928adbc1b59431dc2f12b04a3a2344d29:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGUzYzQ4M2ZlNmQxZmFmNzYwZGEwMDZjYTAwOTE1MGRlZmM5NDg5NGYyNjg1NTFhNDcwNWQ1ZWY3MzJmN2FkZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjc2NGYxZjFiMzQ3MTQ5MDk1YzU0Zjc1ZmM2NGQxMjhiYmFiZTZhNjllYjkyYWE0ZTY2Y2JlMWRmMDdlMmQ1NiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a755d464bccb427194a040c15c893eea",
+      "statement": "One banned term is matched by a regular expression that excludes its verb inflections, because the noun is internal jargon while the identically spelled verb is ordinary Korean and a plain substring match produced false positives.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L36-L41",
+          "version": "repo-lines-v1:sha256:aa942ed901c769a68d4a4c2698c36207d548a3aa6411ff4eb174f5137c264a48:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjUyMjBmYmVhY2M5NDU2Zjc3YjgwNjQ0NjU2ZmMzNTJiYTIxMjY4NmUxZWJjMTMwNjVjMDY2NTQ4OTkwMDljZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzU3NGRmZWUzZGQ3NTUwNmI2ZDM0NjZiNWYyYTVmMjkzYjEyNjhiOWFlYzc3MTFhYTJjNjJlM2Y1ZjA0MTU4NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzI1ZGMyM2MwOTFlMGVjNTJiNGUzM2FjYzZhMzA0ZjU0NTQ5M2M2MWZiYmQwN2MwM2U3NWU0ODBhOTEzMTRkZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTcxMmY0ZWRmOTFjNTY1MGYzMDA2NDg2MjBjMjdjMzU4N2NmODU5MDYzNDEyYzAxNGJjZThkZWJjNDIxYjE4ZSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a60be82e8bb2454cb2e40c2f65faa308",
+      "statement": "The vocabulary file cannot be replaced by the published glossary, because the glossary deliberately omits internal operating terms; the two files address different readers.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L1-L8",
+          "version": "repo-lines-v1:sha256:6f924bc944b45db2dea572bc1bc3c713515550698c9bf6118aa64316dd9c6d45:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWUxZGFlMTY5NDUxY2I0YzA4MWM3YmU0MTZkNzA4ZmQ1YTRjN2NkZTUwMGNiMmUxYzY2Nzc0ZDMzNDk2MTgwYyJ9"
+        },
+        {
+          "resource": "repo://docs/agents/domain.md#L18-L23",
+          "version": "repo-lines-v1:sha256:e8865852c43289ec829064e8322b007dd61da6d9d55c79c0cf30ef3e4ae0ee58:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzdlZTk5ZmJiNTU0ZmVjODg4MWE3ZjRhZDNiMmM2MjQ2MDJmNDkzNjY1M2NmMmU3MWExYjk4MGE2NWYzYWFmZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODgwYmZjMjVmMjYxM2E5OTMzYmQzZDA1YWY4ZjRkZGJiM2FkZDBmN2NiNDYxZThhMDkyMzU5NmE5Mjk4NWMxNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_22800da4dd654df5bf19d4be24e7d20e",
+      "statement": "CONTEXT.md defines two distinct three-part schemes that share a name plus a third that is easily confused with them, and each entry carries an explicit warning pointing at the other, because the collision was invisible while the definitions were scattered across rule sentences.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L20-L34",
+          "version": "repo-lines-v1:sha256:d84a233d8ff3ce6ef78928072853e8f2b937976762d36cff5c0cfed6a667bfea:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNmZGJhYWJmMmUxN2JmYWVkNGRiMzY1N2ViZWY3M2MxNzYxMmUwNzM3YzE5Y2Q3NjJiOTEzNjRlZjc5MmE2NzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmZGE0MmVlOWUwN2NlMTEzNzI0MDgwNzY4MDgyMjkyY2E5OWUzYTEwOWYzMTMzZWJlNDZjZDEyOTc0ZDQzNGYifQ"
+        },
+        {
+          "resource": "repo://CONTEXT.md#L54-L62",
+          "version": "repo-lines-v1:sha256:3bdb4ad15b9a1b6420d384bf5d4720e18e336d575ed792d59b0c273aa61b70b9:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWIwYjJjZjg5MTFjNDJiOWM0N2IwMWE2M2EwZmRjNzZhNWFjZTRmNmNjMDIwMjA0NzI4ZWM1ZmNkNmRjZTQ3NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMWNkZmM1MzE0NTNmMWFiMjI2MmM2ODQ5MTU4NTg3OWRiNzdkYzYxZjNhMmUwYTkzZmQ3ZjM5MTMwYTMxZDY3YyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c04a2dbde9714e9bbd005f9315762a4c",
+      "statement": "The agent-facing domain document still describes CONTEXT.md as not yet existing and shows it as absent in its directory sketch, while the file exists at the repository root, so that guidance is stale relative to ADR 0003.",
+      "evidence": [
+        {
+          "resource": "repo://docs/agents/domain.md#L12-L35",
+          "version": "repo-lines-v1:sha256:ed33477ff0988fef3230098a80b9160b6502d681658e039acee3199aea3e9144:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI5Mzk2ODMyZDkxYWQ2YjI3NDVhM2FlNDExNWY2NTZmMDY3NzFjNjliMWQ2YjAxMDQ1NzA0OGRlMzc2N2VjOGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmZjFjMDVhZDQ2Njc3MjhmN2U0Njg4MTFiYjNiYjE5M2NhMGJmMDYzNTcwOGU3NGUwMjE4NjRlNDZhZjEzMDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQwMDU4NjJlNjIxZDU0OTExODc5NWJiODc2ZWM5NzBhNzM1MmM2ODUxY2ZlMDBkNzM0NDhlYjEzNzk1OWExMDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU3Mjg3YmRmYzllYmE4ODliZmZkYjliZjVjNjkzYzBmOGMzZTdlNWNiZTNlMDdjOWUwNjUwNzRiYTE4ZDM5NzQifQ"
+        },
+        {
+          "resource": "repo://CONTEXT.md#L1-L4",
+          "version": "repo-lines-v1:sha256:119947f53ec49dde82f45b1c957f1f22c8148af7c3e9f320c49b279ebde21aba:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTdhMDQyZTQ3YWRmYjEyMDFjODRiNDU0NTRmYzkyZjM4NmI1MDU1MDI5Mjg4NWVkZWE4MzBhMTRkNzMyNDE1MyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_7f2111e23b3346be9060de61dcfd2588",
+      "statement": "CONTEXT.md is scoped as a dictionary and nothing else; rules stay in the auto-loaded instruction file, and the vocabulary file declares that the instruction file wins whenever a rule and a definition disagree.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L1-L8",
+          "version": "repo-lines-v1:sha256:6f924bc944b45db2dea572bc1bc3c713515550698c9bf6118aa64316dd9c6d45:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWUxZGFlMTY5NDUxY2I0YzA4MWM3YmU0MTZkNzA4ZmQ1YTRjN2NkZTUwMGNiMmUxYzY2Nzc0ZDMzNDk2MTgwYyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_237b7e5be7644f96b7052a40efc87ef2",
+      "statement": "The same internal terms are required vocabulary for contributors and forbidden on the visitor surface, with four of them enforced as lint errors and four more as warnings, so the vocabulary is a two-sided contract rather than a glossary.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L1-L8",
+          "version": "repo-lines-v1:sha256:6f924bc944b45db2dea572bc1bc3c713515550698c9bf6118aa64316dd9c6d45:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWUxZGFlMTY5NDUxY2I0YzA4MWM3YmU0MTZkNzA4ZmQ1YTRjN2NkZTUwMGNiMmUxYzY2Nzc0ZDMzNDk2MTgwYyJ9"
+        },
+        {
+          "resource": "repo://_tools/site_lint.py#L34-L42",
+          "version": "repo-lines-v1:sha256:5b692507952ccda9fe08977d02e1f0d928adbc1b59431dc2f12b04a3a2344d29:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGUzYzQ4M2ZlNmQxZmFmNzYwZGEwMDZjYTAwOTE1MGRlZmM5NDg5NGYyNjg1NTFhNDcwNWQ1ZWY3MzJmN2FkZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjc2NGYxZjFiMzQ3MTQ5MDk1YzU0Zjc1ZmM2NGQxMjhiYmFiZTZhNjllYjkyYWE0ZTY2Y2JlMWRmMDdlMmQ1NiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_fa47ba4c1143433cb1ac8c2b25931f9a",
+      "statement": "One banned term is matched by a regular expression that excludes its verb inflections, because the noun is internal jargon while the identically spelled verb is ordinary Korean and a plain substring match produced false positives.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L36-L41",
+          "version": "repo-lines-v1:sha256:aa942ed901c769a68d4a4c2698c36207d548a3aa6411ff4eb174f5137c264a48:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjUyMjBmYmVhY2M5NDU2Zjc3YjgwNjQ0NjU2ZmMzNTJiYTIxMjY4NmUxZWJjMTMwNjVjMDY2NTQ4OTkwMDljZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzU3NGRmZWUzZGQ3NTUwNmI2ZDM0NjZiNWYyYTVmMjkzYjEyNjhiOWFlYzc3MTFhYTJjNjJlM2Y1ZjA0MTU4NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzI1ZGMyM2MwOTFlMGVjNTJiNGUzM2FjYzZhMzA0ZjU0NTQ5M2M2MWZiYmQwN2MwM2U3NWU0ODBhOTEzMTRkZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTcxMmY0ZWRmOTFjNTY1MGYzMDA2NDg2MjBjMjdjMzU4N2NmODU5MDYzNDEyYzAxNGJjZThkZWJjNDIxYjE4ZSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2ec282d81b754107beb50dda61495fbf",
+      "statement": "The vocabulary file cannot be replaced by the published glossary, because the glossary deliberately omits internal operating terms; the two files address different readers.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L1-L8",
+          "version": "repo-lines-v1:sha256:6f924bc944b45db2dea572bc1bc3c713515550698c9bf6118aa64316dd9c6d45:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWUxZGFlMTY5NDUxY2I0YzA4MWM3YmU0MTZkNzA4ZmQ1YTRjN2NkZTUwMGNiMmUxYzY2Nzc0ZDMzNDk2MTgwYyJ9"
+        },
+        {
+          "resource": "repo://docs/agents/domain.md#L18-L23",
+          "version": "repo-lines-v1:sha256:e8865852c43289ec829064e8322b007dd61da6d9d55c79c0cf30ef3e4ae0ee58:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzdlZTk5ZmJiNTU0ZmVjODg4MWE3ZjRhZDNiMmM2MjQ2MDJmNDkzNjY1M2NmMmU3MWExYjk4MGE2NWYzYWFmZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODgwYmZjMjVmMjYxM2E5OTMzYmQzZDA1YWY4ZjRkZGJiM2FkZDBmN2NiNDYxZThhMDkyMzU5NmE5Mjk4NWMxNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ccaad4ab53b6423281a263f6d2c335f5",
+      "statement": "CONTEXT.md defines two distinct three-part schemes that share a name plus a third that is easily confused with them, and each entry carries an explicit warning pointing at the other, because the collision was invisible while the definitions were scattered across rule sentences.",
+      "evidence": [
+        {
+          "resource": "repo://CONTEXT.md#L20-L34",
+          "version": "repo-lines-v1:sha256:d84a233d8ff3ce6ef78928072853e8f2b937976762d36cff5c0cfed6a667bfea:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNmZGJhYWJmMmUxN2JmYWVkNGRiMzY1N2ViZWY3M2MxNzYxMmUwNzM3YzE5Y2Q3NjJiOTEzNjRlZjc5MmE2NzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmZGE0MmVlOWUwN2NlMTEzNzI0MDgwNzY4MDgyMjkyY2E5OWUzYTEwOWYzMTMzZWJlNDZjZDEyOTc0ZDQzNGYifQ"
+        },
+        {
+          "resource": "repo://CONTEXT.md#L54-L62",
+          "version": "repo-lines-v1:sha256:3bdb4ad15b9a1b6420d384bf5d4720e18e336d575ed792d59b0c273aa61b70b9:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWIwYjJjZjg5MTFjNDJiOWM0N2IwMWE2M2EwZmRjNzZhNWFjZTRmNmNjMDIwMjA0NzI4ZWM1ZmNkNmRjZTQ3NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMWNkZmM1MzE0NTNmMWFiMjI2MmM2ODQ5MTU4NTg3OWRiNzdkYzYxZjNhMmUwYTkzZmQ3ZjM5MTMwYTMxZDY3YyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_f3b1a2c37eda481d9f11f2cf40f6ace2",
+      "statement": "The agent-facing domain document still describes CONTEXT.md as not yet existing and shows it as absent in its directory sketch, while the file exists at the repository root, so that guidance is stale relative to ADR 0003.",
+      "evidence": [
+        {
+          "resource": "repo://docs/agents/domain.md#L12-L35",
+          "version": "repo-lines-v1:sha256:ed33477ff0988fef3230098a80b9160b6502d681658e039acee3199aea3e9144:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI5Mzk2ODMyZDkxYWQ2YjI3NDVhM2FlNDExNWY2NTZmMDY3NzFjNjliMWQ2YjAxMDQ1NzA0OGRlMzc2N2VjOGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmZjFjMDVhZDQ2Njc3MjhmN2U0Njg4MTFiYjNiYjE5M2NhMGJmMDYzNTcwOGU3NGUwMjE4NjRlNDZhZjEzMDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQwMDU4NjJlNjIxZDU0OTExODc5NWJiODc2ZWM5NzBhNzM1MmM2ODUxY2ZlMDBkNzM0NDhlYjEzNzk1OWExMDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU3Mjg3YmRmYzllYmE4ODliZmZkYjliZjVjNjkzYzBmOGMzZTdlNWNiZTNlMDdjOWUwNjUwNzRiYTE4ZDM5NzQifQ"
+        },
+        {
+          "resource": "repo://CONTEXT.md#L1-L4",
+          "version": "repo-lines-v1:sha256:119947f53ec49dde82f45b1c957f1f22c8148af7c3e9f320c49b279ebde21aba:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3ZjA4NDBiMzc4NGYzZDcwZGRkNTQ1ZTg2ODQ2MzQ3YmUyNDcwZjBmZDcxZjgzNTUwNmRiODkyY2M3N2YxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTdhMDQyZTQ3YWRmYjEyMDFjODRiNDU0NTRmYzkyZjM4NmI1MDU1MDI5Mjg4NWVkZWE4MzBhMTRkNzMyNDE1MyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

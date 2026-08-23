@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7d34c14e346e71d8279605b70a574478c9041f1b7dba5d83c8b13aa3696a19bb",
+  "claims": [
+    {
+      "id": "claim_fbc1b27efb2048edb4821931a4a607a1",
+      "statement": "The pre-push hook is the only place the site linter and the knowledge-bundle checker become enforcement rather than scripts, running both against the repository root and aborting the push when either exits non-zero.",
+      "evidence": [
+        {
+          "resource": "repo://.githooks/pre-push#L32-L66",
+          "version": "repo-lines-v1:sha256:e6511d9f6925e77c20986bf4021b15c5b1b6b3de9c9b7291f6241b4afa080a16:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5NmRhODViYTk1ZmM1MjhjM2IxN2I1ZjI0ZTBiODJlNDg1YzM1M2M2ZGJhMmM2OWFlZjJjNzE2MmQ5YTM2NTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4ZDNiOWU4ODBhNzc5NzU0OTNkYzdlMzU5MTQ0YzAyOTVhNGY2OTRjZmUwYWY0ZjkyOGMyMjMwN2JjNWMzMjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJiZTIwNWQ0NjE1YzI0YzQwNzlmZmRjMDdmNjE1ZjJmNGRjZTJlMmQ2Mzc4MmZjZGFhN2VkMTE5ODNkZmQ2YTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_859176c723bc4df084c92bf76660bff9",
+      "statement": "The hook fails open in two cases, exiting 0 when _tools/site_lint.py is absent and when no python3 interpreter can be located, so a missing prerequisite silently disables the gate instead of blocking the push.",
+      "evidence": [
+        {
+          "resource": "repo://.githooks/pre-push#L35-L46",
+          "version": "repo-lines-v1:sha256:729c284494065062a8cbf7f607ed08a8330686b4eeb928718895d725cc6882a1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzNDNkOGNhZDE5MTY5NmQ1MmE4NzkyODI1NDcxNGQ0YTQ1N2FiYWRmZTU3ZmYyZGM2ODVkMWJmZmYxYjgyOTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3NjlkMjM3Y2Q0MjBiOWQzOGI5ODFhMGE0ZjY3NzAxOTBhNGE4M2RjYTFmZTU2YzRmNWJhMWUyY2JjMGVmNzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxYmY4MWI4NmE1MWJhZDA3MTcwM2UwOTYxZmU3MzlmMTVmN2I1YjQ2MDY5ZDRmOWU0YzI1MTViYjE5OTUzM2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY1ZmNkYjUwOGZjNWMwNTdjZGFjNTQxM2E1ODA3MjY4OTM4ODJiY2JmYWU3MzQ5OWVlMWQwMjY3ZjRhYmJkZTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_eb4c7c7342164f7ba470b4c67ac74e44",
+      "statement": "The hook file is tracked by git but the core.hooksPath setting that activates it is not, so every fresh clone pushes unguarded until the setting is applied by hand.",
+      "evidence": [
+        {
+          "resource": "repo://.githooks/pre-push#L24-L30",
+          "version": "repo-lines-v1:sha256:78f33249c3e22249c538bfb5bc6b38e30e874a4eaa51f225ba20c6b1a15065f7:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWI2ZjYyYTA0MDk1MjllMDk3MzZmM2U3ZGJlZDIyODgxYmMxZjYxNWIwOWEzNjhkMDFhNjEyNzkxM2IxODI0MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjQ3MTI2ZTc4ZWYyNDA1ZTkyNzMzOTg2OGQ3Yzg3YWMxMDExODY2Y2RhYmY3NTEyMjYzZDM2Y2JjZDQ4YTBiMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODZhMDdhMzM1MDliMTRiZGMwNTMxMTdiN2E2YTY1MjQ3M2NjZGI1MzM4MjVmMmUwM2ZmMDE5YmNmMDNmMzdhOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDkyZjI1OTYwMGUyOGZiY2IxNDAyNGJlMzZjODMwZTI0MjQ3NzU2MWU4NGI5ZGM5MjUzMGZkMDNjMmMzMDk0OSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_47f614507cb540dc9f87aef4b7aaf892",
+      "statement": "The knowledge-bundle check is bound to the push gate rather than the site publish workflow because knowledge/ is never published, and coupling a broken concept card to a site deployment would be the wrong dependency.",
+      "evidence": [
+        {
+          "resource": "repo://.githooks/pre-push#L8-L11",
+          "version": "repo-lines-v1:sha256:86ea714967d0fdf82333796435a6f9a12a9bb276887de1096da38a75a152c4be:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzJjNDg1OGUyMmNjMmM5NjdiNDIxNTBmYTU1MDU2MmEyYzgzOWMyY2ViY2FhYjkxY2FiZGY2ZjRkYTAyMDAyMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzJjNDg1OGUyMmNjMmM5NjdiNDIxNTBmYTU1MDU2MmEyYzgzOWMyY2ViY2FhYjkxY2FiZGY2ZjRkYTAyMDAyMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjNjNGIwOTUzZWZiOGU1N2Y4OGI0NzM2YmZkOTJjMDBhMzg5M2ZiYjNlNzIzM2U4NzdkNDJhNTlkMDQwNGEzYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmFhODFjMzc5YjcyNWI1M2Q4OGM3NDBlZmU5M2Q2ZjM3OTg1MmIyOTcyNGZiZTdkYTZmZTY5NWYxNzAxMjEzMCJ9"
+        },
+        {
+          "resource": "repo://docs/adr/0002-knowledge-bundle-scope-and-gate.md#L24-L34",
+          "version": "repo-lines-v1:sha256:aedb310f0a5af2d10e5464916f8638121a51d181deee136e7d9e6786af3733c6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2ZmFlMjJlNjlhZDYzNzVmOTMwYWJhODQ2ODFiYWViMTUwNzFmYTI0YTk3NGU2YzdhYzQ1NzA1MTc0Yzc1ZDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVmNzMyODlkZTFiYjVlM2E4NDM0Y2ZmMzYxNjczOGY4NWU3ZDQzMmM5MTM2Y2E4MDk0MGI0NTk4MGE4YWViOGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3MDY5YmIwZGU1OGI5M2ExMDI3NzAxM2YyN2I4MWMzOGU0MDNmZTViZjlmZmU3MDAzZDk3NzAxMjJhODJmODUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8a1039a5f5ed445298d60f982a160bc2",
+      "statement": "The gate blocks errors and deliberately passes warnings, because a style quota that could block a push would contradict the repository's own editorial rule that a third-tier fix must be abandoned when it makes the sentence worse.",
+      "evidence": [
+        {
+          "resource": "repo://.githooks/pre-push#L12-L19",
+          "version": "repo-lines-v1:sha256:f7bb5fa2d7d06370dde0292f567f238ce4ddc3b3a343a9e15b71d60c0b39fc48:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDhhNzcxNGIzNDIyYTY1NGMzNGJiZTdmMmUyYzYxMzk0MTIwODE0MWRiNmRmMTA0Y2NkYmJjNTBkNTllMDMxNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzJjNDg1OGUyMmNjMmM5NjdiNDIxNTBmYTU1MDU2MmEyYzgzOWMyY2ViY2FhYjkxY2FiZGY2ZjRkYTAyMDAyMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDA3ZmYxZmUzYTBmZjNmYjQwYWM1NjY2M2VjMzdiZDQ3ZGFhYzEyOGE1Zjg1NjgxYmU4NWY3YWYxNmMyYWQzZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODZhYjIyNTI2ZDhjODVjOGYwZDkyNmRkNzU3ZDE1MjJhNmIyZGQ1OTY0NzBjOWI4YTJiNTEwZTQ1OThmNjBhMyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_19d6c8081b464f659a5353ccfe44ab8b",
+      "statement": "The bundle check is wrapped in an existence test, so a missing checker file is skipped silently and is a third fail-open branch distinct from the two that print a message before exiting.",
+      "evidence": [
+        {
+          "resource": "repo://.githooks/pre-push#L56-L66",
+          "version": "repo-lines-v1:sha256:f4bf848627f3e2b476298a74391e93bea9ecb4facf2b1362955a6b08293b02e8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxZDBkNjc2NjkzYjYzNWYzOWFjYmNjMzdlMWFhYjNhZWIwMjNlOTNiOTIxNjZiNWU3MTQ4NDEzMTQyZTU4NDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4ZDNiOWU4ODBhNzc5NzU0OTNkYzdlMzU5MTQ0YzAyOTVhNGY2OTRjZmUwYWY0ZjkyOGMyMjMwN2JjNWMzMjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMxY2UxYWExMTY5NWQ5YjUxNTcwZGExNWYyMzlkNzBkMmY1Y2FkNThhNzg1MGQyYThkYTljZWQ1ODYxZDQ4MzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cb6ef9be1cc44919b176a233dae2fa4c",
+      "statement": "Nothing in the repository invokes the bundle checker's selftest automatically; the hook deliberately omits it because a push carries content rather than the checker's own correctness, and wiring it to CI is recorded as a future condition rather than current behavior.",
+      "evidence": [
+        {
+          "resource": "repo://docs/adr/0002-knowledge-bundle-scope-and-gate.md#L24-L31",
+          "version": "repo-lines-v1:sha256:3d31562a6168b4b602b4120e42888d7d8cb6361f32a27f5f17516f3d5edaba3b:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTZmYWUyMmU2OWFkNjM3NWY5MzBhYmE4NDY4MWJhZWIxNTA3MWZhMjRhOTc0ZTZjN2FjNDU3MDUxNzRjNzVkOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZWEwOTM1NzZiYjFiZDlmYTNhNmIyMzZkY2VhNzU5MWVhZGI0ZmM5MjNmMWNkMjhkYzk3ODlhN2JmOTgxOTI4MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWY3MzI4OWRlMWJiNWUzYTg0MzRjZmYzNjE2NzM4Zjg1ZTdkNDMyYzkxMzZjYTgwOTQwYjQ1OTgwYThhZWI4ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzdhZDJiYWM3ZmE4MDdiOWRhZTlkYWNkMDEzMWQ2NWY2NWQ4Y2MwNGNiNGMyZjAyMzkzYmYyOWQxMGRmMzExZiJ9"
+        },
+        {
+          "resource": "repo://.githooks/pre-push#L48-L66",
+          "version": "repo-lines-v1:sha256:e7e2cc3e95639d28e55a5a39a9bfa5658c2dd8f92f67ea7b957d84bf9ab27dc6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZmNGZmY2ExNmY5MWZiNjM2MjllMmI1ODA4OTBhMGM4MjUwOTYxNWM2ODM2ZjM5MjMyNDI5Yjg3NWI0YzQ4YzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4ZDNiOWU4ODBhNzc5NzU0OTNkYzdlMzU5MTQ0YzAyOTVhNGY2OTRjZmUwYWY0ZjkyOGMyMjMwN2JjNWMzMjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkMmQxYjIwZDNjYjJiODMxMjViOWJjN2MyM2NkM2QzZWVjODk0ZWRiMGI2MWY2NjkyNDMxMGY4MDY0YjU0NTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

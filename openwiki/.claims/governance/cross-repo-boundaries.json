@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:50b140101cfcb45c5bab17f4a23ffe973dfd573d90561e05006f3e368899db1b",
+  "claims": [
+    {
+      "id": "claim_cde0e3ca668840d7a054e762d1644e47",
+      "statement": "The lint reaches outside this repository to a sibling clone at a fixed relative path and raises an error when a published score disagrees with it, but returns silently when that sibling is absent, so the same commit is gated or ungated depending on what else exists on disk.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L214-L238",
+          "version": "repo-lines-v1:sha256:8ef96bd40eed34b6ff1622cb679d4d82782f074e54875b878d63cba576019b8c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhNGMxOWRiZmUyMDg2Y2ZmZGUzYWFhZWVmZmViYTVmMzc1ZWNlYTczZGZiNDM0MDEzMzk2NjZkODkzNTZlYjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhMjRmYjgzYmY1ZjM0NzkzYTEwMWY1ODY4MWU2YjJjYzJjOGQ1NDc1Yjg2MmRkOWRiYjUzNGRlYzllNzM2YTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1ZWRkNzE1YWVjNTgzNTU4NjU4MTBlMjQ1NWVmM2VjN2NlNzJjMDNiMzM5MjlkMDk0M2I3YmE2YzJkYWYwY2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyMTI4M2JlODMwYmIxOTQ2MWU5NDEyYjA5NWIzNDg2YzBiZmI2MjVkMGZhYzBkMzUzM2E2NWU1ZmZjMTBkNTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4bc2d2fbf5a64820bd986479078ce6dc",
+      "statement": "The score comparison only checks rows that appear in both tables and never requires a row to exist, so removing a competition row from the published table silently removes it from the check.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L228-L238",
+          "version": "repo-lines-v1:sha256:3f80e90ed1a2ea79b48e007f5405cc6ff684763ecef3057178f35520c5b8c08c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjViYzc2ZWE5MGI0Y2UxMGYwYTcxN2RhYmIyOWUyNzM5NGI5NjhkMDIwMGYxMjlkNDI1OWIxNjBjZWEzNTM4YzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhMjRmYjgzYmY1ZjM0NzkzYTEwMWY1ODY4MWU2YjJjYzJjOGQ1NDc1Yjg2MmRkOWRiYjUzNGRlYzllNzM2YTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMwZWJhZmIzMmYzYjUzMDkwYWNmYTkwMjUzZDBkNDRjMjQxMDQ2MDIxZmIyM2QyNTQ4MzhjOWVlMDA2YTdkMWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyMTI4M2JlODMwYmIxOTQ2MWU5NDEyYjA5NWIzNDg2YzBiZmI2MjVkMGZhYzBkMzUzM2E2NWU1ZmZjMTBkNTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_980ec2b40699405296323838a05f994a",
+      "statement": "The format source of truth for the knowledge bundle is an ADR in a different, non-public repository, so a reader of this repository cannot reach the document that decides the format it is being checked against.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L6-L15",
+          "version": "repo-lines-v1:sha256:2b2f398bc1fb611a8cc7de7d8fc96357c9b4b781613db9da2aeacd2142ffb9bb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyYWU5ZGRhZTQ4Y2U0MWRlYWJkMjJkNjAyYzhjN2EwYTQ1MmY2ZDBiNmY2MDQ3ODFlMjhmN2JiYTc4MTA0ODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIwN2U1NWE0Mjg5MTgwNTE0NDg1ZTM1MzhhZGYzOTdjODEzMmZmNzlkNmFkYjBiYmE2NjkyOTRmMDgxMmI0OTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYxNmFkOTQ4YmRkNDljZWIyYzY1ZDYzYzg4MWZlMmRmZThkMDUyMTQ4OTU1ZWE3NzZmNzg1NzMxNTY5YjAxZGQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_092de7b4f4a142ffa62bbaa4b2eae74e",
+      "statement": "The upstream-derived judgment module cites an adoption ADR by a repository-relative path that does not exist here, and because that citation is prose rather than a checked sources entry, no checker reddens on it.",
+      "evidence": [
+        {
+          "resource": "repo://tests/okf_document.py#L1-L14",
+          "version": "repo-lines-v1:sha256:157dd79b226d330d139466f3a85d197e0b514f6422ce06f9132db87a3718a871:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIxYzVjYTJkOWJkNDM5YmMwYmQ1MDQ2NzIyNjM2ZDUwZTRmODk3YTEyNmE2ZTRmYmM3MGQxMzBlMTRhOGNhYTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMGZhYzNjZDY1Y2M1OTg0ZTZjYjczNTNmOWFjZGUxNTg4MDBlMzBkN2U2NGU3MTI2YTA5ZmQ1YjYzNTZjYzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYyMTIxYmMzMDc0ODkxNTMzZjBjZmY0NDVmNTliNTU1MGY4NmJjNTA2ZmEzN2RlYTBiZTA4OGEzN2Y1ZmVkMzAifQ"
+        },
+        {
+          "resource": "repo://docs/adr/0002-knowledge-bundle-scope-and-gate.md#L1-L10",
+          "version": "repo-lines-v1:sha256:d7b3095a71eaa4dce64ecbbfb2735fe81f080eb6dad381d9dbdc8fc679aec9f8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2MjNkYzY5ZDY2Nzk4OTBmZTBiMTAzYzU3MjIxZjUzMDk1MGZjZTIyMWVlYTVlNGIzYjAzNWUzMTkxY2Y5YjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyMTM1M2UzMTNjZjllZmI4ODc3OGRkNDM1YTA4MzNkY2JhOWZmYTkxOWMxMTRiZjA3OGMxMzkyZDljMjAzZTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNiMTU3YTZkMjc2N2ZmN2Y0MTMzZWUyNzY1MTM2N2M2ZmRmZjdhYjRmZDliYTNjYjQyNjJlMmFhNDQ5MGNjYTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_17428dc0d7ea4a51b9dffa49ce6ef6f9",
+      "statement": "Decisions that span repositories are routed to the root repository's issues rather than this repository's ADR directory, and cross-repository references must be written as bare text because wrapping them in backticks stops GitHub from linking them.",
+      "evidence": [
+        {
+          "resource": "repo://docs/agents/issue-tracker.md#L30-L40",
+          "version": "repo-lines-v1:sha256:0a0ada4a505892cc70a584e8c722cd105fa870b71496d437ce52fed0dacb2aa6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjZTUyNmY3OWRkODMyZTQ0YjdiNTBmM2M1MTAwYTVjOGQwZDg0M2M3OWZmNDEyNTA4NmM3OTg0OTAxNmE1Y2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkYWMyYzkwZTE5MzQ2NDdlZTExNjgwZWM2NjVlOWNmM2IzYTQxNTJiYzBiYjY2YmE1NWMwMWY2OGNlNTNmZTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5MjAxODAwYmI4NzlhNjQzYzZmMTRjODViYTE5M2U3M2M4Y2Y2OTgyZmVkY2MzODEyNzExODZlNzIwZGQ1ZjUifQ"
+        },
+        {
+          "resource": "repo://docs/agents/domain.md#L46-L52",
+          "version": "repo-lines-v1:sha256:ccea1aadef99f56f44270e329eadd0e2d29174a6cdcf1f11930d8b5c1aff219a:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2Q4NjI4N2YwNmY1NmU3ZTRhMGFiZjVlNTk0NDc3ZmE3YjdmODllODhmNzEzMzgxYjU2YWVhNTQxMjNhNjA4YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzE2MGQzZjhlMjllYTkwMWU1ZWY0YjQxOWRhNmZlNDI1Mjc3ZjA5ZDIyNzc0ZGYwNWU3ZmY0NTA5NGI5YTg4YSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGRhZTc4NWI2ZTM5NjRjMGY5YmUzMDI4NTcxZTg5MTgxOWU2ZGYzNDA2NTY3M2MzMjM2MzMxYTNjNWQyZjk4ZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTdmYjhlYzg5ZTU1M2MwY2JkMDczZTdhNjg4MDc3MDQxMzE0YTM0MzdkZjAwODBiYjU1YTZhYzhmMzk5MjI4YSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ba1e516870324f48b35170b845faba9d",
+      "statement": "The lint reaches outside this repository to a sibling clone at a fixed relative path and raises an error when a published score disagrees with it, but returns silently when that sibling is absent, so the same commit is gated or ungated depending on what else exists on disk.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L214-L238",
+          "version": "repo-lines-v1:sha256:8ef96bd40eed34b6ff1622cb679d4d82782f074e54875b878d63cba576019b8c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhNGMxOWRiZmUyMDg2Y2ZmZGUzYWFhZWVmZmViYTVmMzc1ZWNlYTczZGZiNDM0MDEzMzk2NjZkODkzNTZlYjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhMjRmYjgzYmY1ZjM0NzkzYTEwMWY1ODY4MWU2YjJjYzJjOGQ1NDc1Yjg2MmRkOWRiYjUzNGRlYzllNzM2YTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1ZWRkNzE1YWVjNTgzNTU4NjU4MTBlMjQ1NWVmM2VjN2NlNzJjMDNiMzM5MjlkMDk0M2I3YmE2YzJkYWYwY2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyMTI4M2JlODMwYmIxOTQ2MWU5NDEyYjA5NWIzNDg2YzBiZmI2MjVkMGZhYzBkMzUzM2E2NWU1ZmZjMTBkNTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e0a2a193b8724adfb6d0c38393ae418a",
+      "statement": "The score comparison only checks rows that appear in both tables and never requires a row to exist, so removing a competition row from the published table silently removes it from the check.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L228-L238",
+          "version": "repo-lines-v1:sha256:3f80e90ed1a2ea79b48e007f5405cc6ff684763ecef3057178f35520c5b8c08c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjViYzc2ZWE5MGI0Y2UxMGYwYTcxN2RhYmIyOWUyNzM5NGI5NjhkMDIwMGYxMjlkNDI1OWIxNjBjZWEzNTM4YzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhMjRmYjgzYmY1ZjM0NzkzYTEwMWY1ODY4MWU2YjJjYzJjOGQ1NDc1Yjg2MmRkOWRiYjUzNGRlYzllNzM2YTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMwZWJhZmIzMmYzYjUzMDkwYWNmYTkwMjUzZDBkNDRjMjQxMDQ2MDIxZmIyM2QyNTQ4MzhjOWVlMDA2YTdkMWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyMTI4M2JlODMwYmIxOTQ2MWU5NDEyYjA5NWIzNDg2YzBiZmI2MjVkMGZhYzBkMzUzM2E2NWU1ZmZjMTBkNTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_11476dd975894cec9d52ab13499b26e8",
+      "statement": "The format source of truth for the knowledge bundle is an ADR in a different, non-public repository, so a reader of this repository cannot reach the document that decides the format it is being checked against.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L6-L15",
+          "version": "repo-lines-v1:sha256:2b2f398bc1fb611a8cc7de7d8fc96357c9b4b781613db9da2aeacd2142ffb9bb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyYWU5ZGRhZTQ4Y2U0MWRlYWJkMjJkNjAyYzhjN2EwYTQ1MmY2ZDBiNmY2MDQ3ODFlMjhmN2JiYTc4MTA0ODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIwN2U1NWE0Mjg5MTgwNTE0NDg1ZTM1MzhhZGYzOTdjODEzMmZmNzlkNmFkYjBiYmE2NjkyOTRmMDgxMmI0OTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYxNmFkOTQ4YmRkNDljZWIyYzY1ZDYzYzg4MWZlMmRmZThkMDUyMTQ4OTU1ZWE3NzZmNzg1NzMxNTY5YjAxZGQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_72645b63f46b4a998211d0599dcbb5e9",
+      "statement": "The upstream-derived judgment module cites an adoption ADR by a repository-relative path that does not exist here, and because that citation is prose rather than a checked sources entry, no checker reddens on it.",
+      "evidence": [
+        {
+          "resource": "repo://tests/okf_document.py#L1-L14",
+          "version": "repo-lines-v1:sha256:157dd79b226d330d139466f3a85d197e0b514f6422ce06f9132db87a3718a871:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIxYzVjYTJkOWJkNDM5YmMwYmQ1MDQ2NzIyNjM2ZDUwZTRmODk3YTEyNmE2ZTRmYmM3MGQxMzBlMTRhOGNhYTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMGZhYzNjZDY1Y2M1OTg0ZTZjYjczNTNmOWFjZGUxNTg4MDBlMzBkN2U2NGU3MTI2YTA5ZmQ1YjYzNTZjYzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYyMTIxYmMzMDc0ODkxNTMzZjBjZmY0NDVmNTliNTU1MGY4NmJjNTA2ZmEzN2RlYTBiZTA4OGEzN2Y1ZmVkMzAifQ"
+        },
+        {
+          "resource": "repo://docs/adr/0002-knowledge-bundle-scope-and-gate.md#L1-L10",
+          "version": "repo-lines-v1:sha256:d7b3095a71eaa4dce64ecbbfb2735fe81f080eb6dad381d9dbdc8fc679aec9f8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2MjNkYzY5ZDY2Nzk4OTBmZTBiMTAzYzU3MjIxZjUzMDk1MGZjZTIyMWVlYTVlNGIzYjAzNWUzMTkxY2Y5YjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyMTM1M2UzMTNjZjllZmI4ODc3OGRkNDM1YTA4MzNkY2JhOWZmYTkxOWMxMTRiZjA3OGMxMzkyZDljMjAzZTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNiMTU3YTZkMjc2N2ZmN2Y0MTMzZWUyNzY1MTM2N2M2ZmRmZjdhYjRmZDliYTNjYjQyNjJlMmFhNDQ5MGNjYTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_33a5f8a9048d47e8933e65edb42efc3e",
+      "statement": "Decisions that span repositories are routed to the root repository's issues rather than this repository's ADR directory, and cross-repository references must be written as bare text because wrapping them in backticks stops GitHub from linking them.",
+      "evidence": [
+        {
+          "resource": "repo://docs/agents/issue-tracker.md#L30-L40",
+          "version": "repo-lines-v1:sha256:0a0ada4a505892cc70a584e8c722cd105fa870b71496d437ce52fed0dacb2aa6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjZTUyNmY3OWRkODMyZTQ0YjdiNTBmM2M1MTAwYTVjOGQwZDg0M2M3OWZmNDEyNTA4NmM3OTg0OTAxNmE1Y2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkYWMyYzkwZTE5MzQ2NDdlZTExNjgwZWM2NjVlOWNmM2IzYTQxNTJiYzBiYjY2YmE1NWMwMWY2OGNlNTNmZTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5MjAxODAwYmI4NzlhNjQzYzZmMTRjODViYTE5M2U3M2M4Y2Y2OTgyZmVkY2MzODEyNzExODZlNzIwZGQ1ZjUifQ"
+        },
+        {
+          "resource": "repo://docs/agents/domain.md#L46-L52",
+          "version": "repo-lines-v1:sha256:ccea1aadef99f56f44270e329eadd0e2d29174a6cdcf1f11930d8b5c1aff219a:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2Q4NjI4N2YwNmY1NmU3ZTRhMGFiZjVlNTk0NDc3ZmE3YjdmODllODhmNzEzMzgxYjU2YWVhNTQxMjNhNjA4YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzE2MGQzZjhlMjllYTkwMWU1ZWY0YjQxOWRhNmZlNDI1Mjc3ZjA5ZDIyNzc0ZGYwNWU3ZmY0NTA5NGI5YTg4YSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGRhZTc4NWI2ZTM5NjRjMGY5YmUzMDI4NTcxZTg5MTgxOWU2ZGYzNDA2NTY3M2MzMjM2MzMxYTNjNWQyZjk4ZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTdmYjhlYzg5ZTU1M2MwY2JkMDczZTdhNjg4MDc3MDQxMzE0YTM0MzdkZjAwODBiYjU1YTZhYzhmMzk5MjI4YSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2a83f3097e5e4deebc67dc3075233c8d",
+      "statement": "The lint reaches outside this repository to a sibling clone at a fixed relative path and raises an error when a published score disagrees with it, but returns silently when that sibling is absent, so the same commit is gated or ungated depending on what else exists on disk.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L214-L238",
+          "version": "repo-lines-v1:sha256:8ef96bd40eed34b6ff1622cb679d4d82782f074e54875b878d63cba576019b8c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhNGMxOWRiZmUyMDg2Y2ZmZGUzYWFhZWVmZmViYTVmMzc1ZWNlYTczZGZiNDM0MDEzMzk2NjZkODkzNTZlYjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhMjRmYjgzYmY1ZjM0NzkzYTEwMWY1ODY4MWU2YjJjYzJjOGQ1NDc1Yjg2MmRkOWRiYjUzNGRlYzllNzM2YTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1ZWRkNzE1YWVjNTgzNTU4NjU4MTBlMjQ1NWVmM2VjN2NlNzJjMDNiMzM5MjlkMDk0M2I3YmE2YzJkYWYwY2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyMTI4M2JlODMwYmIxOTQ2MWU5NDEyYjA5NWIzNDg2YzBiZmI2MjVkMGZhYzBkMzUzM2E2NWU1ZmZjMTBkNTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_be73c63745eb40daa78ca5b35f3411a4",
+      "statement": "The score comparison only checks rows that appear in both tables and never requires a row to exist, so removing a competition row from the published table silently removes it from the check.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L228-L238",
+          "version": "repo-lines-v1:sha256:3f80e90ed1a2ea79b48e007f5405cc6ff684763ecef3057178f35520c5b8c08c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjViYzc2ZWE5MGI0Y2UxMGYwYTcxN2RhYmIyOWUyNzM5NGI5NjhkMDIwMGYxMjlkNDI1OWIxNjBjZWEzNTM4YzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhMjRmYjgzYmY1ZjM0NzkzYTEwMWY1ODY4MWU2YjJjYzJjOGQ1NDc1Yjg2MmRkOWRiYjUzNGRlYzllNzM2YTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMwZWJhZmIzMmYzYjUzMDkwYWNmYTkwMjUzZDBkNDRjMjQxMDQ2MDIxZmIyM2QyNTQ4MzhjOWVlMDA2YTdkMWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyMTI4M2JlODMwYmIxOTQ2MWU5NDEyYjA5NWIzNDg2YzBiZmI2MjVkMGZhYzBkMzUzM2E2NWU1ZmZjMTBkNTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_22b1db758ec34b04bd52d3b5b66608a0",
+      "statement": "The format source of truth for the knowledge bundle is an ADR in a different, non-public repository, so a reader of this repository cannot reach the document that decides the format it is being checked against.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L6-L15",
+          "version": "repo-lines-v1:sha256:2b2f398bc1fb611a8cc7de7d8fc96357c9b4b781613db9da2aeacd2142ffb9bb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyYWU5ZGRhZTQ4Y2U0MWRlYWJkMjJkNjAyYzhjN2EwYTQ1MmY2ZDBiNmY2MDQ3ODFlMjhmN2JiYTc4MTA0ODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIwN2U1NWE0Mjg5MTgwNTE0NDg1ZTM1MzhhZGYzOTdjODEzMmZmNzlkNmFkYjBiYmE2NjkyOTRmMDgxMmI0OTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYxNmFkOTQ4YmRkNDljZWIyYzY1ZDYzYzg4MWZlMmRmZThkMDUyMTQ4OTU1ZWE3NzZmNzg1NzMxNTY5YjAxZGQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b9d1f8785c1f4cb9a022f7d9232f7579",
+      "statement": "The upstream-derived judgment module cites an adoption ADR by a repository-relative path that does not exist here, and because that citation is prose rather than a checked sources entry, no checker reddens on it.",
+      "evidence": [
+        {
+          "resource": "repo://tests/okf_document.py#L1-L14",
+          "version": "repo-lines-v1:sha256:157dd79b226d330d139466f3a85d197e0b514f6422ce06f9132db87a3718a871:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIxYzVjYTJkOWJkNDM5YmMwYmQ1MDQ2NzIyNjM2ZDUwZTRmODk3YTEyNmE2ZTRmYmM3MGQxMzBlMTRhOGNhYTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMGZhYzNjZDY1Y2M1OTg0ZTZjYjczNTNmOWFjZGUxNTg4MDBlMzBkN2U2NGU3MTI2YTA5ZmQ1YjYzNTZjYzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYyMTIxYmMzMDc0ODkxNTMzZjBjZmY0NDVmNTliNTU1MGY4NmJjNTA2ZmEzN2RlYTBiZTA4OGEzN2Y1ZmVkMzAifQ"
+        },
+        {
+          "resource": "repo://docs/adr/0002-knowledge-bundle-scope-and-gate.md#L1-L10",
+          "version": "repo-lines-v1:sha256:d7b3095a71eaa4dce64ecbbfb2735fe81f080eb6dad381d9dbdc8fc679aec9f8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2MjNkYzY5ZDY2Nzk4OTBmZTBiMTAzYzU3MjIxZjUzMDk1MGZjZTIyMWVlYTVlNGIzYjAzNWUzMTkxY2Y5YjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyMTM1M2UzMTNjZjllZmI4ODc3OGRkNDM1YTA4MzNkY2JhOWZmYTkxOWMxMTRiZjA3OGMxMzkyZDljMjAzZTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNiMTU3YTZkMjc2N2ZmN2Y0MTMzZWUyNzY1MTM2N2M2ZmRmZjdhYjRmZDliYTNjYjQyNjJlMmFhNDQ5MGNjYTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_99ff06f4a4f04d0e9ef0aac7069a1c85",
+      "statement": "Decisions that span repositories are routed to the root repository's issues rather than this repository's ADR directory, and cross-repository references must be written as bare text because wrapping them in backticks stops GitHub from linking them.",
+      "evidence": [
+        {
+          "resource": "repo://docs/agents/issue-tracker.md#L30-L40",
+          "version": "repo-lines-v1:sha256:0a0ada4a505892cc70a584e8c722cd105fa870b71496d437ce52fed0dacb2aa6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjZTUyNmY3OWRkODMyZTQ0YjdiNTBmM2M1MTAwYTVjOGQwZDg0M2M3OWZmNDEyNTA4NmM3OTg0OTAxNmE1Y2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkYWMyYzkwZTE5MzQ2NDdlZTExNjgwZWM2NjVlOWNmM2IzYTQxNTJiYzBiYjY2YmE1NWMwMWY2OGNlNTNmZTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5MjAxODAwYmI4NzlhNjQzYzZmMTRjODViYTE5M2U3M2M4Y2Y2OTgyZmVkY2MzODEyNzExODZlNzIwZGQ1ZjUifQ"
+        },
+        {
+          "resource": "repo://docs/agents/domain.md#L46-L52",
+          "version": "repo-lines-v1:sha256:ccea1aadef99f56f44270e329eadd0e2d29174a6cdcf1f11930d8b5c1aff219a:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2Q4NjI4N2YwNmY1NmU3ZTRhMGFiZjVlNTk0NDc3ZmE3YjdmODllODhmNzEzMzgxYjU2YWVhNTQxMjNhNjA4YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzE2MGQzZjhlMjllYTkwMWU1ZWY0YjQxOWRhNmZlNDI1Mjc3ZjA5ZDIyNzc0ZGYwNWU3ZmY0NTA5NGI5YTg4YSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGRhZTc4NWI2ZTM5NjRjMGY5YmUzMDI4NTcxZTg5MTgxOWU2ZGYzNDA2NTY3M2MzMjM2MzMxYTNjNWQyZjk4ZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTdmYjhlYzg5ZTU1M2MwY2JkMDczZTdhNjg4MDc3MDQxMzE0YTM0MzdkZjAwODBiYjU1YTZhYzhmMzk5MjI4YSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_87b5aba13e9a42439c3798375cf30ebd",
+      "statement": "The score comparison finds its column by matching an exact header string as a table cell on both sides, so renaming that header in either repository empties the mapping and the comparison loop runs zero times while the lint still reports no errors.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L153-L176",
+          "version": "repo-lines-v1:sha256:828062eabb149a9acfebafeb290a4a7bc3039890abef81737d2b3ac1bcaf863e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0ZGQxZThlOWEwNjM0ZTE5MTkyNjI0ZTg5NzllZDZkMTcyMTRkMWY3NzUyOGFkMjM1MDBlNGI4MTc3OWM0ZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzNTFkMzNiNjQ4MGVhNTMwMzUzM2MxOGQ1MmMwOWE4N2UwYzZhOGQwYmU0OGZjMTliYWVlOWJiZjY0N2RmN2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkxOTQzYzVlM2IxMmU0ZTc2MTkyOTA1ZWI3N2I2YzU2MTFkMzY1ZDY1MDgwNjE5N2IxOGRhYmRhNTI4NGEzYjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZkMDcxZTcxZTYyNDQyOWQ1YWZiMDdiZjNiMDcxNTM5ZjAxNTA3MmZkMDVmZTNkODJhNzU4NzJmMzFkM2Y2NzkifQ"
+        },
+        {
+          "resource": "repo://_tools/site_lint.py#L214-L238",
+          "version": "repo-lines-v1:sha256:8ef96bd40eed34b6ff1622cb679d4d82782f074e54875b878d63cba576019b8c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhNGMxOWRiZmUyMDg2Y2ZmZGUzYWFhZWVmZmViYTVmMzc1ZWNlYTczZGZiNDM0MDEzMzk2NjZkODkzNTZlYjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhMjRmYjgzYmY1ZjM0NzkzYTEwMWY1ODY4MWU2YjJjYzJjOGQ1NDc1Yjg2MmRkOWRiYjUzNGRlYzllNzM2YTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1ZWRkNzE1YWVjNTgzNTU4NjU4MTBlMjQ1NWVmM2VjN2NlNzJjMDNiMzM5MjlkMDk0M2I3YmE2YzJkYWYwY2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyMTI4M2JlODMwYmIxOTQ2MWU5NDEyYjA5NWIzNDg2YzBiZmI2MjVkMGZhYzBkMzUzM2E2NWU1ZmZjMTBkNTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0f28cefdead44bfd9c9790babb1ef605",
+      "statement": "A green lint cannot distinguish three different states of the cross-repository score check: scores agree, the sibling repository is absent, or the header no longer matches and nothing was compared at all.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L214-L238",
+          "version": "repo-lines-v1:sha256:8ef96bd40eed34b6ff1622cb679d4d82782f074e54875b878d63cba576019b8c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhNGMxOWRiZmUyMDg2Y2ZmZGUzYWFhZWVmZmViYTVmMzc1ZWNlYTczZGZiNDM0MDEzMzk2NjZkODkzNTZlYjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhMjRmYjgzYmY1ZjM0NzkzYTEwMWY1ODY4MWU2YjJjYzJjOGQ1NDc1Yjg2MmRkOWRiYjUzNGRlYzllNzM2YTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1ZWRkNzE1YWVjNTgzNTU4NjU4MTBlMjQ1NWVmM2VjN2NlNzJjMDNiMzM5MjlkMDk0M2I3YmE2YzJkYWYwY2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyMTI4M2JlODMwYmIxOTQ2MWU5NDEyYjA5NWIzNDg2YzBiZmI2MjVkMGZhYzBkMzUzM2E2NWU1ZmZjMTBkNTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a2311f0e423d41ac9dc9b6cf15bf66d7",
+      "statement": "The score comparison depends on two independent string contracts that neither repository owns jointly: the header cell text that locates the score column, and the competition name in the first cell that keys the row, both of which must match verbatim across the two repositories.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L153-L176",
+          "version": "repo-lines-v1:sha256:828062eabb149a9acfebafeb290a4a7bc3039890abef81737d2b3ac1bcaf863e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0ZGQxZThlOWEwNjM0ZTE5MTkyNjI0ZTg5NzllZDZkMTcyMTRkMWY3NzUyOGFkMjM1MDBlNGI4MTc3OWM0ZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzNTFkMzNiNjQ4MGVhNTMwMzUzM2MxOGQ1MmMwOWE4N2UwYzZhOGQwYmU0OGZjMTliYWVlOWJiZjY0N2RmN2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkxOTQzYzVlM2IxMmU0ZTc2MTkyOTA1ZWI3N2I2YzU2MTFkMzY1ZDY1MDgwNjE5N2IxOGRhYmRhNTI4NGEzYjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZkMDcxZTcxZTYyNDQyOWQ1YWZiMDdiZjNiMDcxNTM5ZjAxNTA3MmZkMDVmZTNkODJhNzU4NzJmMzFkM2Y2NzkifQ"
+        },
+        {
+          "resource": "repo://foundations/index.qmd#L6-L13",
+          "version": "repo-lines-v1:sha256:84d8a59046b2ae9e83c85c048077979a3e9b218a078e628eef52d00994f301f4:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjU2ODczNTYwNzNlODAwMzQ4ZDBmZDEwYTZlZTAyNGRiYzYyZjg1MGQwZmNkY2I4YWNmYjZjYWQ3YTQ1ZTU0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTNiNDc3ZTFhYjdjNDMzZTAwNWE0MGQ2NTM4OTdlMGI2NmFlN2JlNTM3NTg5MTU1NmZkMmZlMDE3MTI1ZGI4YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9757b5f71b6c486b8c3ef2ac034c3717",
+      "statement": "The score check exists because a published score once drifted from its source of truth and the comparison caught it, which is the invariant that is not being enforced while the comparison runs empty.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L214-L222",
+          "version": "repo-lines-v1:sha256:9da98265eabb41be3c42804084b2ea075e9649e0f98cd00dcdbeadf772cef428:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWE0YzE5ZGJmZTIwODZjZmZkZTNhYWFlZWZmZWJhNWYzNzVlY2VhNzNkZmI0MzQwMTMzOTY2NmQ4OTM1NmViOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTk5MzlkODNkZGI1YTliNDYyN2MzYzgzZDhhYjE4MGFkMzMxZDAwMDY2NWJlMzBjYTYwNmIzNzNlMTVlODgyOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjVlZGQ3MTVhZWM1ODM1NTg2NTgxMGUyNDU1ZWYzZWM3Y2U3MmMwM2IzMzkyOWQwOTQzYjdiYTZjMmRhZjBjYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjk1YzBlNzU5Y2FiNzY0YTk4ZTAzOTE5NTFkNjMyNDdiZGVmNTQ5M2M5YzFiMzMyNjVlZTI3M2JkNmQyNjg3YiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:b69666d4cd0397122edb3a04d9f46a36572bf0af34e65309600585d67688b983",
+  "claims": [
+    {
+      "id": "claim_893abb160df541d792e55552ba0b65c5",
+      "statement": "The corpus ships two versions of the same bibliography, before and after duplicate merging, and the published table uses the merged one while the prose used the unmerged one, which is why two counts in the article once appeared to disagree.",
+      "evidence": [
+        {
+          "resource": "repo://_data/field-map-corpus/README.md#L7-L30",
+          "version": "repo-lines-v1:sha256:5017e7cd619fe5ba11ba7cdbbda382f5e351463cc00be7b21009d8f0bc87a391:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2ZDQxMmM5ZTBmM2ViYzIzNTJjZDEyOWFiNzk5N2UzYThhMjNlYmYzZDIxZWM3NWY5YjVmMTU0NzUyZGIwNDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMzNWNlNDRhZTk2NDlkOThjYTMzYTk5OWNlYWY2NTAxNGU5NzM5YmE4ZTIzZGIyMzUwNTRjZTg0ODgyOGJhYjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFlYzU5YzZmZjAxM2I5NDc0MWJmMDAzOWIyMzJhZTljYjc5Y2Y2NzYyMDBjMTI0NzM1ZDFhY2ExNDBlMmVjNDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_73f974e4714f45e29476d4ecc26f55e3",
+      "statement": "The corpus README records that a number printed in the published article has no traceable basis in any data file, appearing only as a sentence in the generated report with no computation behind it.",
+      "evidence": [
+        {
+          "resource": "repo://_data/field-map-corpus/README.md#L31-L37",
+          "version": "repo-lines-v1:sha256:d8e05644999bce9f40d9f0165d95659adac412bc3d64c4fdec10e0f7cf635a1a:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTA1YTg4ZDA1OTk1OTkyYTY4MmVkYTRjODI1NWFmMjc3YTg0YmQxZmE3N2Q5NTBlMDBhNDNhMzY1MGViMWMxYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmVkM2ZhMDdhMTRiNDJjM2IzZWQ1MjViM2I5MGU0NjlkYWVlNGZiYjljYzAwNjk0YjZiOTdlYjEzY2Q5ZGZhNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGZmOGUxYzFhN2ZiZDM0M2YxMWE3MmNlZTZmYzQ4YWM2Y2FlYjk0ZDA2Nzg1OGFjOWZlMGNhMmMwM2YxOTU3OSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_f808932c3a0a41689edda9b81a12cf11",
+      "statement": "Two incompatible classifications exist over the same bibliography, and only one of them backs the published map, so validating published numbers against the other set makes every figure disagree.",
+      "evidence": [
+        {
+          "resource": "repo://_data/field-map-corpus/README.md#L38-L42",
+          "version": "repo-lines-v1:sha256:c34bef266912e8022bf256448f5bd7bfa736feb8bcd328466b1b0b97c675008a:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzY3NjQ5ZTQ4N2U3MWEwZTk0NTYzOGFmMTY1NGE1NDEwYWFkY2E2MDYxMmU0NjA1MWNmMTExYjE4YWUxZDM0MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDRjMTVkMzllYTY2MTM3YWRjZGU5MzAwZjZjNmQ4ZTQyZTdhMjA4ZTczOGQxNDA5N2YyYmI4ZTliNTg0ZTljMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTY4NDZjZTMxNTE2YjljZTVhNDBkYmU3YzIxZGI0NWNmZjYxZTExNzc1ZDlhNDcxZTdjMzVmZDg1MTczOWU2OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9d00eb5f312448adbac2b4b270d6362a",
+      "statement": "Citation counts in the corpus come from a different source than the ones quoted per paper in published reviews, because the corpus source severely undercounts preprints by splitting records.",
+      "evidence": [
+        {
+          "resource": "repo://_data/field-map-corpus/README.md#L31-L37",
+          "version": "repo-lines-v1:sha256:d8e05644999bce9f40d9f0165d95659adac412bc3d64c4fdec10e0f7cf635a1a:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTA1YTg4ZDA1OTk1OTkyYTY4MmVkYTRjODI1NWFmMjc3YTg0YmQxZmE3N2Q5NTBlMDBhNDNhMzY1MGViMWMxYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmVkM2ZhMDdhMTRiNDJjM2IzZWQ1MjViM2I5MGU0NjlkYWVlNGZiYjljYzAwNjk0YjZiOTdlYjEzY2Q5ZGZhNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGZmOGUxYzFhN2ZiZDM0M2YxMWE3MmNlZTZmYzQ4YWM2Y2FlYjk0ZDA2Nzg1OGFjOWZlMGNhMmMwM2YxOTU3OSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

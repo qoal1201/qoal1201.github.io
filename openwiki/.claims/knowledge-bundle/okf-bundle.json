@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:2d2789301da2e0f48d70b2f1e36de2e2168cb6533873ef8638d2866b6de1be3a",
+  "claims": [
+    {
+      "id": "claim_2bb65b2de47648f0960b948901be8cab",
+      "statement": "The knowledge bundle holds concepts this repository re-argues, not definitions; definitions live in CONTEXT.md and each card cites that file as a source instead of restating it, because two copies of one definition drift and nothing reddens when they do.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L28-L45",
+          "version": "repo-lines-v1:sha256:409a9d7211cdb9a41a5f30bb985e361c0f64e869c29d6d6d185f46330b4bbf5f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4MzJjOTZhZmQ5ZmEzMmE1YjNkZjg4MDQ1YjRhOTNmNGFiM2JmZGUwNTQ4ZjBhMmQ0YjZkY2ZiYjI4MjI0N2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYzMjYzOWQ5OGZmOTMwMjdiYWI5MmJmZDI5MmM5ZTBiMTEyYTBlYWVmMWMyYjU5OThkODg0MTBmYmI2MjNjOGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxMGMyMjEyOWFiZmZmMDIwNjBjNDVjNWQzMDA4NTMzOTllOTg0NmZkNGZlNDNiMTg0ZGE4OTE3OWU0NWE0ODAifQ"
+        },
+        {
+          "resource": "repo://knowledge/three-layers.md#L1-L15",
+          "version": "repo-lines-v1:sha256:6cd32851a66fae12422ad9255359b3a8abbdc1555e3ccd33a1342d7d26be8a54:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQyMjZlYWFhMDZlNWFiYjAwNGNhNzJmMjA1OWFlZTU3NTZmNDE3ZDYxN2M2YWJjOGMwNjAwNDlhODI4Y2QwNTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fe62680031c543c6b06dfac2a82b25f8",
+      "statement": "The bundle's index enumerates the other places knowledge already lives in this repository and rules most of them out of scope, so the bundle is defined by exclusion rather than by being the default destination.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L16-L27",
+          "version": "repo-lines-v1:sha256:c2d4fd36615d3e8e9a90374444599eb23b1ae2eb4de38a2695a669e8b81f7ee9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2YWNjZDQ4ODY0NGQ3YzgwNTYzZTVmOWYyZGUyNWRhYjQ0MmY0NjY0NWM4MTlmZTU1OTA4ODlhNDkwNWI5NzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJmYTcyMzU5ZWI3YTQ3ZjkyMDMwM2MxNWNhMmJlY2RlMWVlYzU4NzU0MGJhNmM5ZTlmYTExYTBkMThkODUxZjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJiYTI0ZDdiMDlmNTgzNjE1MjIxNTRiMWQxZjgxOGQ1MmU3OGVlMTBhZjNiZGZjODIxMzIxNWM5NDRmMjI0ZmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_44f54d62840b4855a99ec27f0c3a687b",
+      "statement": "The declared floor of three equals the current card count, which is what makes it unable to push for new content; its only effect is that silently losing a card turns the check red and forces the removal decision to be recorded.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L46-L56",
+          "version": "repo-lines-v1:sha256:8f205f0a200bd29efc428ea0834e65505cb303866778efddca698741d8e10ea3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0Y2FmODVlOGUyN2RjYzFhMTk5YzA5MGRiYTFjZWZiNTFiZWVmMWIyYTQzY2IzZjJmNzhmNmMwYTk4OGY1ODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRkMjExOGIyOTcyY2QwOTNhYjk3ODYyZWU4MzlmMTQ5ZTI5NWJmZjAyZjE1Y2U0MjMyZTczZGJhZDNlNTdmMzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlZDFjYzhiNjkxZTAwMDdiNWRkNjdlMjBlODI4ODM2Y2Y2MGJlYWFhYzRjMjA3MDhiYTQyZGZkODc1MzQwNjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cf1d154f3907439cb525a1de0fe0accc",
+      "statement": "The index states that most of this repository's knowledge mass sits outside git, which is why the bundle check cannot run in GitHub Actions: a CI checkout does not contain the excluded material at all.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L57-L75",
+          "version": "repo-lines-v1:sha256:646645973650d2f25f2ce682b476f0cff62115df0cd90405a81182cab1b3e0b5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5MjM1OWM2Zjk4MjZiYTQ1OTNkZWM1YzA5ZmEyMzMzZjk3ZjQ4YjJmYzk3MmM5YmQyZDFmNmNjNTgzNDVkZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1NmU3ZGM4ZGEyN2EyZjZlYmEzNjQ0YTU5YmI4NjM0M2E4MjhiYmY5YTEyNWUzZmMyMGQxZWU5Y2E5MTQ4NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1NzQ2NjVhY2JmZjVlNGM4OTQxMjRmODEzODY2M2QzMjUxN2E5YzBkODllZGZjMDQ2NzFkZDFkYjY3NDM5YWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI1ZjYzNzcxZmQxN2I5MDQ3YWVhYTA2ZTIyOTU5NTVhY2M4YjVjMGFhZGQxZmE0ODk1MWIwMjU5MThiZTUxNTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_878687b2aa264f269e38c6d498fe3ce2",
+      "statement": "The knowledge bundle holds concepts this repository re-argues, not definitions; definitions live in CONTEXT.md and each card cites that file as a source instead of restating it, because two copies of one definition drift and nothing reddens when they do.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L28-L45",
+          "version": "repo-lines-v1:sha256:409a9d7211cdb9a41a5f30bb985e361c0f64e869c29d6d6d185f46330b4bbf5f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4MzJjOTZhZmQ5ZmEzMmE1YjNkZjg4MDQ1YjRhOTNmNGFiM2JmZGUwNTQ4ZjBhMmQ0YjZkY2ZiYjI4MjI0N2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYzMjYzOWQ5OGZmOTMwMjdiYWI5MmJmZDI5MmM5ZTBiMTEyYTBlYWVmMWMyYjU5OThkODg0MTBmYmI2MjNjOGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxMGMyMjEyOWFiZmZmMDIwNjBjNDVjNWQzMDA4NTMzOTllOTg0NmZkNGZlNDNiMTg0ZGE4OTE3OWU0NWE0ODAifQ"
+        },
+        {
+          "resource": "repo://knowledge/three-layers.md#L1-L15",
+          "version": "repo-lines-v1:sha256:6cd32851a66fae12422ad9255359b3a8abbdc1555e3ccd33a1342d7d26be8a54:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQyMjZlYWFhMDZlNWFiYjAwNGNhNzJmMjA1OWFlZTU3NTZmNDE3ZDYxN2M2YWJjOGMwNjAwNDlhODI4Y2QwNTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b3a84a78af8e4d81a7fed6d500607637",
+      "statement": "The bundle's index enumerates the other places knowledge already lives in this repository and rules most of them out of scope, so the bundle is defined by exclusion rather than by being the default destination.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L16-L27",
+          "version": "repo-lines-v1:sha256:c2d4fd36615d3e8e9a90374444599eb23b1ae2eb4de38a2695a669e8b81f7ee9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2YWNjZDQ4ODY0NGQ3YzgwNTYzZTVmOWYyZGUyNWRhYjQ0MmY0NjY0NWM4MTlmZTU1OTA4ODlhNDkwNWI5NzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJmYTcyMzU5ZWI3YTQ3ZjkyMDMwM2MxNWNhMmJlY2RlMWVlYzU4NzU0MGJhNmM5ZTlmYTExYTBkMThkODUxZjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJiYTI0ZDdiMDlmNTgzNjE1MjIxNTRiMWQxZjgxOGQ1MmU3OGVlMTBhZjNiZGZjODIxMzIxNWM5NDRmMjI0ZmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_92b4b522a5be4672a7841b23be06d6eb",
+      "statement": "The declared floor of three equals the current card count, which is what makes it unable to push for new content; its only effect is that silently losing a card turns the check red and forces the removal decision to be recorded.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L46-L56",
+          "version": "repo-lines-v1:sha256:8f205f0a200bd29efc428ea0834e65505cb303866778efddca698741d8e10ea3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0Y2FmODVlOGUyN2RjYzFhMTk5YzA5MGRiYTFjZWZiNTFiZWVmMWIyYTQzY2IzZjJmNzhmNmMwYTk4OGY1ODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRkMjExOGIyOTcyY2QwOTNhYjk3ODYyZWU4MzlmMTQ5ZTI5NWJmZjAyZjE1Y2U0MjMyZTczZGJhZDNlNTdmMzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlZDFjYzhiNjkxZTAwMDdiNWRkNjdlMjBlODI4ODM2Y2Y2MGJlYWFhYzRjMjA3MDhiYTQyZGZkODc1MzQwNjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_43ecec52afd841879c2d5b903cbae31f",
+      "statement": "The index states that most of this repository's knowledge mass sits outside git, which is why the bundle check cannot run in GitHub Actions: a CI checkout does not contain the excluded material at all.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L57-L75",
+          "version": "repo-lines-v1:sha256:646645973650d2f25f2ce682b476f0cff62115df0cd90405a81182cab1b3e0b5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5MjM1OWM2Zjk4MjZiYTQ1OTNkZWM1YzA5ZmEyMzMzZjk3ZjQ4YjJmYzk3MmM5YmQyZDFmNmNjNTgzNDVkZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1NmU3ZGM4ZGEyN2EyZjZlYmEzNjQ0YTU5YmI4NjM0M2E4MjhiYmY5YTEyNWUzZmMyMGQxZWU5Y2E5MTQ4NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1NzQ2NjVhY2JmZjVlNGM4OTQxMjRmODEzODY2M2QzMjUxN2E5YzBkODllZGZjMDQ2NzFkZDFkYjY3NDM5YWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI1ZjYzNzcxZmQxN2I5MDQ3YWVhYTA2ZTIyOTU5NTVhY2M4YjVjMGFhZGQxZmE0ODk1MWIwMjU5MThiZTUxNTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_14585219d0a747d499a803683633c612",
+      "statement": "The knowledge bundle holds concepts this repository re-argues, not definitions; definitions live in CONTEXT.md and each card cites that file as a source instead of restating it, because two copies of one definition drift and nothing reddens when they do.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L28-L45",
+          "version": "repo-lines-v1:sha256:409a9d7211cdb9a41a5f30bb985e361c0f64e869c29d6d6d185f46330b4bbf5f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4MzJjOTZhZmQ5ZmEzMmE1YjNkZjg4MDQ1YjRhOTNmNGFiM2JmZGUwNTQ4ZjBhMmQ0YjZkY2ZiYjI4MjI0N2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYzMjYzOWQ5OGZmOTMwMjdiYWI5MmJmZDI5MmM5ZTBiMTEyYTBlYWVmMWMyYjU5OThkODg0MTBmYmI2MjNjOGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxMGMyMjEyOWFiZmZmMDIwNjBjNDVjNWQzMDA4NTMzOTllOTg0NmZkNGZlNDNiMTg0ZGE4OTE3OWU0NWE0ODAifQ"
+        },
+        {
+          "resource": "repo://knowledge/three-layers.md#L1-L15",
+          "version": "repo-lines-v1:sha256:6cd32851a66fae12422ad9255359b3a8abbdc1555e3ccd33a1342d7d26be8a54:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQyMjZlYWFhMDZlNWFiYjAwNGNhNzJmMjA1OWFlZTU3NTZmNDE3ZDYxN2M2YWJjOGMwNjAwNDlhODI4Y2QwNTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f2f54848157c400cb182e4bf0455f005",
+      "statement": "The bundle's index enumerates the other places knowledge already lives in this repository and rules most of them out of scope, so the bundle is defined by exclusion rather than by being the default destination.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L16-L27",
+          "version": "repo-lines-v1:sha256:c2d4fd36615d3e8e9a90374444599eb23b1ae2eb4de38a2695a669e8b81f7ee9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2YWNjZDQ4ODY0NGQ3YzgwNTYzZTVmOWYyZGUyNWRhYjQ0MmY0NjY0NWM4MTlmZTU1OTA4ODlhNDkwNWI5NzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJmYTcyMzU5ZWI3YTQ3ZjkyMDMwM2MxNWNhMmJlY2RlMWVlYzU4NzU0MGJhNmM5ZTlmYTExYTBkMThkODUxZjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJiYTI0ZDdiMDlmNTgzNjE1MjIxNTRiMWQxZjgxOGQ1MmU3OGVlMTBhZjNiZGZjODIxMzIxNWM5NDRmMjI0ZmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_393c76e050f64541adf4178eb7e58199",
+      "statement": "The declared floor of three equals the current card count, which is what makes it unable to push for new content; its only effect is that silently losing a card turns the check red and forces the removal decision to be recorded.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L46-L56",
+          "version": "repo-lines-v1:sha256:8f205f0a200bd29efc428ea0834e65505cb303866778efddca698741d8e10ea3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0Y2FmODVlOGUyN2RjYzFhMTk5YzA5MGRiYTFjZWZiNTFiZWVmMWIyYTQzY2IzZjJmNzhmNmMwYTk4OGY1ODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRkMjExOGIyOTcyY2QwOTNhYjk3ODYyZWU4MzlmMTQ5ZTI5NWJmZjAyZjE1Y2U0MjMyZTczZGJhZDNlNTdmMzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlZDFjYzhiNjkxZTAwMDdiNWRkNjdlMjBlODI4ODM2Y2Y2MGJlYWFhYzRjMjA3MDhiYTQyZGZkODc1MzQwNjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fec1eff256d34475aab4630d1e3dedab",
+      "statement": "The index states that most of this repository's knowledge mass sits outside git, which is why the bundle check cannot run in GitHub Actions: a CI checkout does not contain the excluded material at all.",
+      "evidence": [
+        {
+          "resource": "repo://knowledge/index.md#L57-L76",
+          "version": "repo-lines-v1:sha256:a316cbc92440b7e6bc3c2e29365d942c748b36374e96dd1c0146ca5f867fbba9:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5MjM1OWM2Zjk4MjZiYTQ1OTNkZWM1YzA5ZmEyMzMzZjk3ZjQ4YjJmYzk3MmM5YmQyZDFmNmNjNTgzNDVkZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI1ZjYzNzcxZmQxN2I5MDQ3YWVhYTA2ZTIyOTU5NTVhY2M4YjVjMGFhZGQxZmE0ODk1MWIwMjU5MThiZTUxNTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1NzQ2NjVhY2JmZjVlNGM4OTQxMjRmODEzODY2M2QzMjUxN2E5YzBkODllZGZjMDQ2NzFkZDFkYjY3NDM5YWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

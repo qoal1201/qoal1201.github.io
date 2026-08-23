@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:77b53b249edf790b4f8e9daf54139e7b45f05a5be746c417b9a8e1065009d298",
+  "claims": [
+    {
+      "id": "claim_35b99b1480674f5e8772edf77dd7b5ab",
+      "statement": "The published surfaces divide by content model rather than topic: experiment articles are timelines that stop changing once closed, while reviews, the glossary, and the prologue are gardens that keep being revised, and git rather than the document preserves their history.",
+      "evidence": [
+        {
+          "resource": "repo://_templates/experiment.qmd#L1-L19",
+          "version": "repo-lines-v1:sha256:215ef43cc0972e43ded80cb1fda6f760a49dbbf411765b29071b2f3f28460422:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxOTRhODY4MGE3ZTE5MjFlMzZmNGY1MThlMmJhYjI5ZDYwODdlMmFmYTk1MTU2OThlNWE3NTJiOTIxZmZmYzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://CONTEXT.md#L40-L48",
+          "version": "repo-lines-v1:sha256:fce4e3a5d4fea5e41c679b5c20424e694eddd41ab643153436522fd5491f29b6:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODNiNDdjMWM0NWY3Nzg5ZDAyZjM5NjQyMzE0MDNkYTdlYmRkODYwMTcwZTI0ZDA0MTk3MmFjYzJkOWFhZmQ1MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzljZTg2OGE4MTg0OTZmMThlMWU1OTkwMzI3MTM3YjA0ZmRjYzJjOTEyYjY3MTQyYWM1NWZkZDAxMTZkNjVhMyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_140d73ec6cdc4d66bdb9e85720112ba4",
+      "statement": "The paper-review template is a skeleton guide rather than a string to copy, and it fixes section order by order of understanding rather than by the paper's table of contents, with different skeletons for architecture, measurement, and position papers.",
+      "evidence": [
+        {
+          "resource": "repo://_templates/paper-review.qmd#L1-L30",
+          "version": "repo-lines-v1:sha256:3bb8968e0453a5fecb799bae6f1bfa0df04a474426cea50d1a5ac96fa962bf7e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxODliNTgyMDAzZTljMzY0YjYyZmE1YTljYWMyYjI2YTNiMTJjMmRmYzUxMDZhYzU1NWY1NzdmMjI1MWNlM2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA3NzMwYTA4MTQ1ZWQ2MTY1YTBkYWY1NmVmZmI0YTVmMmUyN2M5ZmQyNWFlYzNhOGU0OGE0OTdiOTVjOWQyZmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE5YzE3OTVmOGI5OTRjNGY0N2M0YjQ3OWRmNzkwOWNhYzZkYjgzMDYwMzAxMDlkMTY2MjU2Zjc5ODU1MTA4ZDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2edc50e12a3a42ad903f2cea657c0758",
+      "statement": "Foundations notebooks render from saved execution output and are never re-run during a build, because competition CSVs cannot be redistributed and are therefore absent from the repository.",
+      "evidence": [
+        {
+          "resource": "repo://foundations/index.qmd#L6-L13",
+          "version": "repo-lines-v1:sha256:84d8a59046b2ae9e83c85c048077979a3e9b218a078e628eef52d00994f301f4:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjU2ODczNTYwNzNlODAwMzQ4ZDBmZDEwYTZlZTAyNGRiYzYyZjg1MGQwZmNkY2I4YWNmYjZjYWQ3YTQ1ZTU0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTNiNDc3ZTFhYjdjNDMzZTAwNWE0MGQ2NTM4OTdlMGI2NmFlN2JlNTM3NTg5MTU1NmZkMmZlMDE3MTI1ZGI4YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://README.md#L26-L31",
+          "version": "repo-lines-v1:sha256:c800b15e4208db23de6b0a5600e493443920d3a97dfcc06448a96d4a2b35a6aa:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDhiNDMxZGYzYzM4NzQ2MjlkYzYxZDhkNDM0YjJjMGY3M2NhNmQ5NWU3NmU5N2U1M2UyZTFmM2NjZDJiMTVkZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjUxOTBlOWI5NGYzZjlmYzQwN2NiNWE5YjAyYzYyNGNlNmU5NTMzYmQxODlkNjRmNmM1NGVkODFjNDM0N2ZhMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjEzYWFlMDU0YmM1ZTI1NDI2YTE0OWUyYjYyMzRmMGNkMjUwNWI4MzU1ODI0ZmE2MzM3MmVjZWYyOGMwMWRmYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_38722745aaf64b4c8513339eec0858ba",
+      "statement": "The reproduction skeleton template carries its own requirements.txt, which is a scaffold for a future reproduction rather than a dependency declaration for this repository; the repository root has no dependency manifest at all.",
+      "evidence": [
+        {
+          "resource": "repo://_templates/reproduction-skeleton/requirements.txt",
+          "version": "repo-file-v1:sha256:67b12d4fb3f6374b0d5aea60c756c7daf9db0be31415ffa247b33fe4dea2b611"
+        },
+        {
+          "resource": "repo://_templates/reproduction-skeleton/README.qmd#L1-L19",
+          "version": "repo-lines-v1:sha256:b62ad80ac64c4aac5889f5da7dcfb42bcd577bafd1bdfaaceb9bf756a823b73b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ0YWQ1MTY2Nzk3YjM5MWYzODlkNmYyYmIzOTIzMTQ4YjRjMzRiNDVmMjYyMGUxZGIyMjU0MzE0ODM5NDJmMmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

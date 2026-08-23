@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:1e32928ac9bbdc57e784cdc458415e63ae6e7c781f56f7a3fd41591780710daa",
+  "claims": [
+    {
+      "id": "claim_87950054521349bf9f6fa496eb412ec5",
+      "statement": "This repository is a Quarto website plus the guards that keep its published claims honest; it has no application runtime, no root dependency manifest, and its only build entrypoint is the Quarto project file.",
+      "evidence": [
+        {
+          "resource": "repo://_quarto.yml#L1-L44",
+          "version": "repo-lines-v1:sha256:cdd8ac776f9361c2d98069a2fdac762efc24a1bf2d2b18ead00c1494b9b9fbff:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkMmFhY2QzMmU1NWM1OTU2MmJjMTRlMmU0Mjc0ZDY1ZDJjMzFiMjAxMDZjZmE2YWIwNjNmYzM0NGRlMTcxOWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzNTdhMmNlMWM2MzJiOGJmZWVkNDU4YzYxYTJlZWVmYmRkZTMzMjcxODhlOGM3ZTFhZjc4OWE2MDIxNzRhNWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://README.md#L1-L31",
+          "version": "repo-lines-v1:sha256:17029e7d6fef577774ba47b1bb554fbb873797981e7d375162d31b461ec612b5:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgyMTc2M2NiNmVmODI1OWZlOTAwMTMzMTI0MDA0NmEwYjBlYzAzZDJlNzcxOTk2ZDExMjcxNWJiZGEwODdjMTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1MTkwZTliOTRmM2Y5ZmM0MDdjYjVhOWIwMmM2MjRjZTZlOTUzM2JkMTg5ZDY0ZjZjNTRlZDgxYzQzNDdmYTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e21872e54b1e44ffbd74d9600f3a5104",
+      "statement": "Two independent pipelines act on a push: the pre-push hook runs locally and can refuse the push, while the publish workflow runs in GitHub Actions and only renders and deploys, so nothing in CI validates editorial correctness.",
+      "evidence": [
+        {
+          "resource": "repo://.githooks/pre-push#L32-L66",
+          "version": "repo-lines-v1:sha256:e6511d9f6925e77c20986bf4021b15c5b1b6b3de9c9b7291f6241b4afa080a16:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5NmRhODViYTk1ZmM1MjhjM2IxN2I1ZjI0ZTBiODJlNDg1YzM1M2M2ZGJhMmM2OWFlZjJjNzE2MmQ5YTM2NTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4ZDNiOWU4ODBhNzc5NzU0OTNkYzdlMzU5MTQ0YzAyOTVhNGY2OTRjZmUwYWY0ZjkyOGMyMjMwN2JjNWMzMjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJiZTIwNWQ0NjE1YzI0YzQwNzlmZmRjMDdmNjE1ZjJmNGRjZTJlMmQ2Mzc4MmZjZGFhN2VkMTE5ODNkZmQ2YTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/publish.yml#L1-L38",
+          "version": "repo-lines-v1:sha256:f94341d4e79a27527fa75fcbd118168330e3dee80dae24d8b09b560811cb6263:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkODdlYmJkMmE5M2Q0NTVmZDNmNTQ4YjUzNjRhNmEyZmY5NTg2NDM3ZmQyZGU0OGIwMmZlMGIyMDA5YzkyMzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2MzQxMzJhMWI5YWUwNmQ4YjQ5YjY1ZTY0YmVhNTExZGQ2MGI5N2NkYjJhNDM1ZTQ2ZDAwYjIwYjUwODJjZGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0817f381ce7c4f6988eed5ace2cfa727",
+      "statement": "A scheduled workflow regenerates this wiki daily and opens a pull request, requiring a provider API key secret and write permissions on contents and pull requests.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/openwiki-update.yml#L1-L60",
+          "version": "repo-lines-v1:sha256:3fab13c0b339333f4a09e8e51f51d858b054bac0cb400b30c3990c42d162ead9:eyJzZWxlY3RlZExpbmVDb3VudCI6NjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2MDI3ODdhZjZkY2MwODM0ZGUxMjFjYmIxY2I5NWY5NDU5YjcyMWVhYjAzNDlmMTA1MDFiOTk2YzFjNzdmZmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUxNjE4YTI0ZmM2Y2MyYTBjNTU5ZjEyNzIxOTljZjI2ZGI2MDFiMWZmNDgxYmUyMDAwZTc5NTNhZjFlY2QwZGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUwOTBkMGFjMDhlYTQzZmEwOGZmOTk5YTI0ZmU3ODMzNDZkMDAxMzAwOTY4NTBlYTk0YzU3ZGE4MzFlODQ4OTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1d081b1e69b64624841ff9d707c2ef4b",
+      "statement": "The repository README still lists a top-level page that no longer exists, and the same removed page is named in a chart generator docstring and kept alive only as a redirect target.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L7-L16",
+          "version": "repo-lines-v1:sha256:83e15a0d2b14f83376aa2d215f1165c48d381f830be9f2379ad721b73ec7a8c2:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljNTRjYzUzNWFlODc4NzllYjRmMDJjNGY5MTAyZmI5MmQzMTM1Mzk5ZDNmNzVlYWU1N2E0NzM3MDYzZDZiYTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyOThlZGU0YjY0MTIzMGYwZDczNDdkZjZkMDBiNjRhNjg3NmU4ODI0Y2Y5ZDg4MWQ1MmRjYWY4MjgwNjg1MjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdmMzBmN2EzMGQ0ZGM4ZWZlYmIzOThiNjc5NzlkNjBjZTRmYmUyMGQ4NWE3YzVhYTBlNmUzM2Q2NzdhYjMzNmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY5YzgxNDY3MDc5OWQ3MGIwYTU3ZDg1ODA5ZjI4MDJjOTE1OTg1YzFjYTJiY2ZkMjgyMGRhMDk0MGY1YTQ5MjcifQ"
+        },
+        {
+          "resource": "repo://_tools/make_field_map_charts.py#L1-L12",
+          "version": "repo-lines-v1:sha256:916d83c8a07817c2683d8edb1aa34e852f26c080178c7d0122aa5334c756d7f9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRjMTI1M2NlYzJmYmVlNDYzNzhkNmVkYzhjZjBhYjMwY2Q5ZDJhNGE4MGM2YTczNzQ4MGRhZjhjNDkwZjA2MDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMDNlY2RkNGE0ZDEwZjE5YzczZmQ0MmZkMTI0MzdmZDMzNTRhODI2ODE2MDVkYTUyNTVhOTdhMzkwNjhkYmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiZTA3NWVmNDMyNjkxN2FkYmI1ODUwMDI0YjQ1NjcxZmFlMzA0MWJhNGFhMTYzZWYzMWI3NDIwMGE3MDA0ZjEifQ"
+        },
+        {
+          "resource": "repo://experiments/2026-06-29-prologue.qmd#L6-L11",
+          "version": "repo-lines-v1:sha256:2c9c029629a8862b027bdaba6541cf737a117c6ab9076ba98b32ef27e6e0e5cf:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTlhNjkzOTQ4YmNjZTEwZmI2M2M0OTUxYTBhZjhhM2RmNGY2ZjE4ZGYyYTJhOTgzZjgyMTVmYjZhMTk0NzNmZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWZiMmYyOTYxNTNjZGE0MGYxMGIyYWRhYTMyYmExZDVlMTQ3ZTE4YzNmY2ZhOTE1YzhhZmIzNDU2MDQ3OTU0NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDEzZTFlODQ2YmZiOGRkZjdkY2E0MDNmMWZmNjgwOTk3ZjMyZTZiNGI1YTM4M2Y3NzVmZDIyMjE1MzczYTc3NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjRiZTAwODM5NjA2NTI2NjFmNWE4YTg3ODNiODAwNzFjMTAxNzg0NTQ0OTliODk2NmVlYzM1NTUwOGUzYjM0ZiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

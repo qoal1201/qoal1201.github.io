@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:9d76f1a72c270bfd61d629c3bea1b091bda1d59b9243c55e3308d14c8ef385d1",
+  "claims": [
+    {
+      "id": "claim_1cfcdf2d649e47719e92ee803f343364",
+      "statement": "sync_dates.py derives each review's date-modified from git rather than from hand-maintained frontmatter, using today's date when the working tree has content changes and the last content-changing commit date otherwise.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/sync_dates.py#L1-L30",
+          "version": "repo-lines-v1:sha256:16e1779354f3779ce89490fbe337d7788d6f35a5e52410e39cff1486442d2d48:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2ODJjYmRiNGM4YjA3NTE4YmY0ODZjNTg5OTBmYzM5MTc4M2FhMjBhOTE2YmZiMjdhZDIxMWViMWQ1YzM2NDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM2ODA1MGNhYWFjMDM2ZmM1Zjk1YmM1ZDZkMmI2ZGJkNTI3MjNiMTNlMWViODRjYjA0YjM4YjFkMmZlODFlZGUifQ"
+        },
+        {
+          "resource": "repo://_tools/sync_dates.py#L110-L120",
+          "version": "repo-lines-v1:sha256:5bab0657add45b9afcb0bf43e378f458e09a8e36fbb1710b95efcd36395823e5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2MzJiZjdiMjYxNWUxMDlkMjc3N2Y5MDdjOTA2N2JiODhhZDYxNzA2ZTE4MzU2MmJmMWMwYTNmYzBiN2QzMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ0MWNkMGFhNjUxNmU5NTA4MDdjMTBiNjFhYTcyZDg0MGFmZjMxNDI3ZTk0YjJkOTNkN2QwMmNlMzZlMjg0NzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc3NTRkMWQ1MWE5ODgyODY0ZTNmNTgwY2Y2MGYyYWMzMzg0OWU3NGNiZTVmZWY0ZjVjOTQ5ODM4OGVhM2RhNDUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b0dee07bd5d342769bb4586d72b436fb",
+      "statement": "Commits that touch only the date or date-modified lines are excluded from the definition of a content change, without which the script's own output would become the next run's evidence and push every date forward indefinitely.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/sync_dates.py#L49-L63",
+          "version": "repo-lines-v1:sha256:a25506a9eeb18b72c499fe2885ffbb9d5ebd1de2cd8d6ad6ddb5b173b763afed:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5Y2UzOTJlZTMwYmYxOTg4YWY4ZmQwOWM0ZDk3MDBkODhlZjAwYmRmMTIwMjY1OWNhNTY5NmU2YzQ3MjMzZmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdmZWYyYWE2MWY2NzQ4ZTVjNDhmYjcxOWZkNjRhYWY1MzhjNzU4ZTEwMDg3MzBhZmFkNmEzNGM3OWMyMjJmZmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFlOWRiMjVkYjAxYmUwZmYwM2JiYTUwODhjYTA2OTkyYjUyZDdhZWZmYTQyNDY2Mjg4MmE3NmJjYTMwN2ZlNTUifQ"
+        },
+        {
+          "resource": "repo://_tools/sync_dates.py#L64-L85",
+          "version": "repo-lines-v1:sha256:3419c993237118676b28e93e54f9b1554875954e7a83c6611e1cb0b66d62cf33:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkZTYwODQ0YWMwMzg2MzRiNGRlMmNlMGZjYTkwNzMxMGM2MzZmYmYyNjhiYTc2OGJkNGNiZTdjNDVlOGY5ODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUwYjIxYmY4OTVmYWUyZDczOTIwZDkzMTc4Y2ZkNTg0MWNkZjhmOTUyNDUxNmM4YTU2NTg0MzZhNGFjNDhmM2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRlMTUzNTRmMjA1MzJkYWU5ZjJjZGRhYzJmOWRkMGViMmU1YTZlYzAxZjkxNTJjNzZjNWIwZDgzMzBiMDI1MTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dc4003ce6e4741a389a8958801eca40b",
+      "statement": "The creation commit is excluded from the update search so a page published and never edited carries no date-modified at all, and any derived date at or below the published date is dropped rather than displayed.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/sync_dates.py#L74-L84",
+          "version": "repo-lines-v1:sha256:a8937f54e1b3878d2eaffa092c4b2e1e79a937ec875d821393c1151909a4dc27:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg5MmIwNGZhMDMzMTQwYmM2ZjY0YjY2NWZjZTQ2ZGE5MWM0Mzg2NWNlMTMyZmIzNWExNWFjNGNhZWRjMGQ3NTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMwODY5YTcyMGM2NDQ2Nzc1YTM1NmE5ZTIyOTc5YTU5ZDRmNDM4Y2VlNGM0MDY1MjkyOGE1YjEyODYzY2Y0ZWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJjNzFkMzgxZGNjYWFiNzZmNGFkODI3YjRhNDVkZmRiYjhlYjQ1ZjM0MDg2OTYxMDkzYjgxZDdlMjA3ODUxNGUifQ"
+        },
+        {
+          "resource": "repo://_tools/sync_dates.py#L117-L120",
+          "version": "repo-lines-v1:sha256:74869cf7b7e360aff9fa666e9557489e23dd4abde20fc4239ef2688c506e7f92:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2M0MWY4ZWY5ZWM0Y2Q5ZTExZTA5M2RjYjNlY2ZlODQ4Mzg1YzFhMmYzYzQwNWUwMGFhNWY1OGYxNGFjZTc5ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWNjNjcyNGQ0ZDQ4YWFkZDdhNTcwOTQ3YTk5MTc0YTRhNDc2ZGFlODgxZTk4YjQ1YjBjZjViOTQ2Y2UwYmRlZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzc1NGQxZDUxYTk4ODI4NjRlM2Y1ODBjZjYwZjJhYzMzODQ5ZTc0Y2JlNWZlZjRmNWM5NDk4Mzg4ZWEzZGE0NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_f5cdb539bc9047aa9ccdce3c47412a4a",
+      "statement": "Dirty-path detection uses git diff --name-only instead of parsing git status porcelain output, because stripping the command output removed the leading status columns and shifted every first path by one character, causing changed files to be missed.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/sync_dates.py#L38-L48",
+          "version": "repo-lines-v1:sha256:a113d1d9744023c3fad64e110885d5e4ba8131f70d5fc4676f79e8bc0a4699da:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2MTI0MTk0YjI4ZDc4NjVkNDBkMDJmZmY0MGEyYWU5ZTlhMDgxNGM1Y2IzNDI2Yzk0ZDcxMTM3YWZlMWVjNzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRhZDA3ZjVkM2FhZGU1MzVhYTExNjQwZjVjZmQ5OTQwMWRhMWY3YzA1MjkwOTQ3MmQ1M2U3OGYyNTNjMTU4MDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc3NTBhYzdkNzgyYTUzMTg4NWVjZTU3MTY3OTcwODU3OTVkMTJjNTYzMjdkZjhmNjZhYzEzOWJmZDljNWE0YTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6b8b208b35784c70b1d3884f35e77437",
+      "statement": "sync_dates.py runs in two modes distinguished only by --check: the default rewrites files and returns 0, while --check leaves files untouched and returns 1 when any date would change, making it usable as a gate.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/sync_dates.py#L91-L138",
+          "version": "repo-lines-v1:sha256:9ec104f1f1f2b39f5519cb49a61c25e8389934613b04f66c1c93739990378ee6:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyZTMxMjU3ZGMwYWUxZDU5MzAzN2MyODBjOWFkNTA4MTliOGE2YzhjZjcyOGJlMDcxNmQwMGEzZWVjYzA0YmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJlMDBhYmNmNmJlMGEwN2M0NWIwY2QyOTgwMzZkNWNiM2VhMWYyNjJkOWIyODc1Y2IzOWJkZmUwMDgzYjQ1MjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFjOTEzYTVjNDQ3MGNlOWUxM2ExYjBkMjJiZTU1MzNmNDg2NGI1ODZhY2RkMzAxMzFiYTg4MmM2YTIyYmRjODEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNkNDEzNDBjYzIzOWExNTljZTliNjAyMmU5ZjYzMjI4MzJlMmVhZDc2Y2FlOWU0NzU0ZDIxMGViOGZiNmQ1ZTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_80df01ea68244f95b27130efdffcdb22",
+      "statement": "The git helper discards exit status and stderr, so any git failure yields an empty result that the caller reads as no update date, which collapses to deleting the modified date from every targeted document rather than reporting an error.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/sync_dates.py#L32-L37",
+          "version": "repo-lines-v1:sha256:8bcccdc0e0f8e6dcc8e9b710de8902e2ec62c74a9d746bc7835a88b3e7ce4c4f:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzc3M2Y2MGMxMzc5ZDI2NDI0ZDliY2I3MWM4MTY1NTlkM2I0ZmFmNWFhZGYwZWZjNTFiZTZiYjdkMTBjZWM2ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjU4ZDRhN2E0MWRlNjkyZmI1MWUxMTEwYzJhNjZkOTZiMTFjMzM0YmJkZTUxM2VjODg5YjY5OGFjOTgyNTQyZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTgzMjlmYmQ3OWUyNzE4NzA0ODcxYzlhZTM1YTEzNTNiZjVlZTM2OTljMzk3YjlhN2NlODI2ZDkxMjVhNzI0YyJ9"
+        },
+        {
+          "resource": "repo://_tools/sync_dates.py#L64-L85",
+          "version": "repo-lines-v1:sha256:3419c993237118676b28e93e54f9b1554875954e7a83c6611e1cb0b66d62cf33:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkZTYwODQ0YWMwMzg2MzRiNGRlMmNlMGZjYTkwNzMxMGM2MzZmYmYyNjhiYTc2OGJkNGNiZTdjNDVlOGY5ODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUwYjIxYmY4OTVmYWUyZDczOTIwZDkzMTc4Y2ZkNTg0MWNkZjhmOTUyNDUxNmM4YTU2NTg0MzZhNGFjNDhmM2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRlMTUzNTRmMjA1MzJkYWU5ZjJjZGRhYzJmOWRkMGViMmU1YTZlYzAxZjkxNTJjNzZjNWIwZDgzMzBiMDI1MTMifQ"
+        },
+        {
+          "resource": "repo://_tools/sync_dates.py#L110-L135",
+          "version": "repo-lines-v1:sha256:1439fb9c23285fda339e8903a14e93b893fa1f2695318845e9a51256b29ad69b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2MzJiZjdiMjYxNWUxMDlkMjc3N2Y5MDdjOTA2N2JiODhhZDYxNzA2ZTE4MzU2MmJmMWMwYTNmYzBiN2QzMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ0MWNkMGFhNjUxNmU5NTA4MDdjMTBiNjFhYTcyZDg0MGFmZjMxNDI3ZTk0YjJkOTNkN2QwMmNlMzZlMjg0NzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ2ODNhYTZmZWFhZDI3Y2MwYTdmYzdhNzJiZTBkZTFmNjI2ODNjZDZjY2YyNWMxZTc4YzFkMDhlMTcyYTBjNGEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_acc0c8cc055d44a389e251d23055ad25",
+      "statement": "Neither the push hook nor the publish workflow invokes the date derivation, so a stale or stripped modified date reaches the deployed site through a fully green push.",
+      "evidence": [
+        {
+          "resource": "repo://.githooks/pre-push#L32-L66",
+          "version": "repo-lines-v1:sha256:e6511d9f6925e77c20986bf4021b15c5b1b6b3de9c9b7291f6241b4afa080a16:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5NmRhODViYTk1ZmM1MjhjM2IxN2I1ZjI0ZTBiODJlNDg1YzM1M2M2ZGJhMmM2OWFlZjJjNzE2MmQ5YTM2NTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4ZDNiOWU4ODBhNzc5NzU0OTNkYzdlMzU5MTQ0YzAyOTVhNGY2OTRjZmUwYWY0ZjkyOGMyMjMwN2JjNWMzMjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJiZTIwNWQ0NjE1YzI0YzQwNzlmZmRjMDdmNjE1ZjJmNGRjZTJlMmQ2Mzc4MmZjZGFhN2VkMTE5ODNkZmQ2YTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/publish.yml#L1-L38",
+          "version": "repo-lines-v1:sha256:f94341d4e79a27527fa75fcbd118168330e3dee80dae24d8b09b560811cb6263:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkODdlYmJkMmE5M2Q0NTVmZDNmNTQ4YjUzNjRhNmEyZmY5NTg2NDM3ZmQyZGU0OGIwMmZlMGIyMDA5YzkyMzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2MzQxMzJhMWI5YWUwNmQ4YjQ5YjY1ZTY0YmVhNTExZGQ2MGI5N2NkYjJhNDM1ZTQ2ZDAwYjIwYjUwODJjZGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

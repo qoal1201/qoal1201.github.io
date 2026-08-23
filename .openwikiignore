@@ -31,6 +31,9 @@
 !/.githooks/
 !/.github/
 !/.gitignore
+# 이 파일 자신. 추적되는 공개 파일이고, 막아두면 읽기 경계를 설명하는 문서가
+# 자기 근거를 인용하지 못한다 (`실측 2026-08-23`: OpenWiki 가 증거로 거부했다).
+!/.openwikiignore
 !/CONTEXT.md
 !/LICENSE
 !/README.md

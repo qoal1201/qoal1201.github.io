@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:1539a5fc705e58aea7410a7744dcc53bf67c2bcbdeadffbfa6381b6a5bb76e4f",
+  "claims": [
+    {
+      "id": "claim_6744854e98d040cdb9ca69a2dcd17989",
+      "statement": "Figure scripts share a single style module that fixes the palette, forces Korean labels through one font, and converts SVG text to paths so a visitor without that font sees identical output.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/figures/figstyle.py#L1-L48",
+          "version": "repo-lines-v1:sha256:e356ffc7f7de51f9574226ac1ba70028de1e640eeda0a33f15db37bb47a54d4e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEzNjQyMmNmNWE1ZjQ0MmUyNTZjY2JhY2FjZjQwYTNkMGUyNDBhOTI0YjVmYjYyMDlmYjhmOGVlODMzN2E5M2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhlYjRjY2IxM2NkZmNiYjhkODA2NTE0MTQzNWNiZjZmNDg2YjhkNDk4MmIwNzliMDRiMDk4YmVhMDVlYjQ3NmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c3a12610a20c48f48d55ffa363019a85",
+      "statement": "Saved figures are given an explicit white background rather than a transparent one so they read as cards against the site's dark theme instead of losing their ink.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/figures/figstyle.py#L40-L48",
+          "version": "repo-lines-v1:sha256:cfb8a37120891259f619a4a7a3dfbbff6fe01ee16a04ead06fd017b9c88a5d77:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGViNGNjYjEzY2RmY2JiOGQ4MDY1MTQxNDM1Y2JmNmY0ODZiOGQ0OTgyYjA3OWIwNGIwOThiZWEwNWViNDc2ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmY2MmFmMDg2ZGUyNzFlNzk1MmQwY2EzOTdmNmMxMmUyNjE5ZjNmOTliY2QyZDhjMTZjZGNmZjhmZmE4NGViNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ce88934f531d4946acc98109a6971bd2",
+      "statement": "Each per-document figure script declares its own dependencies in a PEP 723 header and is run standalone with uv, so figure generation needs no project-level environment.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/figures/wang_figs.py#L1-L12",
+          "version": "repo-lines-v1:sha256:b811706c952741bdbad60d06b868a06d5061fda8aaa911aff4fcac6bb2700ad8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1NjU3Y2Y5NTNkMGE2NzkzYjI0MDlkMTE0ZTc3Yjk0MmIxN2M3OTY4MGIxODMyNDA0ZWE1MTMzZmI3YTkzMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMDNlY2RkNGE0ZDEwZjE5YzczZmQ0MmZkMTI0MzdmZDMzNTRhODI2ODE2MDVkYTUyNTVhOTdhMzkwNjhkYmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJlZDY3YTg3NDgyMTBkMTE5NTUzNTQ1YTkwOTU4NGEzZjJjNTdkNWU1MGU1MTQwNzg5YTBkOWVkOGVkMzU1OTgifQ"
+        },
+        {
+          "resource": "repo://_tools/figures/transformer_figs.py#L1-L12",
+          "version": "repo-lines-v1:sha256:ff16fd6293c337d71264c1ba886f94d77a121a30a95bff9c34117aaef00350ab:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1NjU3Y2Y5NTNkMGE2NzkzYjI0MDlkMTE0ZTc3Yjk0MmIxN2M3OTY4MGIxODMyNDA0ZWE1MTMzZmI3YTkzMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFjNWQ5NGFkY2I4NzgzZjg2YTM2MjhmM2FmY2ViMGJkZDE5MmM1NmM1MDM1NTM2ODAyYzVjNDNlNzI1NjY2ZWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8a5c9a29340c48dd8cf7b6b2c773425d",
+      "statement": "Figure scripts restate in their docstrings which published numbers they draw and mark schematic figures as carrying no data, enforcing the rule that a figure may only show what the article's prose already established.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/figures/wang_figs.py#L1-L20",
+          "version": "repo-lines-v1:sha256:307d0a003d5a3107c5ce091dc152f15bb30f07e9b92cc75c9c11f8dd5e58b323:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1NjU3Y2Y5NTNkMGE2NzkzYjI0MDlkMTE0ZTc3Yjk0MmIxN2M3OTY4MGIxODMyNDA0ZWE1MTMzZmI3YTkzMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImViYjY2YmZmMDM5NGEyNTI5NDFiMDI5OGM0ZGUyYzVlY2QyZjk5ZDJjMjMyNzUzOTcwOTE2YzMxOWQ3MTE3OWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJkN2NmZDk2MTI4OTI0MTQyNmU1ZGQzNzFlMTJhMzg5YWY5MzQyMGJhZjY0MTRhMzc0NDZiNjAzNjYwZjRkZDAifQ"
+        },
+        {
+          "resource": "repo://_tools/figures/schelling_figs.py#L1-L15",
+          "version": "repo-lines-v1:sha256:750e97a9b60761c31d33cdeee52b6112d0beb9431bd8768f7aa4d7e3404d559e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1NjU3Y2Y5NTNkMGE2NzkzYjI0MDlkMTE0ZTc3Yjk0MmIxN2M3OTY4MGIxODMyNDA0ZWE1MTMzZmI3YTkzMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE0YzliZTg1NTY5OWNhOWM5MmVhMjNjODA0NWU3ODcxYTljZmVmZDE2OTIzNjllOTFhYTRmM2FmMTg0ZGEwMTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_92af9eedcfc348b5a2209bd0ea1474f6",
+      "statement": "The field-map chart generator predates the shared style module and duplicates the palette and font setup inline while writing PNG rather than SVG, and its docstring still names a source page that no longer exists in the repository.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/make_field_map_charts.py#L1-L25",
+          "version": "repo-lines-v1:sha256:f6a21f47ee33e15e0d7c96a3298fc63176d1328931b298dad3dac8aa7c053647:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRjMTI1M2NlYzJmYmVlNDYzNzhkNmVkYzhjZjBhYjMwY2Q5ZDJhNGE4MGM2YTczNzQ4MGRhZjhjNDkwZjA2MDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlhNDA2ZDE3YjM2MjYyOWM4NTM5NDA4YmMwYzU3MGU4Mzk0M2M2YjdiZjAzNWQ5NmFlMGI2MzgwMzljMTgyMmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6334652fa3104fbb9726383ef62a6b60",
+      "statement": "The shared style pins a single font family with no fallback list, so on a build machine lacking that font matplotlib substitutes glyphs silently and the path-baking step freezes the substitution into the committed output where no viewer can correct it.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/figures/figstyle.py#L28-L40",
+          "version": "repo-lines-v1:sha256:3afd9f6c626b9533ae59d415418e2169e3b80e23c08f3176e019af1d47f93cee:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2NmNlYmJkMmQwYmViZTk0MjMwYzU5NjNjNTQwZTVhYmE5OWVkMTJlZDM4MWYzNTZkZTcwOTk4YjJiZjJkMzUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE1YmY2YTY5NjkyZWMwZGNjNTBhOTZjNTc5MjQ1NzZlMmYyYjcwNTBlZmQ4YWIyN2I5YzM2MWM4OGJiMjdiNDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI4NjZjNzAwOGU4YmVjOTAyZDNjZDJkOGEyMjRkZjZiNmI0MmMwM2VmNTUxN2Q1ODYzOGY2YTAwZjA4ZWExZGEifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

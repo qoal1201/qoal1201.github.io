@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:d2ca14a55f229336ff519482c1429f5ae3a3bf6006d7105a17ec9b4dedb52b2e",
+  "claims": [
+    {
+      "id": "claim_7d174bd6c21440469f27e73b0e95ba08",
+      "statement": "The statistics probes are dependency-free standalone scripts that print a demonstration and assert nothing, so they are reproduction evidence for a published argument rather than a test suite, and no gate runs them.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/stats/significance.py#L1-L64",
+          "version": "repo-lines-v1:sha256:312661fda4d52fae9f013e8bf3dc932f1ac792f44da113b42c17b7a1d48fcc9e:eyJzZWxlY3RlZExpbmVDb3VudCI6NjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1Mjk1MWVjZjFlNmQ0NTE2ODhmZjNkYmJkNzVkNDc0Y2FkOTZiZDhlMzQ4MTQ1M2FkMmU4ZjUzODgwMGYxNjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4YzhlOGYzMjY0ODkxZWYxYmQzNjJhMjAwOGQyNjJkNTc4ZTI4NDJhMGUxMzMxNDZmZGZjNTgyMGVmNjYwMDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://_tools/stats/effect_size.py#L1-L78",
+          "version": "repo-lines-v1:sha256:5af352f85ca58ff3b1ecb0b23127afa2198a5f1a57e5b26a827cd72a02170081:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJkNTNjNTg0YmRjYmM1OGNlZjA5ODA1Y2UwOGNmOTE4MGJmMDQzZWZiZjM2YWIxODA5Y2UzYjlhMGU5M2QxNDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4NTk0ZmExMjY4ZWNhYmM2MmFmN2M5ZTI0NDliOGM0NmRiMGY0MjZjZDlhYWQzODRjNjdlZmU1OWU1ODJiM2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8116468a860d441e984ef916117ff4d1",
+      "statement": "Each probe fixes its random seed at import time, which is what makes the printed numbers stable enough to be quoted in a published article.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/stats/significance.py#L1-L12",
+          "version": "repo-lines-v1:sha256:f1a565074eba5b5eb0fec609a53b3d496c4b54d5ce0e8119e91e14e4a7e2c29f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1Mjk1MWVjZjFlNmQ0NTE2ODhmZjNkYmJkNzVkNDc0Y2FkOTZiZDhlMzQ4MTQ1M2FkMmU4ZjUzODgwMGYxNjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzOTg2MmI1YmNlNDdmNGE3ZjliNTE1NWFmNWIwZDY2MTM1ZDFhNzgyOGM0Y2QyNzI4YzQxYWVmOTkwZTg4NzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlmNmRiOTMwN2Q5NTUxOWEyZWI1MTc4MmQ0MzAyZmMyZDA4NDQ4M2FmOTVjNjA2YTNiYTJhNWE4ZjY0MWQwZjQifQ"
+        },
+        {
+          "resource": "repo://_tools/stats/effect_size.py#L1-L10",
+          "version": "repo-lines-v1:sha256:fea738c81067908a5ab034fe20736684b195e2a3fe235889206ba975a6c61146:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJkNTNjNTg0YmRjYmM1OGNlZjA5ODA1Y2UwOGNmOTE4MGJmMDQzZWZiZjM2YWIxODA5Y2UzYjlhMGU5M2QxNDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRhMzMwMTdkOTQxMGIyNWQxOTA2ZmM3NWQyYzdiNjcwZGFiN2U1NjZhMWIwNWQyMDIzYmI5MzgxNGIyN2UxYTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhiMTIyMjdiYzU3MGQ0ODljOTEyNzMzNjRmOTNiMjkwZjMxY2U4OTliM2QwZmMwZmQxOGRiYWNmYjEwNGFiZWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7e0d36a50e7a4b8ea85d07994f2bd3cb",
+      "statement": "The significance probe reconstructs the reviewed paper's twenty-four comparison structure over two samples drawn from an identical distribution, so any significant result it reports is by construction a false positive.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/stats/significance.py#L28-L64",
+          "version": "repo-lines-v1:sha256:d54d2252990d241245c3560070af140828fc279507b3cfeea560c6e631bb63f5:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4YzhlOGYzMjY0ODkxZWYxYmQzNjJhMjAwOGQyNjJkNTc4ZTI4NDJhMGUxMzMxNDZmZGZjNTgyMGVmNjYwMDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4YzhlOGYzMjY0ODkxZWYxYmQzNjJhMjAwOGQyNjJkNTc4ZTI4NDJhMGUxMzMxNDZmZGZjNTgyMGVmNjYwMDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNkNmUwZTc3YmVmM2U2MWNjYTNiMWM3NDBmMGQwNWMyZmIwZjhiZWEyY2Y0MDQzODRlOTE5ZjNkNTQ3NjJmYzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0d609c2b9cd1472587b4d67a8779dd15",
+      "statement": "The effect-size probe answers the complementary question by holding a negligible true difference fixed while growing the sample, showing that a significance verdict tracks sample size rather than the size of the difference.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/stats/effect_size.py#L20-L45",
+          "version": "repo-lines-v1:sha256:30f9b8dce61e41c7b3bba95660a4c3b403beedb7bfa81dc2ec4b361cbda17313:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyYzM3Y2NkNzc3YWM3Y2RhMGM1Y2VjNWIyOTdkYjYxODZiNWRiMzdjZjIxY2FiZGZkYjY3YzYzODlmNDA5NDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA5ODlhZDhjN2Q0NzkxNzE3NzQ4Y2E0NGY0OGM4NjQxZTAxMWQ2ZDQ3N2MyNDFlOGU3OWZkNDkwYmZlM2M5NWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFjNDIwNjNmNDk5ZmVjY2UyODNhNTBjNzQzNjUwZjIwYzM5ODFjMzljMjQ0NWM4MjkzMWMzOTU2MDQxMmE1N2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg0NTEyYWI2N2NjODk0NmI3YjQ3MzNjZGFhYjczNjc2YmJlZjIyNzQ0NjUyNTAwZmMyODYxMmUxNTQ1Mzg5YjYifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

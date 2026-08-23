@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:5843e81a1475377592ed501f50095c8aeb685179708ed1422748ecaa306f618c",
+  "claims": [
+    {
+      "id": "claim_e6a9efc59e6944ba853568ee510d30ec",
+      "statement": "site_lint.py builds its check set by globbing the repository root plus paper-reviews, experiments, and foundations for .qmd files, so the linted set is derived from directory layout rather than read from the _quarto.yml render list it is meant to mirror.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L27-L33",
+          "version": "repo-lines-v1:sha256:e95882b7c7b76229285e6657099e7e9918bc4a5a59346242676d9bd3f98bebbe:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODcxMWM0ZTg2NTQ1NzFjZWNlMjQyODU2YmZiMGEwMGJmZjVjMTA5NDUwMjIxZmJmOTQwNmM4NDc2MzFhMjA1OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmFmYmEwNTI3YzM5NTNjNGI2ZTBlNWI1NzM5YmE4MzYxMmY4MDUzYmNkYzk0NjY3MzAxOTNjZDFkNTkwYjQwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjVkODc4ZGI4ZmUwMTY5YWNmZjZhMmIzYzFkNWNmZDMyMGE2MTUwOTYxZjZhNjZhZWM5MjI5OGNmMTBiNTEwMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTM4YWNiMTE2ZjAyMDg5ZmNiMTg2ZDZmMWY2Nzg0OTQ4OWUxYzVhNTNjNmE2YWFjNzZhYWI3N2RmYTJmYzRiOCJ9"
+        },
+        {
+          "resource": "repo://_quarto.yml#L1-L10",
+          "version": "repo-lines-v1:sha256:4118a62bce3cf9ae05300b8c8d78747250e897c4e96fcf6ddaf06df3d3a841dc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkMmFhY2QzMmU1NWM1OTU2MmJjMTRlMmU0Mjc0ZDY1ZDJjMzFiMjAxMDZjZmE2YWIwNjNmYzM0NGRlMTcxOWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIzODkyNTc0YTE0NjE0Yjk4NWY4NTUxZGUyNTczNTkxZjM0NjdlZDc2ODMxMjE5N2ZmMGZiMmU5YzIxOGQ3ZWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c26ff6ce75664168b0c71e59154f0de6",
+      "statement": "site_lint.py exits non-zero only when errors are present; warnings are printed and ignored by the exit code, which is what lets the push gate block correctness failures without blocking style quotas.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L310-L317",
+          "version": "repo-lines-v1:sha256:fd2af55f053e6a2950bc243f10ba270b741422cb4acca4d22ea6433b880f1930:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODU1NWViMmY0ZjI3M2VmZmNmY2ZjMGE0ZTdlMjJlYjEzMWRhNDI0YWM5ZTdhMzcxYWQwZmEyODY3NTk5OGYyOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTlmODZhZDhjNWY4ZmVjN2ZiOTBlMTUzMjEwMzlhNmRkZTUwNWEwNjc5NmJmNTczZDc2ZTE2NzQ4NTVlOTEzYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYWVjZmUzMmQ4MTBiY2FkMDViMmNlYzQ1NGUxMmM1NzE0MTRkNjkwNDk3MDEyOGM3YmE5ZDZlMDkwMDBlNzY5YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2Q0MTM0MGNjMjM5YTE1OWNlOWI2MDIyZTlmNjMyMjgzMmUyZWFkNzZjYWU5ZTQ3NTRkMjEwZWI4ZmI2ZDVlOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_425d5d43d7d54b2a8649f0d3a7a88df3",
+      "statement": "Status-line enforcement is keyed to a literal path list plus a glob over paper-reviews, with before-attention.qmd excluded because a foundational-concept article has no reading range for a status line to disclose.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L44-L58",
+          "version": "repo-lines-v1:sha256:992279cd4a96a8ef8387929cf990869cd3477eac2d2f470075abb96ad8600183:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2ODg0MTYwYjQxNDg5OGUwMGNmYjJjZTIxN2M3YWJiZTE5M2I2ODc0YTQwY2MxNmY3NThjZjVjMjJjMjlmODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJmNzA3ODE0N2VlOWEwN2U3ZmU1NWI0ZjA1YmRjZDk1MDFhYjAzNzNhMDU0ODJjMzdhOTMxYWEzZmRiYWRkNmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3MjgyYThlYWI4NzRlMmQ1MzIwMTE3OTQ3ODM2MjI5YjM5ZGY1ZDFiYTZhYmYxN2E1OThhZDA5ZmI3ZjFkMTAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0e52d1e7986f40e1a1c1ec6a06fe0f37",
+      "statement": "Several site_lint checks are keyed to literal filenames and stop checking silently when a target is renamed or deleted; the module records two such incidents where a check pointed at a file that no longer existed and therefore never ran.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L36-L58",
+          "version": "repo-lines-v1:sha256:87df3676f41998d0368d5a8f678d74f2cab9653c5134771a47856bdd7a41d531:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1MjIwZmJlYWNjOTQ1NmY3N2I4MDY0NDY1NmZjMzUyYmEyMTI2ODZlMWViYzEzMDY1YzA2NjU0ODk5MDA5Y2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcyNWRjMjNjMDkxZTBlYzUyYjRlMzNhY2M2YTMwNGY1NDU0OTNjNjFmYmJkMDdjMDNlNzVlNDgwYTkxMzE0ZGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3MjgyYThlYWI4NzRlMmQ1MzIwMTE3OTQ3ODM2MjI5YjM5ZGY1ZDFiYTZhYmYxN2E1OThhZDA5ZmI3ZjFkMTAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_49c5dd5b40f84964828c70e43adffcb6",
+      "statement": "The style check counts em dashes only on prose lines, excluding bullets, quotes, tables, headings, and fenced code, and subtracts one leading bold label per bullet line, so structural formatting is not charged against the prose quota.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L188-L212",
+          "version": "repo-lines-v1:sha256:dc422b884794534e7c80c8f766f779f05a8225f9fdfd2411d6dbf551d6083bca:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhmNWViNzQwMjZjZDM0YTNhZmIzODg4NGMyMjQzOGFmYjJjMzJkMGQwZDc4YTFhZjM4ZTY4MDA5NWY4MTdjYTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc1NDA5NjQxOTdlMThjZjRlODA0MTNiMjM5ZDAzMDgxYzA4ZjFhYzJjMmE4NmU4NGE3ODNiNmY5ODA2NWVjYTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM2NmU1NTdhY2QxMjhmNzFlZTdiYzU2MGY4NmY1ZjRkOTk0OWE4Mjk4NzVmNGMyODk0NWM0MDkyMWI1MjQ3N2QifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bbcd855a756843e8ac78e7fa79004f34",
+      "statement": "Two style quotas were deliberately removed rather than tuned — a 아니라 quota that could not separate dramatic contrast from factual statement, and a connective-comma quota whose stated justification had no traceable source — because a groundless quota was driving edits that worsened sentences.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L170-L182",
+          "version": "repo-lines-v1:sha256:e189a841ba51cb65f1cac5faf65a80db7cca4b104bca672688bd596b759d8750:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIxYjcwMzUxN2Y0MTQyYWIyNjhhMzU4YjkzNjVhMjA1NDZmNjM5MGE2ZmMxODI4ZDZmNTg2MWEwOGVjZjZhMGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjMzUwZTJmOTQ3MDRkZGMzNDBhMmVjNDAwNjhmOGVmMDczYzNlYWUxYjBhZjJjMDk1OGQzNGY1M2RlODI1ZTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI0YjJhNDRhNjYyOTk5MTY3NDYxNjZhMjY5OTA1OTJmZGZmYmY3YTNhMzAxMzQ0ZDYxNDkyMjBlMzc4YzBkMTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ3NDZhODJjZjU4OWE4ZWU1ODYzMDdkMjdlYzE3MTZiYzIzMThjMGNhN2QxNTA2NDM3YjYwMDQ5NTZlNTI2ZmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_698deb7496904ae2923e9b8e8d76e75c",
+      "statement": "The lint's file set is restricted to Quarto markdown, so the published Jupyter notebook under foundations is rendered and deployed without any lint coverage at all, including its inline copy of a competition score.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L27-L33",
+          "version": "repo-lines-v1:sha256:e95882b7c7b76229285e6657099e7e9918bc4a5a59346242676d9bd3f98bebbe:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODcxMWM0ZTg2NTQ1NzFjZWNlMjQyODU2YmZiMGEwMGJmZjVjMTA5NDUwMjIxZmJmOTQwNmM4NDc2MzFhMjA1OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmFmYmEwNTI3YzM5NTNjNGI2ZTBlNWI1NzM5YmE4MzYxMmY4MDUzYmNkYzk0NjY3MzAxOTNjZDFkNTkwYjQwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjVkODc4ZGI4ZmUwMTY5YWNmZjZhMmIzYzFkNWNmZDMyMGE2MTUwOTYxZjZhNjZhZWM5MjI5OGNmMTBiNTEwMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTM4YWNiMTE2ZjAyMDg5ZmNiMTg2ZDZmMWY2Nzg0OTQ4OWUxYzVhNTNjNmE2YWFjNzZhYWI3N2RmYTJmYzRiOCJ9"
+        },
+        {
+          "resource": "repo://_quarto.yml#L1-L10",
+          "version": "repo-lines-v1:sha256:4118a62bce3cf9ae05300b8c8d78747250e897c4e96fcf6ddaf06df3d3a841dc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkMmFhY2QzMmU1NWM1OTU2MmJjMTRlMmU0Mjc0ZDY1ZDJjMzFiMjAxMDZjZmE2YWIwNjNmYzM0NGRlMTcxOWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIzODkyNTc0YTE0NjE0Yjk4NWY4NTUxZGUyNTczNTkxZjM0NjdlZDc2ODMxMjE5N2ZmMGZiMmU5YzIxOGQ3ZWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5d67cc6ee0be48ed941dea63575a91d6",
+      "statement": "Link checking skips any target whose suffix is not Quarto or plain markdown, so the notebook link in the foundations table and every image path are never existence-checked.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L111-L129",
+          "version": "repo-lines-v1:sha256:c089f7661387ac0f7377d710e477a7f402e0353957b7dd14a92938c4be2f1167:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1ZjExNDZlYzM0OTYxZDNlYjNkMDhmY2UwZTBiYjE0MGZjNGJkYjBjNjFkODA0NTY5MzMwM2NhZWNlMjg0ZjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJhOGNlYTdlM2RhYjA2NTM1NDQzZjc0NTlmMmMzZjlkODhmMzlhMGVmOTQyMjA1Mjg0MTA4ZTU0N2EzZWQxNzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjZjJlYzczOWJhYTIwOGI5ZWQyNGFhYzQ0YmI4NmM1ZGUxZjA1MDEyZDMzZDNhNDdmYzQxNDFiYzhmNzA1NmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_327fd61a16e749f580eb00aa8722839c",
+      "statement": "Drafted reviews fall inside the status-line requirement glob and are held to it identically to published ones, so lint parity with drafts extends beyond the file set to the individual checks.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L44-L58",
+          "version": "repo-lines-v1:sha256:992279cd4a96a8ef8387929cf990869cd3477eac2d2f470075abb96ad8600183:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2ODg0MTYwYjQxNDg5OGUwMGNmYjJjZTIxN2M3YWJiZTE5M2I2ODc0YTQwY2MxNmY3NThjZjVjMjJjMjlmODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJmNzA3ODE0N2VlOWEwN2U3ZmU1NWI0ZjA1YmRjZDk1MDFhYjAzNzNhMDU0ODJjMzdhOTMxYWEzZmRiYWRkNmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3MjgyYThlYWI4NzRlMmQ1MzIwMTE3OTQ3ODM2MjI5YjM5ZGY1ZDFiYTZhYmYxN2E1OThhZDA5ZmI3ZjFkMTAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e50bc2a3761c458299874ed57d073ef5",
+      "statement": "Link checking only confirms that a target file and anchor exist on disk, so it cannot detect that a link lands on a page absent from the site's only index.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L111-L129",
+          "version": "repo-lines-v1:sha256:c089f7661387ac0f7377d710e477a7f402e0353957b7dd14a92938c4be2f1167:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1ZjExNDZlYzM0OTYxZDNlYjNkMDhmY2UwZTBiYjE0MGZjNGJkYjBjNjFkODA0NTY5MzMwM2NhZWNlMjg0ZjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJhOGNlYTdlM2RhYjA2NTM1NDQzZjc0NTlmMmMzZjlkODhmMzlhMGVmOTQyMjA1Mjg0MTA4ZTU0N2EzZWQxNzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjZjJlYzczOWJhYTIwOGI5ZWQyNGFhYzQ0YmI4NmM1ZGUxZjA1MDEyZDMzZDNhNDdmYzQxNDFiYzhmNzA1NmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ba21e70407f14bf1b9d853cb2e5983f4",
+      "statement": "Extending lint coverage to the published notebook would require parsing it as JSON and walking its markdown and source cells rather than reading it as text, which is why the file set is restricted to Quarto markdown in the first place.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L27-L33",
+          "version": "repo-lines-v1:sha256:e95882b7c7b76229285e6657099e7e9918bc4a5a59346242676d9bd3f98bebbe:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODcxMWM0ZTg2NTQ1NzFjZWNlMjQyODU2YmZiMGEwMGJmZjVjMTA5NDUwMjIxZmJmOTQwNmM4NDc2MzFhMjA1OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmFmYmEwNTI3YzM5NTNjNGI2ZTBlNWI1NzM5YmE4MzYxMmY4MDUzYmNkYzk0NjY3MzAxOTNjZDFkNTkwYjQwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjVkODc4ZGI4ZmUwMTY5YWNmZjZhMmIzYzFkNWNmZDMyMGE2MTUwOTYxZjZhNjZhZWM5MjI5OGNmMTBiNTEwMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTM4YWNiMTE2ZjAyMDg5ZmNiMTg2ZDZmMWY2Nzg0OTQ4OWUxYzVhNTNjNmE2YWFjNzZhYWI3N2RmYTJmYzRiOCJ9"
+        },
+        {
+          "resource": "repo://_tools/site_lint.py#L294-L317",
+          "version": "repo-lines-v1:sha256:cdd13cea7df2367117fb6a9f6e2c3791416d783e06c978b5d9aacd148e6f8512:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyZTMxMjU3ZGMwYWUxZDU5MzAzN2MyODBjOWFkNTA4MTliOGE2YzhjZjcyOGJlMDcxNmQwMGEzZWVjYzA0YmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5Zjg2YWQ4YzVmOGZlYzdmYjkwZTE1MzIxMDM5YTZkZGU1MDVhMDY3OTZiZjU3M2Q3NmUxNjc0ODU1ZTkxM2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ0OWVlODJkYmUyNGFhODc4MjI1MmEzZGNkNWMzZjVjZDQyMzk5ZDlkMDc3MjRkNWE3YjIyY2Q3NTNmZjQ5MDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNkNDEzNDBjYzIzOWExNTljZTliNjAyMmU5ZjYzMjI4MzJlMmVhZDc2Y2FlOWU0NzU0ZDIxMGViOGZiNmQ1ZTgifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:6f4e7935275c93e8d59c08358f447a9ac4496bce9268d7782b63f4214ca48c08",
+  "claims": [
+    {
+      "id": "claim_09565d9a8f324b1a9c7f2e76dc824aa6",
+      "statement": "Glossary anchors are an inbound-link contract rather than cosmetic identifiers: other published pages link directly to them and site_lint validates those targets, so changing an anchor breaks links elsewhere in the site.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L97-L128",
+          "version": "repo-lines-v1:sha256:1a94f2b3768b2c1706f7dcdc8b2da92883fa47ee12aeb4873fded31020718f85:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNiYzhiMWNlZGIxY2ZmY2EwNTA5YzZlMWNmNjNlOTI5ZjhjNGFiODlmOTViNjNmNzRhZmFmNGE1YTVkNDYwZDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk1OTU1MmYxNjA0OWFlZjY5ZjQyMmU1ZWY2OTRhOTFhNjA3MzE3MjlmYWNhYzg0MWQyZWRlM2I0Mzg5NTNjODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA1MjI2MmNhYWY0NDZkZjU3MzcxNGFkOTUzYzU5MmFiMzc5NmQxZjY3MzIyNzQ3ZDk4NDExNzIyMzJjZThlYmYifQ"
+        },
+        {
+          "resource": "repo://glossary.qmd#L1-L20",
+          "version": "repo-lines-v1:sha256:4bd228b2d77188c11da93fa12cf1082374e72072f648ff2947d4ea02e664b1ac:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk2OTVjZDBkMzFlMTdmNGI1NTc2ZTk5ODE2ZjQxOWJkOWZhNmMyNWJjZDc5YWU4N2FhNTljNmMxYmU1NDFlY2YifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dc6feea440264b45aeada40d16f6f5a3",
+      "statement": "Duplicate anchors and missing anchors are errors that stop a push, while an entry exceeding the two-paragraph skeleton is only a warning, so structural collisions are enforced but verbosity is not.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L254-L292",
+          "version": "repo-lines-v1:sha256:a2a3465417a9364c5b7c30a9a0fc9826d7ce6160bdd4f4811c941251de3a75b3:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYWIwMThjMjMzMDU1ZTllYjA3MThiNzRiOGRiZDY0NjBmM2MyOTNjZDk1NmFiNWFlNmZiNDI1MGRkNDQxOTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJmODQ3YTM2ODZlODIxMTI0ZjRiMjc1NmNiZTM0NTI3ODM2ODkxODgzYmY1ODhlODM3NTkzZGZmMDVkZmQwMTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQzOGI3NWVkNmY0ZTBlMTVjZjE5MzgzMmE4Y2I3MmJhN2Q1ZDYyMGM1NGIyZmUwYjc4ZTlhYjg3OTAzYmM0MGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_45c309cfe7944cc68eeb13b98b52c566",
+      "statement": "Section placement inside the glossary carries provenance: a general section holds terms whose one-line definition stands without any specific paper, and per-paper sections hold that paper's own apparatus and notation.",
+      "evidence": [
+        {
+          "resource": "repo://glossary.qmd#L1-L20",
+          "version": "repo-lines-v1:sha256:4bd228b2d77188c11da93fa12cf1082374e72072f648ff2947d4ea02e664b1ac:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk2OTVjZDBkMzFlMTdmNGI1NTc2ZTk5ODE2ZjQxOWJkOWZhNmMyNWJjZDc5YWU4N2FhNTljNmMxYmU1NDFlY2YifQ"
+        },
+        {
+          "resource": "repo://glossary.qmd#L505-L579",
+          "version": "repo-lines-v1:sha256:e47ec14b27d90fce9df2f356840562c5d58bd107fe301d72b23e7724216d75fe:eyJzZWxlY3RlZExpbmVDb3VudCI6NzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRjNjZiMTNjZWEwNDFjNzI5NWFjZGEzMWViNWE3MGQwODk0ZTUzMjdjN2YxNWMyNTc1YjM1ZTY1ZTU4NzQ0ZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxNjcyZmJiNmM2ZTk1YzhkOTAzOTFhYWU5OWEzNDI2MTlkODQ4MDQ2MDY2NTYzYWYyY2I1MjY2YTA4OTQzYTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRhOTAzNzUyZTlkNmRlNmI2ZDJiMTk3MzNhMmFiMjRiNjQxNjE5ZWMzYjBhZTRkNTVmZjFhOWIzZDhiZTYyNWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_93d9124b130b4d52b8336c037ee31f3f",
+      "statement": "The glossary length threshold was removed rather than tuned, and length is now reported for the longest entries without affecting any verdict, because enforcing a character count had deleted sourcing and correcting clauses from entries.",
+      "evidence": [
+        {
+          "resource": "repo://_tools/site_lint.py#L234-L252",
+          "version": "repo-lines-v1:sha256:a86ed283c316e6c910de160f4a5b89a0ca9756d7aaf8453f82e89b360cd7239c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI0NTg2NDNiMmNhN2VjZmU0ZDZjZjI3MDhhM2ZjNjE0ZGUxNDRkOTZjNzAzZjJmNGU2ZDRkMDdjYTc0NWQxOWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE0NWRjNzQ4Y2Q3ZWYzNjUwMzFmNjc3ZTI4YWFhYWMxZmZiNDMwNjlkOGM4OWI0NmMyZjUyZDUyOTRjODAzMDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEyMjkzN2VjMTdjZTZlZGQwYjI1NGFkM2QxMjA1Y2Y1ZDA5ZTY4ZjZkMGU5NzRmZjllNzYwZTEyMzFkOTA2MmIifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:b23daa1230c1c8ad8652143c87d6d0c7c0f09d51175ea83925339406aa101f14",
+  "claims": [
+    {
+      "id": "claim_cf75021575cf4d6f93d6a7bab622456b",
+      "statement": "Issues and specs for this repository live in GitHub issues rather than local markdown, chosen so the repository joins the cross-repository issue-reference wiring the other repositories already use.",
+      "evidence": [
+        {
+          "resource": "repo://docs/agents/issue-tracker.md#L1-L10",
+          "version": "repo-lines-v1:sha256:cd98bedcff3219bf9723971eefdb40723f2f490689a6c7ea1c90ae6905c62628:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgxZjQ1YzlhMzliOTM5NzdmMzQyYmJlODgyNTk5NmYzMDE3ODMxN2M4NjcxY2IyOGQwOGE4MWEzZTc5NTE4MGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5MGQ1NTQ5NDJiZmI0NzAyMzgxMDcwNGJmZDBjMDQ0ZjFlMmEyMjk3MTJmNjZiYTgzMDgzNjViYTEwMDg2ZDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjNWZmMjZlN2U2ZDYyZDIxMzZjMGFkYWRjODA5YjVlYzdmNGIyYzdmNWE3YWYzZDU5YmJmZWY1NmUwYzliMmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_77012bedca5a45cbbd949bc20763f593",
+      "statement": "Because the repository is public its issues are public too, which is why the tracker document splits what may be filed as an issue from what may not.",
+      "evidence": [
+        {
+          "resource": "repo://docs/agents/issue-tracker.md#L10-L20",
+          "version": "repo-lines-v1:sha256:2125a16a246dacbcc492f228e3ca183ff5200dae798b4075c8e371e893f4a69e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5MGQ1NTQ5NDJiZmI0NzAyMzgxMDcwNGJmZDBjMDQ0ZjFlMmEyMjk3MTJmNjZiYTgzMDgzNjViYTEwMDg2ZDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2NWFmYWY1YmI5NzM2MmI1MzI2OWI3ZDJmNDhlNzZjNDY3NTlmYmI0NTczZTU5NDdiMzk5OGY0NDdmZmJmMTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZkZTJlOTk1NDE1NTNkYjAzMDYxM2IyMjc1OTRjMTUxZTk0ZDQyMTdkYzdjNmFlOTcwOWNkYzk1NjgyYzlmMzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkxOTIyNDg4NTQwNDVhOWZlOGMwNjNhNzVkMjhkZWZiYzc4Mjc4NDI3MmNjNWE3MDIxMzc0NmM5MjdiNDU4Y2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_31af266032404e89b817a206569c4078",
+      "statement": "The five triage labels are adopted unchanged from an upstream skill vocabulary and are shared across sibling repositories, so editing the label strings breaks that alignment; none of them exist in the tracker yet.",
+      "evidence": [
+        {
+          "resource": "repo://docs/agents/triage-labels.md#L1-L20",
+          "version": "repo-lines-v1:sha256:88e396394e256513a3fa108aca54775d577fb789808aad433eeb24c28d764e2b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ0MjdmYmU4OTllMWZiN2MzMzZjM2NkMjVlNGM0ZTA5YjAzY2ViMmRkMjIzODQ4Njc3NmJlMDg0MGI4ZTQzOWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmYWEyOTk1YmI1ZDc3YTA2ZmUwMmQ3MmU2NGFiZjZmNjc4OTZmZDIzYzE3YjdiN2IyNjRmM2QxMTlkNGI0ZGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b2781b5c7d6d42fa802b9413c379b2f7",
+      "statement": "A substantial part of this repository's working material is untracked by git, including the auto-loaded instruction file, agent skills, paper PDFs and notes, and workspace scratch, so a clone contains strictly less than the working copy and any documentation generated from a clone describes a smaller repository.",
+      "evidence": [
+        {
+          "resource": "repo://.gitignore#L28-L47",
+          "version": "repo-lines-v1:sha256:9c7fb6fdd4d11935b16444376ce29e7aef572cada44863a7513d743cfe8447e9:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjZDkyZGE1OTNkYWJlOTcwZjQwODdhYzgzNGQ0YmZmYTRkZGNmM2UyMTM3ZDEyZjU2YWViYmRlYzczNmRiYzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5ZjZmMTVkMDUxYjNiOWFkNmQzOGVhOTdlYzk3OWRhYmIyNTQxZThiYTM1MTc4N2EyNGE4N2U4ODU1Y2U3ZjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNjMzczYTA4ZDUyZGU4NGYwNTA4ZWI2ZWJmNTJkYzkyM2FmNDM2YmNmZTJiMmRkYTFkZjFkY2ZhYWE1ODc0MGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.3.3",
+    "at": "2026-08-23T16:52:46.407Z"
+  }
+}
