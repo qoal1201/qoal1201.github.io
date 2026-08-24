@@ -19,9 +19,6 @@ sources:
   - id: openwiki-source-23775c3de52f3ab95a13cb8b
     resource: repo://README.md
 generated: {by: "claude-code", at: "2026-08-23T16:52:46.407Z"}
-verified:
-  - by: openwiki/0.3.3
-    at: 2026-08-23T16:52:46.407Z
 ---
 
 # 갈래를 가르는 축은 주제가 아니다

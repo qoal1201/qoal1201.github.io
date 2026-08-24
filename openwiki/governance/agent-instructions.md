@@ -11,9 +11,6 @@ sources:
   - id: openwiki-source-5ca79d0aedcffa9b0b0c5fd2
     resource: repo://docs/agents/triage-labels.md
 generated: {by: "claude-code", at: "2026-08-23T16:52:46.407Z"}
-verified:
-  - by: openwiki/0.3.3
-    at: 2026-08-23T16:52:46.407Z
 ---
 
 # 이슈가 진실원이다

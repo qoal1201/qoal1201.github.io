@@ -9,9 +9,6 @@ sources:
   - id: openwiki-source-bfa3b84a318d5325e014eaad
     resource: repo://_tools/site_lint.py
 generated: {by: "claude-code", at: "2026-08-23T16:52:46.407Z"}
-verified:
-  - by: openwiki/0.3.3
-    at: 2026-08-23T16:52:46.407Z
 ---
 
 # 책임 경계

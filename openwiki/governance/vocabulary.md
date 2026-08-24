@@ -13,7 +13,7 @@ sources:
 generated: {by: "claude-code", at: "2026-08-23T16:52:46.407Z"}
 verified:
   - by: openwiki/0.3.3
-    at: 2026-08-23T16:52:46.407Z
+    at: 2026-08-24T04:02:34.087Z
 ---
 
 # 범위

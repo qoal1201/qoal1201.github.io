@@ -1,123 +1,7 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:1df80ac00bcdb2cb93bdddcf4c1bec738fbe4c090d91ddfdf0d1364de52e4c59",
+  "pageVersion": "sha256:861b8bf59194c57e9dcc135a0008c5ccaa9b1e47865a18ee5abfb231ef4cf8cc",
   "claims": [
-    {
-      "id": "claim_b5d7df637d824b6f847bef0eae3d60b3",
-      "statement": "Every ADR in this repository ends with explicit reopen conditions, which makes a superseded decision a condition that fired rather than a decision that was wrong.",
-      "evidence": [
-        {
-          "resource": "repo://docs/adr/0001-no-separate-context-file.md#L22-L30",
-          "version": "repo-lines-v1:sha256:bdba7c831ac97afa3c956ec9c3cc3554595b1ce0edf2d5222c3b36a659dbce62:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWExMmQ1NjdmOTUyZTljOTc5MWNhYWFiYjA0ODlmNzcxMGE4MDBlNTUxOGJjNDg4ZjZiMjlhODBkZTg0MTQ1MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzBhODYzMDk1MDVjY2FlODhiZTEyNmY1NTBhNGVjOWVmZmU3MjMzMDNmNzg1NTc1Y2JhNGVlZGU4ZmQ4MmQyNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTczOGQzNjE4ZTVkZWQ5Y2NhYTI5YmVjYzNhYjBhNWU5MGFlYzA4NzA5MzMwNDQ0NzVhZTUxNjVkMDljYzJlZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzdhZDJiYWM3ZmE4MDdiOWRhZTlkYWNkMDEzMWQ2NWY2NWQ4Y2MwNGNiNGMyZjAyMzkzYmYyOWQxMGRmMzExZiJ9"
-        },
-        {
-          "resource": "repo://docs/adr/0002-knowledge-bundle-scope-and-gate.md#L28-L31",
-          "version": "repo-lines-v1:sha256:4d83e51254341b4ed53a9bee2047b0b3ae17e2ae74bbd45aecd542370a2da1a0:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGYzZDkwODI3MDUyODA1YmVjMTgzNDQ5ZTEzMTA4MjhiOTA3MTI0OTIwNzcwN2QwM2VhMjNjMWZiNGIzYjA2ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZWEwOTM1NzZiYjFiZDlmYTNhNmIyMzZkY2VhNzU5MWVhZGI0ZmM5MjNmMWNkMjhkYzk3ODlhN2JmOTgxOTI4MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWE3ZDRjMThkZjhmYzVmODE2YTEwOTRkODNiYTgzNjQwNTk2Y2I4Njg3YjFmOTMxNmIxZDFhMTJiMDhlZTRiZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzdhZDJiYWM3ZmE4MDdiOWRhZTlkYWNkMDEzMWQ2NWY2NWQ4Y2MwNGNiNGMyZjAyMzkzYmYyOWQxMGRmMzExZiJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_a03d06bc3036407bbf3c5408702dfa5c",
-      "statement": "ADR 0001 decided against a separate vocabulary file and ADR 0003 reversed it, and the reversal turned on a distinction the first decision missed: 0001 evaluated the file only as a place to read from and never as a place where newly settled terms get written.",
-      "evidence": [
-        {
-          "resource": "repo://docs/adr/0003-context-md-holds-internal-vocabulary.md#L7-L20",
-          "version": "repo-lines-v1:sha256:de13ce09aab1cd9c69224bd5299249e9732dfa197c45b3ad527ba137f09838fe:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkZjdjOGY5YjZiZTUzNGExODk3ZDEzZGQ1MjU1ZjViM2VlYjE1YmFlYmVlNGI2MWRkMDVkNTdlZWVhNjkyMjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEyMzlmZmQzMDQwOThkOGFjOGVkZjkyMzY4OTc3MzM3NjAxNTVmOTJiMzc4OWUzYjAzZjA3N2YxNDM5YjcyYTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVmNzMyODlkZTFiYjVlM2E4NDM0Y2ZmMzYxNjczOGY4NWU3ZDQzMmM5MTM2Y2E4MDk0MGI0NTk4MGE4YWViOGUifQ"
-        },
-        {
-          "resource": "repo://docs/adr/0001-no-separate-context-file.md#L7-L20",
-          "version": "repo-lines-v1:sha256:398450a2335937317d3c547a9b25d655dd46c61359d6ff3bbbaa44d4d48cb187:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliYTJkMjhhMTI0MjFmZTI5ZDQxNjA5ZmZlOWQyNGVhN2ZiNjhhZjU1M2VkYmNlNTFhMjBmNjExMGQ4ZmQ4ODEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJlMGVhMjNlMDg4ZmY0ZTVlODVkMzg3OTZmNDNkZTYwY2RkMzc1ZTFjM2FiOTllNGI0N2Q5ZThkNmJiZjg5MGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiOTVmNjk4N2I5YmMzZjg5ZDNjYjZjMDY0MGQwZDkyZmMyMzFmMTg1YzZjMjQzYzIyNzZhN2ZhMjc1NzNmMjIifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_b1073c222f34446dbd25dbd4de2b6522",
-      "statement": "ADR 0003 records that the vocabulary was moved rather than copied, because leaving the same definitions in both files would produce exactly the divergence ADR 0001 had correctly feared.",
-      "evidence": [
-        {
-          "resource": "repo://docs/adr/0003-context-md-holds-internal-vocabulary.md#L14-L24",
-          "version": "repo-lines-v1:sha256:9ecd8dbdd870b82d1f14240e50ee7121d4e61760b9cd2828403654b09c526d1f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkM2RiYzRlN2U3Y2JlNWRkYzg5MWIwODA3MTJmNjM1MWM5NGI3MjhlYzhiZDg1NTZmNDYxMmIwNzBkMjdiNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3MzNjNmI1YTZlMjBkNjc0YWMwMjUwNzRhNGZlMGE2MDMwYzNhODdiMjk1YzFjMzU0OWQwOWQ3Yjk2NTY2MDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM2MjIxY2Y5NmJjODU1ZTAyYmQ3NDM0YzhjYzEzOTUyMmY4OTdiMTZmZWI1ZmVjZjM2M2Y2MWI1MzE3N2YyYTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc2NWYwYmJjOTY0NzAxYjQ1Njc1ODk3ZWY0Yjc3YmE3YWM1NDJmNWYzODBjMzQ5MWU5ODk2MjY4OTQ4MTM5ZjIifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_c154f0bf509c49bf8f416bde2c22115d",
-      "statement": "ADR 0003 states its own cost rather than only its benefit: the new vocabulary file is not auto-loaded, so a session that reads only the instruction file no longer sees those definitions, and whether the pointer compensating for that actually gets followed is left as an open observation.",
-      "evidence": [
-        {
-          "resource": "repo://docs/adr/0003-context-md-holds-internal-vocabulary.md#L26-L34",
-          "version": "repo-lines-v1:sha256:b221170cc83fb6d632689022324e11d3f8e9612edaafc568fcd143daf8ce0575:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGY2YjBiNDUzM2ZkYmU1N2Q4OWRmOWYwOTk0NjZhZGI3NThmMThjOWJkMTY3YjBhYjEzNzYyMjUzMGJiZWJmNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjMwZGJkZTQxMzFhNGU2M2JhZjA4ZTBhOTFkZjM4ZWVlYjg0Y2E2NDFhOTA0NDUwOTlkNzE3YmFhZDYzMzE5NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzNhZTViYmQyYzQ2OWExY2IyYTViMWZlYTY1YWVjMmM2NzViNjNjYTAyMjFjYTNiNjY4ZTcyZGI3MjI0MTIzOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzdhZDJiYWM3ZmE4MDdiOWRhZTlkYWNkMDEzMWQ2NWY2NWQ4Y2MwNGNiNGMyZjAyMzkzYmYyOWQxMGRmMzExZiJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_3b95157b348c48508550fb708cb50f74",
-      "statement": "ADR 0002 is the decision the knowledge bundle and its gate implement, fixing four things: published articles are out of scope, trust is derived rather than stored, the count floor lives in bundle frontmatter rather than code, and the check binds to pre-push.",
-      "evidence": [
-        {
-          "resource": "repo://docs/adr/0002-knowledge-bundle-scope-and-gate.md#L12-L20",
-          "version": "repo-lines-v1:sha256:52d65b25771cf51220746077bca417732b1e066200d77dfa01541fe8faebc6f8:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2QzZGJjNGU3ZTdjYmU1ZGRjODkxYjA4MDcxMmY2MzUxYzk0YjcyOGVjOGJkODU1NmY0NjEyYjA3MGQyN2I0MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTNlOGNhZTBmMTU5YmY5YmRiYzFlYjk2NzMwZDNjYmQ0NjdlYTk3YTRmZjYzYTM0ZGUwZWNmOThiYzJmMzgzNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNWJlMWM0YWYyODdmYmZiMzQwNDU4NDcyODAwYTczM2JkZGE4ODExMmY5OGNkMGRiMzliZjM2YTlhOGNmNzllMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWY3MzI4OWRlMWJiNWUzYTg0MzRjZmYzNjE2NzM4Zjg1ZTdkNDMyYzkxMzZjYTgwOTQwYjQ1OTgwYThhZWI4ZSJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_07a699882d5244b0a6c2e8170d6c1760",
-      "statement": "Every ADR in this repository ends with explicit reopen conditions, which makes a superseded decision a condition that fired rather than a decision that was wrong.",
-      "evidence": [
-        {
-          "resource": "repo://docs/adr/0001-no-separate-context-file.md#L22-L30",
-          "version": "repo-lines-v1:sha256:bdba7c831ac97afa3c956ec9c3cc3554595b1ce0edf2d5222c3b36a659dbce62:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWExMmQ1NjdmOTUyZTljOTc5MWNhYWFiYjA0ODlmNzcxMGE4MDBlNTUxOGJjNDg4ZjZiMjlhODBkZTg0MTQ1MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzBhODYzMDk1MDVjY2FlODhiZTEyNmY1NTBhNGVjOWVmZmU3MjMzMDNmNzg1NTc1Y2JhNGVlZGU4ZmQ4MmQyNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTczOGQzNjE4ZTVkZWQ5Y2NhYTI5YmVjYzNhYjBhNWU5MGFlYzA4NzA5MzMwNDQ0NzVhZTUxNjVkMDljYzJlZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzdhZDJiYWM3ZmE4MDdiOWRhZTlkYWNkMDEzMWQ2NWY2NWQ4Y2MwNGNiNGMyZjAyMzkzYmYyOWQxMGRmMzExZiJ9"
-        },
-        {
-          "resource": "repo://docs/adr/0002-knowledge-bundle-scope-and-gate.md#L28-L31",
-          "version": "repo-lines-v1:sha256:4d83e51254341b4ed53a9bee2047b0b3ae17e2ae74bbd45aecd542370a2da1a0:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGYzZDkwODI3MDUyODA1YmVjMTgzNDQ5ZTEzMTA4MjhiOTA3MTI0OTIwNzcwN2QwM2VhMjNjMWZiNGIzYjA2ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZWEwOTM1NzZiYjFiZDlmYTNhNmIyMzZkY2VhNzU5MWVhZGI0ZmM5MjNmMWNkMjhkYzk3ODlhN2JmOTgxOTI4MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWE3ZDRjMThkZjhmYzVmODE2YTEwOTRkODNiYTgzNjQwNTk2Y2I4Njg3YjFmOTMxNmIxZDFhMTJiMDhlZTRiZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzdhZDJiYWM3ZmE4MDdiOWRhZTlkYWNkMDEzMWQ2NWY2NWQ4Y2MwNGNiNGMyZjAyMzkzYmYyOWQxMGRmMzExZiJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_abdc80fa105a4590887a2ec0653779f7",
-      "statement": "ADR 0001 decided against a separate vocabulary file and ADR 0003 reversed it, and the reversal turned on a distinction the first decision missed: 0001 evaluated the file only as a place to read from and never as a place where newly settled terms get written.",
-      "evidence": [
-        {
-          "resource": "repo://docs/adr/0003-context-md-holds-internal-vocabulary.md#L7-L20",
-          "version": "repo-lines-v1:sha256:de13ce09aab1cd9c69224bd5299249e9732dfa197c45b3ad527ba137f09838fe:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkZjdjOGY5YjZiZTUzNGExODk3ZDEzZGQ1MjU1ZjViM2VlYjE1YmFlYmVlNGI2MWRkMDVkNTdlZWVhNjkyMjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEyMzlmZmQzMDQwOThkOGFjOGVkZjkyMzY4OTc3MzM3NjAxNTVmOTJiMzc4OWUzYjAzZjA3N2YxNDM5YjcyYTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVmNzMyODlkZTFiYjVlM2E4NDM0Y2ZmMzYxNjczOGY4NWU3ZDQzMmM5MTM2Y2E4MDk0MGI0NTk4MGE4YWViOGUifQ"
-        },
-        {
-          "resource": "repo://docs/adr/0001-no-separate-context-file.md#L7-L20",
-          "version": "repo-lines-v1:sha256:398450a2335937317d3c547a9b25d655dd46c61359d6ff3bbbaa44d4d48cb187:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliYTJkMjhhMTI0MjFmZTI5ZDQxNjA5ZmZlOWQyNGVhN2ZiNjhhZjU1M2VkYmNlNTFhMjBmNjExMGQ4ZmQ4ODEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJlMGVhMjNlMDg4ZmY0ZTVlODVkMzg3OTZmNDNkZTYwY2RkMzc1ZTFjM2FiOTllNGI0N2Q5ZThkNmJiZjg5MGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiOTVmNjk4N2I5YmMzZjg5ZDNjYjZjMDY0MGQwZDkyZmMyMzFmMTg1YzZjMjQzYzIyNzZhN2ZhMjc1NzNmMjIifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_f790eb0e5ff748d49ec091437caa05fc",
-      "statement": "ADR 0003 records that the vocabulary was moved rather than copied, because leaving the same definitions in both files would produce exactly the divergence ADR 0001 had correctly feared.",
-      "evidence": [
-        {
-          "resource": "repo://docs/adr/0003-context-md-holds-internal-vocabulary.md#L14-L24",
-          "version": "repo-lines-v1:sha256:9ecd8dbdd870b82d1f14240e50ee7121d4e61760b9cd2828403654b09c526d1f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkM2RiYzRlN2U3Y2JlNWRkYzg5MWIwODA3MTJmNjM1MWM5NGI3MjhlYzhiZDg1NTZmNDYxMmIwNzBkMjdiNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3MzNjNmI1YTZlMjBkNjc0YWMwMjUwNzRhNGZlMGE2MDMwYzNhODdiMjk1YzFjMzU0OWQwOWQ3Yjk2NTY2MDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM2MjIxY2Y5NmJjODU1ZTAyYmQ3NDM0YzhjYzEzOTUyMmY4OTdiMTZmZWI1ZmVjZjM2M2Y2MWI1MzE3N2YyYTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc2NWYwYmJjOTY0NzAxYjQ1Njc1ODk3ZWY0Yjc3YmE3YWM1NDJmNWYzODBjMzQ5MWU5ODk2MjY4OTQ4MTM5ZjIifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_bec37b58eecf4b59b5d7741232c960a9",
-      "statement": "ADR 0003 states its own cost rather than only its benefit: the new vocabulary file is not auto-loaded, so a session that reads only the instruction file no longer sees those definitions, and whether the pointer compensating for that actually gets followed is left as an open observation.",
-      "evidence": [
-        {
-          "resource": "repo://docs/adr/0003-context-md-holds-internal-vocabulary.md#L26-L34",
-          "version": "repo-lines-v1:sha256:b221170cc83fb6d632689022324e11d3f8e9612edaafc568fcd143daf8ce0575:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGY2YjBiNDUzM2ZkYmU1N2Q4OWRmOWYwOTk0NjZhZGI3NThmMThjOWJkMTY3YjBhYjEzNzYyMjUzMGJiZWJmNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjMwZGJkZTQxMzFhNGU2M2JhZjA4ZTBhOTFkZjM4ZWVlYjg0Y2E2NDFhOTA0NDUwOTlkNzE3YmFhZDYzMzE5NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzNhZTViYmQyYzQ2OWExY2IyYTViMWZlYTY1YWVjMmM2NzViNjNjYTAyMjFjYTNiNjY4ZTcyZGI3MjI0MTIzOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzdhZDJiYWM3ZmE4MDdiOWRhZTlkYWNkMDEzMWQ2NWY2NWQ4Y2MwNGNiNGMyZjAyMzkzYmYyOWQxMGRmMzExZiJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_a87b1c343b8b4b989de971c766a4a7e7",
-      "statement": "ADR 0002 is the decision the knowledge bundle and its gate implement, fixing four things: published articles are out of scope, trust is derived rather than stored, the count floor lives in bundle frontmatter rather than code, and the check binds to pre-push.",
-      "evidence": [
-        {
-          "resource": "repo://docs/adr/0002-knowledge-bundle-scope-and-gate.md#L12-L20",
-          "version": "repo-lines-v1:sha256:52d65b25771cf51220746077bca417732b1e066200d77dfa01541fe8faebc6f8:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2QzZGJjNGU3ZTdjYmU1ZGRjODkxYjA4MDcxMmY2MzUxYzk0YjcyOGVjOGJkODU1NmY0NjEyYjA3MGQyN2I0MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTNlOGNhZTBmMTU5YmY5YmRiYzFlYjk2NzMwZDNjYmQ0NjdlYTk3YTRmZjYzYTM0ZGUwZWNmOThiYzJmMzgzNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNWJlMWM0YWYyODdmYmZiMzQwNDU4NDcyODAwYTczM2JkZGE4ODExMmY5OGNkMGRiMzliZjM2YTlhOGNmNzllMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWY3MzI4OWRlMWJiNWUzYTg0MzRjZmYzNjE2NzM4Zjg1ZTdkNDMyYzkxMzZjYTgwOTQwYjQ1OTgwYThhZWI4ZSJ9"
-        }
-      ]
-    },
     {
       "id": "claim_0201ab6f8f06446380d351b2afde7233",
       "statement": "Every ADR in this repository ends with explicit reopen conditions, which makes a superseded decision a condition that fired rather than a decision that was wrong.",
@@ -179,6 +63,6 @@
   ],
   "verification": {
     "by": "openwiki/0.3.3",
-    "at": "2026-08-23T16:52:46.407Z"
+    "at": "2026-08-24T04:00:10.657Z"
   }
 }

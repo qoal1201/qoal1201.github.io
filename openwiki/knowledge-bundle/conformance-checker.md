@@ -15,7 +15,7 @@ sources:
 generated: {by: "claude-code", at: "2026-08-23T16:52:46.407Z"}
 verified:
   - by: openwiki/0.3.3
-    at: 2026-08-23T16:52:46.407Z
+    at: 2026-08-24T04:00:10.657Z
 ---
 
 # 두 파일의 분업

@@ -1,93 +1,7 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:4c2c6f6f671e67323605b80fe3a45f8f10a44364d47c6cb9eca6a0847f3cec76",
+  "pageVersion": "sha256:1206a5253cd681e7ee03204c7fa4e62086e9b5433e3030bc6ca5faea6c113d15",
   "claims": [
-    {
-      "id": "claim_017f8abf07e84d80b136b84ed7a9d50e",
-      "statement": "The bundle checker deliberately imports no count or length constants from the sibling repositories it was ported from, because those constants encode those repositories' histories and copying them caused agents elsewhere to invent concept cards purely to turn a check green.",
-      "evidence": [
-        {
-          "resource": "repo://tests/check_knowledge_bundle.py#L10-L27",
-          "version": "repo-lines-v1:sha256:7fd6fca0a887ec8a9dcaebcb1e84e2d569cab257b102bc7ba74e5318437fad8c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNiMmQwNzA4NmMxNzM1MWJiMjA5NjY4MzJkMTY5NWUyMzQ1ODkxYTI0NjdmODYyNThmNDAwOGE0MGI1OGRjOTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdmODQ4NGZkZWE3NGUyODU3OTEyNWU3NzY5NTU1YzZiNTc3NTUxNzBiMzk3NWZiMzFhZTliMWM5ODNhYTEzYjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkN2UwODYzZmRjMTFhMTVmMjNiYWZkNDJhMzQxZTcxMDlhMTY3MzUyZjMwZGM0ZmUxYjE4NWU0ZmFlMDZiNjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ0YzUxYmZmN2M0ZGVjYzhjZjUwNWIwODZhNTJlYjQ3MjE5MTMwNzAwYmYwMDRmMjQzZjUxNWE5YTU0NzEyY2MifQ"
-        },
-        {
-          "resource": "repo://docs/adr/0002-knowledge-bundle-scope-and-gate.md#L33-L35",
-          "version": "repo-lines-v1:sha256:8b595196d19c44bb55fede5d1845cf9b0fdb7d440e265db8c67d857a14365464:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTQxNmZlNWJlNmIyNmY2MWM1ZjE0ODM0NDk5ZGFlMjY0YWQ0NGZhOTEzODkxOWNlN2Y3MTk4YzU2Mzc0NzhiNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjU2NjU3OTc0ZjFiYjhmYjMwMGJiNTdhMDI0Yzg1N2ZjMDJjYTZiMGJhMDNkODYxYWI5YTg2M2RjNGU2NGI3YSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzI5YmZlNTRlMjFmYzUwNjMwNGJiYmM3NDkzZGFhNGI0NTJjODUxYmQ4NTNiZTMwNmUzMTdjYmYxOTFhYzY5ZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWQ2NDZhYTU0Y2EzOWMxNjg0OGNkNWZmNGI3Njk1OTI5ZjM5MmUxNGJmNThhODVkYTI5MGU1MGJiZGY5NDQzYSJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_7cc6a462f20d41d29c06643626254a10",
-      "statement": "The only count threshold is read from the min_concepts key in knowledge/index.md frontmatter, defaulting to zero when absent or unparseable, so an empty bundle is conformant by design and green never means the bundle holds knowledge.",
-      "evidence": [
-        {
-          "resource": "repo://tests/check_knowledge_bundle.py#L73-L82",
-          "version": "repo-lines-v1:sha256:290770e40946c8ede2055c09e8061df34b02787e16dddf2ceaebde54bf1dba83:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmNGRmZmEwMjVmNjljYmQ5YTQ3MTI4MmRjZmY0OGM0MWU4NmUyYjc5YjhiM2EzMzE4OGU3MjY3YzlhZDc3NTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRjNzQ5ZTBlZDcwYmYyZDAyNmE1MzU3OWY3MmE4MWQ5ZGM2YjIwZjUyYTU1OWRmZDIyN2I2NzNhZWE2ZDQ3ZDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3YjcyMmQwNzI1ODI5MmM5OWFhNGM5NDFiNzM4N2I2NzljMzAxMDgwZGEzMWRiNTViNmU4MDg2NTNmZWIxN2EifQ"
-        },
-        {
-          "resource": "repo://knowledge/index.md#L1-L4",
-          "version": "repo-lines-v1:sha256:feddad7e6c6109aa69ac06e75c0a8d2e25847c6b238820fe7d8b713cf82df0a7:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTg3MDcwYmFiNGM1NTE0ZjEyZjM3MjE2ZWY5NDZjOTgwMDM5M2FhM2ZlNzc5NmNmYTcxODNhMzBmOWM4ZTY4MCJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_427b07de6174498a8e6e2c69140cdb6f",
-      "statement": "The checker requires knowledge/index.md to contain a limits section, which is the bundle's own record of what the check cannot see, and treats its absence as a failure rather than a style issue.",
-      "evidence": [
-        {
-          "resource": "repo://tests/check_knowledge_bundle.py#L88-L94",
-          "version": "repo-lines-v1:sha256:f46839c74520de01bb69df7ec6e245abb2874ae94f80b0bc3c6f022232975db8:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODI5OTNiZmI2NzUzMWYzYTFkNzAxYWVjNDc2ZmY4ZTAxYjk0MTY3NDVmM2M2ZGIxOWY0OTczZjIwZmUyMzZhMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjM1OGViZTQ0YzBmMjlhYzYxYzNmYzFmMjYyYjI4NDg1ZWY2M2Q3MzllYTQ5YTQ5MmQ1MTJlYzA3NDYwYTE1NCJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_4d1108db9aea4733bea151e9a4d14936",
-      "statement": "Every repository-relative sources entry in a concept card is resolved against the repository root and reddens when missing, while resources beginning with http are never checked, so renaming a cited in-repo file breaks the push gate but a dead external link does not.",
-      "evidence": [
-        {
-          "resource": "repo://tests/check_knowledge_bundle.py#L108-L116",
-          "version": "repo-lines-v1:sha256:1c8bb944df8e01185e96bef439c83daf497f78395de6519253ccc3f458d557a8:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjZhZDA1MmM0NGI5NTNmMGQ4MzI4NmEyZGRkZWMyMTg1ZTdmMTg5ZGIwZTRmNTAyYzZmMDZmMzQ3NTg0NTRhNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDA5NWE5N2MyNjc4YjRkNGU1MjFmMmFmMTMxMWNkMTVkMGJjNDBkODIyYzZlZmQzNjE4ZWY5NDBhNzExMDNlYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTkwNTJiYmQ5ODAxNDllZjY3YjViMTA3NWFlYmYxY2I1MDQ4ZDdjZjgzMDdjMzg3MjRkZmFmYjFjOGNlMGYzYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNmVlMGFkM2U3YTg4YTY4Y2FmZTUzMjUwNzBlN2JmZGRmNjYwZjkwNTQzYzM2NWI3MmQ0ZWJiMzY1NmUxZTIwMCJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_8cc2a2f62856477593150b7a94389c92",
-      "statement": "Trust tiers are derived from the verified frontmatter rather than stored, so a card with no verifier is unverified as a matter of fact and cannot be upgraded by editing a field.",
-      "evidence": [
-        {
-          "resource": "repo://tests/okf_document.py#L235-L253",
-          "version": "repo-lines-v1:sha256:078c8d53131cfe6e1ee87ba343fb168a481d7186965aa08bab829ea796d88f67:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5ODc0YmRmN2QwNDYyNDJlOTI5YmVkNzU4NjYzYjAyZjgxYThiZDVmOTQ2MjVjZmU3M2I5YjU4MGJiYmNjZDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdhMDdiNjdjZmI3YjEzMWE1ZmNjYzgwNTY3Mzc3YTY5MzJmNzM5MTM3MjgwZDgyODU2ZDgxZGQ3OGMxYzdlZTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFiODYwZjM1OTI2YTE4NjE1MTFlMzBjNjc3MDVhNDAzNzExMmM2NjcyMjEwYWJiNmExYWE1ODFhN2YyNGFmYjIifQ"
-        },
-        {
-          "resource": "repo://docs/adr/0002-knowledge-bundle-scope-and-gate.md#L16-L18",
-          "version": "repo-lines-v1:sha256:7021f50178c334564bb589c9f353e1c1c489cb2eb409e141776204bd477832d1:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzg1N2Q5Y2M5N2E1OWQwZGU3NjIxNzAxNjBmMjhhYjU4YzQyN2NkM2E3Zjk0MDZjYThlMzU0YjViMjdjZWZjNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiM2U5ODA1N2MzZWE5NGMyNDRhNmQ1MWIxMDQxNjZjZTAzODdmM2ViNGQ1N2FiYWUyMWY2OTQxNmVlOTZlZWEzNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjkxMzc5OTA0MDY5ODVhNTBjYmQxNDI2YzRmMjZlZDkyNzhmOTlkN2Y3Yjk0ZTM2ZTk0OGE3Zjk4NjliODMyNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjc0MmFlNzI1OTkzM2ZjOGE3ZmMzYjljNjdmYjg1Y2MyMjU4YjkxYTVlZmRjNzBhNDU1ZjE4MWFlODA2MzE2ZSJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_752e9369ec07434eb943bc8c9dc9e8c7",
-      "statement": "The frontmatter parser accepts only a narrow subset of YAML and raises on any shape it does not recognize instead of skipping it, because a permissive parser lets a card with a typo pass as green and that failure occurred four times in this repository.",
-      "evidence": [
-        {
-          "resource": "repo://tests/okf_document.py#L15-L32",
-          "version": "repo-lines-v1:sha256:86a2ff5bc85410d0fb235b3280568af719887642f72579b777701b29883ab954:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZmYWIxOWQ4NDgwYmJiNmE4NDRlNTc5NDNmMDk1NGI5NmEyOTg0N2E3ZmYxNzEzMjczOTU5OTVlODU1Y2NhZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2ZWJjYTdkNzI3ODMzOWY1OTBhYjljNzQwYzY0N2FlODViZjg0ODM5M2YyMTU2NjMxNzkyNmNmMTFmYWUxYjMifQ"
-        },
-        {
-          "resource": "repo://tests/okf_document.py#L168-L187",
-          "version": "repo-lines-v1:sha256:17fe94e3ff4b9f75f3d8e581ee6b093c5dac3640812a5151ed456cfe10222f19:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA3MzViNjVjZTJmZWY1N2Q2NzhhMzRlZTQ0NTFhYzZkYjVmZDU2MzdkYzU2ZjUwMzEzYmQ4NTViZjhlMTY4MjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2ZmJhZTBiOTFkNDRmYzBkNDlmNWRlNjkxZGE2ZmM0MzFmMjYwMTM0YmY3MzFlMGUyMWY3NjQ4MDk0MzM0Y2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ2YjE0MmUzZmJkMGI5ZDBiZWI5MmU3ZTg2NzAzMGE5Y2MzMjRlYjY3OGI1ZTUwN2FkZDllMzE5MmExNDRkNDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkwY2U5NmI4MjIxYTg4NmUzYmFhMzUwMDA4YmE0ZmRiYjZlMWRjNTZiMDJkOTk1MjZmNGU2MTMyZGUxY2NmMmEifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_a63c724946da4f758fabe1623504e804",
-      "statement": "The checker's selftest injects failures into a temporary copy of the bundle and asserts each one reddens; its floor case must replace an existing min_concepts declaration rather than append one, because a duplicate key is won by the later value and the injected floor is silently ignored.",
-      "evidence": [
-        {
-          "resource": "repo://tests/check_knowledge_bundle.py#L127-L170",
-          "version": "repo-lines-v1:sha256:73e4440f0c2a8475443fc9652aa7ecd3d17f608b74cf57b9ca52085d6606dcc3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUxYjEwN2Y5ZTU0MTEzYzA2ODhjYjczMWYyMTZkYjQ1YzNiZDhjNWE5MzRmYTE4NWYzNmEwYWI2Nzc5MGIyZDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMzM0ZTBhNjc0MjU2MDdjOWQ5MzYyYmQxNzE1YWE2ZGQyNWM3N2MyZmRiOTM0ODJlZTg3MTUwOGEwY2VmY2EiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYzNzJkYTZmZWIyOGFkNjllNDRjMzRjYTIxY2MyYjM4ZmQ2NWY5ZDk4YTBhNDljMWYwNTE3YzRjYWMxMjMyNWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmMGFmYjEwNDMwMzQ0NjJhMGQ4YzcwYTYwZjgzMjY3MDg1MmEwMzc5ZGU0MTQ3NDg2YTExOTg2NTYyYjQ3YzYifQ"
-        }
-      ]
-    },
     {
       "id": "claim_07432b44a66f40fcad197cfa8c21bbdd",
       "statement": "The bundle checker deliberately imports no count or length constants from the sibling repositories it was ported from, because those constants encode those repositories' histories and copying them caused agents elsewhere to invent concept cards purely to turn a check green.",
@@ -205,6 +119,6 @@
   ],
   "verification": {
     "by": "openwiki/0.3.3",
-    "at": "2026-08-23T16:52:46.407Z"
+    "at": "2026-08-24T04:00:10.657Z"
   }
 }

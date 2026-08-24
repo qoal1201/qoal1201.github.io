@@ -15,9 +15,6 @@ sources:
   - id: openwiki-source-0e1f3b45819028e3584bc0dc
     resource: repo://_tools/make_field_map_charts.py
 generated: {by: "claude-code", at: "2026-08-23T16:52:46.407Z"}
-verified:
-  - by: openwiki/0.3.3
-    at: 2026-08-23T16:52:46.407Z
 ---
 
 # 원칙
